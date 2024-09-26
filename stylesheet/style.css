@@ -9,15 +9,17 @@ body {
 }
 
 #header-logo {
-    text-align: left;
     margin-left: 15px;
     margin-top: 15px;
     max-width: 75px;
     min-width: 15mm;
 }
 
-.img-container{
-    padding: 0 15%;
+.img-container {
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 0;
+    /* margin: auto; */
 }
 
 header {
@@ -38,7 +40,7 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 15%;
-    max-width: 50%;
+    max-width: 60%;
 }
 
 .nav-links li {
@@ -75,19 +77,22 @@ h1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding: 0% 15%;
 }
 
-#course-info div {
+.detail-box {
+    width: 200px;
     margin: 0.6%;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 10px;
-    width: 200px;
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
 
+
+
 #course-info div:hover {
-    background-color: lightgray;
-    border-color: #3B3941;
+    background-color: rgba(211, 211, 211, 0.237);
+    border-color: #3b39417a;
 }
