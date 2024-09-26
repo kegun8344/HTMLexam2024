@@ -3,7 +3,8 @@ html{
 }
 
 body {
-    margin-left: 100px;
+    /* må gjøre scalable, ikke px på margin, skal fikses */
+    margin-left: 300px;
     background-color: white;
     padding: 0%;
 }
@@ -17,18 +18,22 @@ body {
 
 header {
     background-color: #3B3941;
-    margin-left: -100px;
+    margin-left: -300px;
+    /* må gjøre scalable, ikke px på margin, skal fikses */
 }
 
 nav a {
     display: inline-block;
     margin: 0 15px;
-    padding: 50px 0;
+    padding: 25px 0;
     text-decoration: none;
     color: #CFA30D;
     font-weight: bold;
     font-size: 1.5rem;
     transition: all 0.3 ease;
+}
+article{
+    margin-top: 75px;
 }
 
 nav a:hover {
