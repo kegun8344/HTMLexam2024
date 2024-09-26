@@ -15,6 +15,10 @@ body {
     max-width: 100px;
 }
 
+#course-info{
+    display: flex;
+}
+
 header {
     background-color: #3B3941;
 }
