@@ -88,6 +88,7 @@ h2 {
 #main-content {
     margin-left: 10%;
     margin-right: 10%;
+    padding-top: 50px;
 }
 
 #course-summary {
@@ -129,6 +130,7 @@ h2 {
 	background: #00000022;
 	text-align: center;
 	margin-top: 5em;
+    min-height: 450px;
 }
 
 #footer .row {
@@ -198,10 +200,11 @@ ul.media li a{
     text-decoration: none;
     color: black;
     transition: color 0.3s ease, font-size 0.3s ease;
+    
 }
 
 .more-info-links:hover{
     text-decoration: underline;
-    color:#6a95bd;
+    color:#49a7ff;
     font-size: larger;
 }
