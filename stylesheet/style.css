@@ -93,8 +93,8 @@ h2 {
 #course-summary {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    padding: 0% 15%;
+    justify-content: left;
+    padding: 0% 0%;
 }
 
 .detail-box {
@@ -192,4 +192,16 @@ ul.media li a{
 	height: 40px;
 	line-height: 40px;
 	text-align: center;
+}
+
+.more-info-links{
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, font-size 0.3s ease;
+}
+
+.more-info-links:hover{
+    text-decoration: underline;
+    color:#6a95bd;
+    font-size: larger;
 }
