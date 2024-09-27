@@ -21,15 +21,15 @@ header {
 #header-logo {
     margin-left: 15px;
     margin-top: 15px;
-    max-width: 75px;
+    max-width: 100px;
     min-width: 15mm;
 }
 
 .img-container {
-    /* display: flex; */
-    /* justify-content: center; */
-    padding: 0;
-    /* margin: auto; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
 }
 
 /* header ----------------------------------------------- */
