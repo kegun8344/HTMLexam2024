@@ -8,6 +8,10 @@ body {
     padding: 0%;
 }
 
+.general-spacer {
+    height: 30px;
+}
+
 
 /* header ----------------------------------------------- */
 header {
@@ -27,6 +31,7 @@ header {
     padding: 0;
     /* margin: auto; */
 }
+
 /* header ----------------------------------------------- */
 
 
@@ -68,20 +73,24 @@ nav {
     font-weight: bold;
     font-size: 1.5rem;
 }
-/* nav ----------------------------------------------- */
 
+/* nav ----------------------------------------------- */
 
 /* main-content ----------------------------------------------- */
 h1 {
     font-size: 40px;
 }
 
-#main-content {
-    margin-left: 10%;
-    margin-right: 15%;
+h2 {
+    font-weight: 100;
 }
 
-#course-info {
+#main-content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#course-summary {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -97,10 +106,16 @@ h1 {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-#course-info div:hover {
+#course-summary div:hover {
     background-color: rgba(211, 211, 211, 0.237);
     border-color: #3b39417a;
 }
+
+#course-info {
+    width: 100%;
+    margin: auto;
+}
+
 /* main-content ----------------------------------------------- */
 
 /**********************************/
