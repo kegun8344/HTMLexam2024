@@ -8,6 +8,12 @@ body {
     padding: 0%;
 }
 
+
+/* header ----------------------------------------------- */
+header {
+    background-color: #3B3941;
+}
+
 #header-logo {
     margin-left: 15px;
     margin-top: 15px;
@@ -21,11 +27,10 @@ body {
     padding: 0;
     /* margin: auto; */
 }
+/* header ----------------------------------------------- */
 
-header {
-    background-color: #3B3941;
-}
 
+/* nav ----------------------------------------------- */
 nav {
     display: flex;
     justify-content: center;
@@ -63,13 +68,16 @@ nav {
     font-weight: bold;
     font-size: 1.5rem;
 }
+/* nav ----------------------------------------------- */
 
+
+/* main-content ----------------------------------------------- */
 h1 {
     font-size: 40px;
 }
 
 #main-content {
-    margin-left: 15%;
+    margin-left: 10%;
     margin-right: 15%;
 }
 
@@ -89,13 +97,11 @@ h1 {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-
-
-
 #course-info div:hover {
     background-color: rgba(211, 211, 211, 0.237);
     border-color: #3b39417a;
 }
+/* main-content ----------------------------------------------- */
 
 /**********************************/
 /*		 Styling Footer	 */

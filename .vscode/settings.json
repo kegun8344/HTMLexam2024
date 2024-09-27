@@ -1,5 +1,6 @@
 {
     "liveServer.settings.port": 5501,
     "git.autofetchPeriod": 15,
-    "git.autofetch": true
+    "git.autofetch": true,
+    "livePreview.defaultPreviewPath": "/index.html"
 }
