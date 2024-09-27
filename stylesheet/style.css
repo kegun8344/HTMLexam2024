@@ -74,8 +74,6 @@ nav {
     font-size: 1.5rem;
 }
 
-/* nav ----------------------------------------------- */
-
 /* main-content ----------------------------------------------- */
 h1 {
     font-size: 40px;
@@ -118,11 +116,9 @@ h2 {
 
 /* main-content ----------------------------------------------- */
 
-/**********************************/
-/*		 Styling Footer	 */
-/**********************************/
 
-/*** Adding Styles to Company Details ***/
+/*		 Styling Footer	 */
+
 .moreInfo{
 	overflow: hidden;
 	padding: 3em 0em;
@@ -148,7 +144,6 @@ h2 {
 	font-size: 3em;
 }
 
-/*** Adding Styles to Copyright Div ***/
 .mediabox
 {
 	overflow: hidden;
@@ -171,7 +166,6 @@ h2 {
 	color: rgba(255, 255, 255, 0.8);
 }
 
-/* Styling Social Icons */
 ul.media{
 	margin: 0;
 	padding: 2em 0em 0em 0em;
