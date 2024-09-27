@@ -118,7 +118,6 @@ h2 {
 /* main-content ----------------------------------------------- */
 
 
-<<<<<<< HEAD
 /*** Adding Styles to Company Details ***/
 .moreInfo {
     overflow: hidden;
@@ -127,17 +126,6 @@ h2 {
     text-align: center;
     margin-top: 5em;
     min-height: 650px;
-=======
-/*		 Styling Footer	 */
-
-.moreInfo{
-	overflow: hidden;
-	padding: 3em 0em;
-	background: #00000022;
-	text-align: center;
-	margin-top: 5em;
-    min-height: 450px;
->>>>>>> b345792ce1f034deb3a15fa4ab3a56281f04e02c
 }
 
 #footer .row {
@@ -160,15 +148,6 @@ h2 {
     font-size: 3em;
 }
 
-<<<<<<< HEAD
-/*** Adding Styles to Copyright Div ***/
-.mediabox {
-    overflow: hidden;
-    padding: 3em 0em;
-    border-top: 20px solid rgba(255, 255, 255, 0.08);
-    text-align: center;
-    background: #3B3941;
-=======
 .mediabox
 {
 	overflow: hidden;
@@ -176,7 +155,6 @@ h2 {
 	border-top: 20px solid rgba(255, 255, 255, 0.08);
 	text-align: center;
 	background: #3B3941;
->>>>>>> b345792ce1f034deb3a15fa4ab3a56281f04e02c
 }
 
 .mediabox p {
@@ -190,24 +168,11 @@ h2 {
     color: rgba(255, 255, 255, 0.8);
 }
 
-<<<<<<< HEAD
 /* Styling Social Icons */
 ul.media {
     margin: 0;
     padding: 2em 0em 0em 0em;
     list-style: none;
-=======
-ul.media{
-	margin: 0;
-	padding: 2em 0em 0em 0em;
-	list-style: none;
-}
-	
-ul.media li{
-	display: inline-block;
-	padding: 0em 0.10em;
-	font-size: 1em;
->>>>>>> b345792ce1f034deb3a15fa4ab3a56281f04e02c
 }
 
 ul.media li {
