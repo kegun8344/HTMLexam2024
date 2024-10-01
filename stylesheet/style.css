@@ -115,6 +115,16 @@ h2 {
     margin: auto;
 }
 
+#more-content a{
+    text-decoration: none;
+    color: black;
+}
+
+#more-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: #CFA30D;
+    text-decoration-thickness: 2px;
+}
 /* main-content ----------------------------------------------- */
 
 
