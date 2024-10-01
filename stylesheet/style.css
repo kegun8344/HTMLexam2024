@@ -308,9 +308,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 #course-summary {
-    display: flex;
-    justify-content: center;
     max-width: 60%;
-    margin: auto;
+    /* margin: auto; */
     padding: 50px 0;
 }
