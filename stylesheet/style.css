@@ -39,13 +39,13 @@ header {
 /* Video ------------------------------------------------------------*/
 .video-container {
     position: relative;
-    padding-bottom: 42.1875%;
-    /* 16:9 aspect ratio */
+    max-width: 75%;                 /* <----- 16:9 aspect ratio */
+    padding-bottom: 42.1875%;       /* <----- 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    max-width: 75%;
     margin: 0 auto;
-    border-radius: 50px;
+    border-radius: 30px;
+    border: 1px;
 }
 
 iframe {
@@ -92,7 +92,7 @@ nav {
     display: inline-block;
     margin: 0 10px;
     text-decoration: none;
-    color: #CFA30D;
+    color: #ffd500;
     font-weight: bold;
     font-size: 1.5rem;
 }
