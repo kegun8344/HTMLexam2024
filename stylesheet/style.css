@@ -123,6 +123,7 @@ h2 {
 #more-content a{
     text-decoration: none;
     color: black;
+    font-size: larger;
 }
 
 #more-content a:hover {
