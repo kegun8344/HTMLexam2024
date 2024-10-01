@@ -276,7 +276,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* Style the tab content */
 .tabcontent {
-    background-color: rgba(255, 208, 55, 0.669);
+    background-color: #f1f1f1;
     display: none;
     padding: 6px 12px;
     -webkit-animation: fadeEffect 1s;
