@@ -128,7 +128,7 @@ h2 {
     min-height: 650px;
 }
 
-#footer .footer-info {
+#footer .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
