@@ -12,6 +12,10 @@ body {
     height: 30px;
 }
 
+hr {
+    margin: 75px 0;
+}
+
 
 /* header ----------------------------------------------- */
 header {
@@ -115,7 +119,7 @@ h2 {
     margin: auto;
 }
 
-#more-content a{
+#more-content a {
     text-decoration: none;
     color: black;
     font-size: larger;
@@ -179,21 +183,21 @@ ul.media {
     padding: 2em 0em 0em 0em;
     list-style: none;
 }
-	
-ul.media li{
-	display: inline-block;
-	padding: 0em 0.10em;
-	font-size: 2em;
+
+ul.media li {
+    display: inline-block;
+    padding: 0em 0.10em;
+    font-size: 2em;
 }
 
-ul.media li a{
-	color: #FFF;
-	display: inline-block;
-	background: rgba(12, 12, 12, 0.6);
-	width: 60px;
-	height: 60px;
-	line-height: 60px;
-	text-align: center;
+ul.media li a {
+    color: #FFF;
+    display: inline-block;
+    background: rgba(12, 12, 12, 0.6);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
 }
 
 .more-info-links {
