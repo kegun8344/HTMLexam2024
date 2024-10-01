@@ -125,6 +125,12 @@ h2 {
     font-size: larger;
 }
 
+#more-content a:hover {
+    text-decoration: underline;
+    text-decoration-color: #CFA30D;
+    text-decoration-thickness: 2px;
+}
+
 /* main-content ----------------------------------------------- */
 
 
