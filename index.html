@@ -30,7 +30,7 @@
     <section id="main-content">
         <h1>Matematisk modellering og datavitenskap - ingeniør </h1>
         <h2>Bachelorprogram</h2>
-        <section id="course-summary">
+        <section id="course-key-points">
             <div class="detail-box">
                 <h3>Studiested: </h3>
                 <p>Pilestredet i Oslo</p>
@@ -60,24 +60,94 @@
                 <p>40 </p>
             </div>
         </section>
-        <div class="general-spacer"></div>
-        <section id="course-info">
-            <hr>
-            <h2>Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige
-                oppgaver.</h2>
-            <div class="general-spacer"></div>
-            <h2>Studiestart</h2>
-            <p>Informasjon om program, timeplaner, pensum, fadderuker og mye mer finner du på studiestartsiden for
-                matematisk modellering og datavitenskap - ingeniør (student.oslomet.no).
-                <br><br>
-                NB! Vær obs på at timeplanen som ligger på studiestartsiden er en timeplan for alle studentene på
-                kullet.
-                <br><br>
-                For å se din personlige timeplan må du logge deg inn på "Min side" (student.oslomet.no) etter at du har
-                aktivert IT-kontoen din og du er blitt plassert i klasse/gruppe. Dette skjer vanligvis uken før
-                studiestart.
-            </p>
-            <hr>
+
+        <section id="course-info-tabs">
+            <h2 id="course-summary">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske
+                og samfunnsnyttige
+                oppgaver.
+            </h2>
+
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Studiestart')">Studiestart</button>
+                <button class="tablinks" onclick="openTab(event, 'Opptakskrav og poeng')">Opptakskrav og poeng</button>
+                <button class="tablinks" onclick="openTab(event, 'Slik søker du')">Slik søker du</button>
+                <button class="tablinks" onclick="openTab(event, 'Hva lærer du?')">Hva lærer du?</button>
+                <button class="tablinks" onclick="openTab(event, 'Studiets oppbygging')">Studiets oppbygging</button>
+                <button class="tablinks" onclick="openTab(event, 'Hvordan foregår undervisningen?')">Hvordan foregår
+                    undervisningen?</button>
+                <button class="tablinks" onclick="openTab(event, 'Hva koster det?')">Hva koster det?</button>
+                <button class="tablinks" onclick="openTab(event, 'Hva kan du jobbe som?')">Hva kan du jobbe
+                    som?</button>
+                <button class="tablinks" onclick="openTab(event, 'Utveksling')">Utveksling</button>
+                <button class="tablinks" onclick="openTab(event, 'Videre studiemuligheter ved OsloMet')">Videre
+                    studiemuligheter ved OsloMet</button>
+            </div>
+
+            <div id="Studiestart" class="tabcontent">
+                <h3>Studiestart</h3>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div id="Opptakskrav og poeng" class="tabcontent">
+                <h3>Opptakskrav og poeng</h3>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div id="Slik søker du" class="tabcontent">
+                <h3>Slik søker du</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Hva lærer du?" class="tabcontent">
+                <h3>Hva lærer du?</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Studiets oppbygging" class="tabcontent">
+                <h3>Studiets oppbygging</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Hvordan foregår undervisningen?" class="tabcontent">
+                <h3>Hvordan foregår undervisningen?</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Hva koster det?" class="tabcontent">
+                <h3>Hva koster det?</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Hva kan du jobbe som?" class="tabcontent">
+                <h3>Hva kan du jobbe som?</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Utveksling" class="tabcontent">
+                <h3>Utveksling</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div id="Videre studiemuligheter ved OsloMet" class="tabcontent">
+                <h3>Videre studiemuligheter ved OsloMet</h3>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <script>
+                function openTab(evt, tabName) {
+                    var i, tabcontent, tablinks;
+                    tabcontent = document.getElementsByClassName("tabcontent");
+                    for (i = 0; i < tabcontent.length; i++) {
+                        tabcontent[i].style.display = "none";
+                    }
+                    tablinks = document.getElementsByClassName("tablinks");
+                    for (i = 0; i < tablinks.length; i++) {
+                        tablinks[i].className = tablinks[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
         </section>
 
     </section>
