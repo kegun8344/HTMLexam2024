@@ -118,60 +118,60 @@ h2 {
 /* main-content ----------------------------------------------- */
 
 
-/*		 Styling Footer	 */
-
-.moreInfo{
-	overflow: hidden;
-	padding: 3em 0em;
-	background: #00000022;
-	text-align: center;
-	margin-top: 5em;
-    min-height: 450px;
+/*** Adding Styles to Company Details ***/
+.moreInfo {
+    overflow: hidden;
+    padding: 3em 0em;
+    background: #00000022;
+    text-align: center;
+    margin-top: 5em;
+    min-height: 650px;
 }
 
-#footer .row {
-    display: inline-block; 
+#footer .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+
 #footer #col1,
 #footer #col2,
-#footer #col3{
-	float: left;
-	width: 320px;
-	padding: 40px 40px 0px 40px;
-}
-	
-#footer #icon{
-	display: block;
-	margin-bottom: 1em;
-	font-size: 3em;
+#footer #col3 {
+    float: left;
+    width: 320px;
+    padding: 40px 40px 40px 40px;
 }
 
-.mediabox
-{
-	overflow: hidden;
-	padding: 3em 0em;
-	border-top: 20px solid rgba(255, 255, 255, 0.08);
-	text-align: center;
-	background: #3B3941;
-}
-	
-.mediabox p
-{
-	letter-spacing: 1px;
-	font-size: 0.90em;
-	color: rgba(255, 255, 255, 0.6);
-}
-	
-.mediabox a
-{
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.8);
+#footer #icon {
+    display: block;
+    margin-bottom: 1em;
+    font-size: 3em;
 }
 
-ul.media{
-	margin: 0;
-	padding: 2em 0em 0em 0em;
-	list-style: none;
+.mediabox {
+    overflow: hidden;
+    padding: 3em 0em;
+    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    background: #3B3941;
+}
+
+.mediabox p {
+    letter-spacing: 1px;
+    font-size: 0.90em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mediabox a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Styling Social Icons */
+ul.media {
+    margin: 0;
+    padding: 2em 0em 0em 0em;
+    list-style: none;
 }
 	
 ul.media li{
@@ -190,15 +190,15 @@ ul.media li a{
 	text-align: center;
 }
 
-.more-info-links{
+.more-info-links {
+    display: block;
     text-decoration: none;
     color: black;
     transition: color 0.3s ease, font-size 0.3s ease;
-    
 }
 
-.more-info-links:hover{
+.more-info-links:hover {
     text-decoration: underline;
-    color:#49a7ff;
+    color: #49a7ff;
     font-size: larger;
 }
