@@ -89,7 +89,7 @@ h2 {
     padding-top: 50px;
 }
 
-#course-summary {
+#course-key-points {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
@@ -105,7 +105,7 @@ h2 {
     transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-#course-summary div:hover {
+#course-key-points div:hover {
     background-color: rgba(211, 211, 211, 0.237);
     border-color: #3b39417a;
 }
@@ -207,4 +207,79 @@ ul.media li a{
     text-decoration: underline;
     color: #49a7ff;
     font-size: larger;
+}
+
+
+/* tabs style copied from w3schools, then customized
+https://www.w3schools.com/howto/howto_js_tabs.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
+ */
+
+/* Style the tab */
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ffe695;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #f3ce53;
+}
+
+/* Style the tab content */
+.tabcontent {
+    background-color: rgba(255, 208, 55, 0.669);
+    display: none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+#course-summary {
+    display: flex;
+    justify-content: center;
+    max-width: 60%;
+    margin: auto;
+    padding: 50px 0;
 }
