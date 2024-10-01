@@ -45,6 +45,7 @@ header {
     overflow: hidden;
     max-width: 75%;
     margin: 0 auto;
+    border-radius: 50px;
 }
 
 iframe {
@@ -79,7 +80,7 @@ nav {
     display: inline;
     padding: 15px;
     background-color: #00000022;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: background-color 0.3s ease;
 }
 
