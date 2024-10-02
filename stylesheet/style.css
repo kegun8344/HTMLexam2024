@@ -32,6 +32,46 @@ header {
     padding: 10px;
 }
 
+/* dropdown-menu ------------------------------------------------------------------- */
+/* from w3school */
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_right */
+.dropbtn {
+    background-color: #ffd500;
+    color: rgb(0, 0, 0);
+    padding: 16px;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ffd500;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s ease;
+  }
+  
+  .dropdown-content a:hover {background-color: #fff6cb;}
+  .dropdown:hover .dropdown-content {display: block;}
+
 /* Video ------------------------------------------------------------*/
 .video-container {
     position: relative;
@@ -60,9 +100,10 @@ iframe {
 /* nav ----------------------------------------------- */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     padding: 10px 20px;
+    min-height: 90px;
 }
 
 .nav-links {
@@ -347,13 +388,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ffe695;
-    padding: 14px 20px;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #ffd500;
-    padding: 14px 20px;
 }
 
 /* Style the tab content */
