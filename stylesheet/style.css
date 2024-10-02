@@ -162,7 +162,7 @@ h2 {
     height: 40px;
     overflow: hidden;
     font-weight: bolder;
-    background-color: #5b5b5f;
+    background-color: #ffd500;
 
 }
 #studies td {
@@ -183,7 +183,7 @@ h2 {
     text-decoration-thickness: 2px;
 }
 #studies tr:nth-child(even) {
-    background-color: rgba(86, 83, 83, 0.11);
+    background-color: #fff4c0;
 }
 
 
