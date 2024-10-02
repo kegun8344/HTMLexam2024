@@ -17,7 +17,7 @@ hr {
 }
 
 
-/* header ----------------------------------------------- */
+/* header ------------------------------------- */
 header {
     background-color: #3B3941;
 }
@@ -39,8 +39,10 @@ header {
 /* Video ------------------------------------------------------------*/
 .video-container {
     position: relative;
-    max-width: 75%;                 /* <----- 16:9 aspect ratio */
-    padding-bottom: 42.1875%;       /* <----- 16:9 aspect ratio */
+    max-width: 75%;
+    /* <----- 16:9 aspect ratio */
+    padding-bottom: 42.1875%;
+    /* <----- 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     margin: 0 auto;
@@ -97,7 +99,7 @@ nav {
     font-size: 1.5rem;
 }
 
-/* main-content ----------------------------------------------- */
+/* main-content ----------------------------------------------------- */
 h1 {
     font-size: 40px;
 }
@@ -150,9 +152,14 @@ h2 {
     text-decoration-thickness: 2px;
 }
 
-/* main-content ----------------------------------------------- */
+#course-summary {
+    min-width: 285px;
+    max-width: 60%;
+    /* margin: auto; */
+    padding: 30px 0;
+}
 
-
+/* footer ------------------------------------------------- */
 /*** Adding Styles to Company Details ***/
 .moreInfo {
     overflow: hidden;
@@ -239,6 +246,7 @@ ul.media li a {
     font-size: larger;
 }
 
+/* course-info-tabs ----------------------------------------------------- */
 
 /* tabs style copied from w3schools, then customized
 https://www.w3schools.com/howto/howto_js_tabs.asp
@@ -253,7 +261,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-    width: auto;
+    width: 60%;
+    margin: auto;
+    min-width: 285px;
 }
 
 /* Style the buttons inside the tab */
@@ -285,9 +295,15 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 .tabcontent {
     background-color: #f1f1f1;
     display: none;
-    padding: 30px 30px;
+    padding: 5% 5%;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 50%;
+    margin: auto;
+    border: 1px solid #f1f1f1;
+    min-width: 250px;
 }
 
 /* Fade in tabs */
@@ -311,19 +327,17 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     }
 }
 
-#course-summary {
-    max-width: 60%;
-    /* margin: auto; */
-    padding: 50px 0;
-}
-
-.course-info-links{
+.course-info-links {
     text-decoration-style: underline;
     text-decoration-color: #ffd500;
     color: black;
     text-decoration-thickness: 2px;
 }
 
-.course-info-links:hover{
+.course-info-links:hover {
     text-decoration-thickness: 3px;
+}
+
+.subheader-tabcontent {
+    margin-top: 50px;
 }
