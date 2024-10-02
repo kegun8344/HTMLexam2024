@@ -146,7 +146,7 @@ h2 {
 
 #more-content a:hover {
     text-decoration: underline;
-    text-decoration-color: #CFA30D;
+    text-decoration-color: #ffd500;
     text-decoration-thickness: 2px;
 }
 
@@ -234,7 +234,8 @@ ul.media li a {
 
 .more-info-links:hover {
     text-decoration: underline;
-    text-decoration-color: #CFA30D;
+    text-decoration-color: #ffd500;
+    text-decoration-thickness: 2px;
     font-size: larger;
 }
 
@@ -265,16 +266,19 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
+    border-radius: 10px;
+    margin: 0 1px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ffe695;
+    padding: 14px 20px;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #f3ce53;
+    background-color: #ffd500;
 }
 
 /* Style the tab content */
@@ -311,4 +315,15 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     max-width: 60%;
     /* margin: auto; */
     padding: 50px 0;
+}
+
+.course-info-links{
+    text-decoration-style: underline;
+    text-decoration-color: #ffd500;
+    color: black;
+    text-decoration-thickness: 2px;
+}
+
+.course-info-links:hover{
+    text-decoration-thickness: 3px;
 }
