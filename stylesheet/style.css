@@ -131,6 +131,43 @@ h2 {
     text-decoration-thickness: 2px;
 }
 
+#studies{
+    border-collapse: collapse;
+    width: 100%;
+}
+#studies th {
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+    font-weight: bolder;
+    background-color: #5b5b5f;
+
+}
+#studies td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    height: 40px;
+    overflow: hidden;
+}
+#studies td a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+#studies td a:hover{
+    text-decoration: underline;
+    text-decoration-color: #CFA30D;
+    text-decoration-thickness: 2px;
+}
+#studies tr:nth-child(even) {
+    background-color: rgba(86, 83, 83, 0.11);
+}
+
+
 /* main-content ----------------------------------------------- */
 
 
