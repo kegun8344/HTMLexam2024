@@ -152,18 +152,35 @@ h2 {
 
 #studies{
     border-collapse: collapse;
-    width: 100%;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
 }
 #studies th {
     text-decoration: none;
     border: 2px solid black;
     padding: 10px;
     text-align: center;
-    height: 40px;
+    height: 30px;
     overflow: hidden;
     font-weight: bolder;
     background-color: #ffd500;
 
+}
+.header-row, .row-link {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-row span, .row-link span {
+    flex: 1;
+    padding: 5px;
+    border-right: 1px solid #ddd;
+}
+
+.header-row, .row-link span:last-child {
+    border-right: none;
 }
 #studies td {
     border: 1px solid black;
@@ -175,16 +192,16 @@ h2 {
 #studies td a{
     text-decoration: none;
     color: black;
-    font-weight: bold;
-}
-#studies td a:hover{
-    text-decoration: underline;
-    text-decoration-color: #CFA30D;
-    text-decoration-thickness: 2px;
 }
 #studies tr:nth-child(even) {
     background-color: #fff4c0;
 }
+#studies tr:hover{
+    background-color: rgba(211, 211, 211, 0.237);
+}
+
+
+
 
 
 /* main-content ----------------------------------------------- */
