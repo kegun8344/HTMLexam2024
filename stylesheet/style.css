@@ -172,6 +172,19 @@ h2 {
 
 /* studies ----------------------------------------------- */
 
+#person-text {
+    padding-left: 10px;
+    display: inline-block;
+}
+.divider{
+    display: inline;
+    font-weight: 100;
+}
+
+#img-krhel3944 {
+    max-width: 100px;
+}
+
 #studies{
     border-collapse: collapse;
     width: 100%;
