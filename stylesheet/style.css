@@ -516,7 +516,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     margin-top: 50px;
 }
 
-#course-structure {
+.course-structure {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -541,8 +541,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 .course-info-box:hover {
-    /* border-left: 1px solid #ffd500; */
-    /* border-right: 1px solid #ffd500; */
     background-color: #ffe695;
 }
 
@@ -550,6 +548,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     display: flex;
     justify-content: space-between;
     height: 62px;
+    margin-top: -8px;
+    margin-bottom: 25px;
 }
 
 #star-symbol-explainer>i {
@@ -561,3 +561,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     margin-left: 2px;
     scale: 1.2;
 }
+
+.hr-dashed {
+    margin: 0px;
+    border-top: 1px dashed;
+    height: 1px;
+    color: #0000004e;
+  }
