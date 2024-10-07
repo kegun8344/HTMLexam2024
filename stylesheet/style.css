@@ -520,7 +520,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 .course-structure {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     padding-bottom: 30px;
 }
 
