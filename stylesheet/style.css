@@ -1,5 +1,6 @@
 html {
     font-family: sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -567,4 +568,18 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     border-top: 1px dashed;
     height: 1px;
     color: #0000004e;
-  }
+}
+
+#tabcontent-btt {
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    text-decoration: underline;
+    text-decoration-color: #ffd500;
+    text-decoration-thickness: 2px;
+}
+
+#tabcontent-btt:hover {
+
+    text-decoration-thickness: 3px;
+}
