@@ -520,6 +520,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-bottom: 30px;
 }
 
 .clickable-info-box {
@@ -535,23 +536,28 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     border-radius: 10px;
     color: black;
     transition: 0.1s all ease;
+    background-color: #00000000;
+    height: 120px;
 }
 
 .course-info-box:hover {
-    border-left: 3px solid #ffd500;
-    border-right: 3px solid #ffd500;
+    /* border-left: 1px solid #ffd500; */
+    /* border-right: 1px solid #ffd500; */
+    background-color: #ffe695;
 }
 
 .course-info-box-elements {
     display: flex;
     justify-content: space-between;
+    height: 62px;
 }
 
-#star-symbol-explainer>i{
+#star-symbol-explainer>i {
     margin-right: 7px;
 }
 
-#double-angle-symbol-explainer>i{
-    margin-right: 9px;
-    margin-left: 4px;
+#double-angle-symbol-explainer>i {
+    margin-right: 11px;
+    margin-left: 2px;
+    scale: 1.2;
 }
