@@ -1,6 +1,7 @@
 html {
     font-family: sans-serif;
     scroll-behavior: smooth;
+    line-height: 1.4;
 }
 
 body {
@@ -451,7 +452,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-    background-color: #ffe695;
+    background-color: #ffe58f;
 }
 
 /* Create an active/current tablink class */
@@ -539,10 +540,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     transition: 0.1s all ease;
     background-color: #00000000;
     height: 120px;
+    line-height: initial;
 }
 
 .course-info-box:hover {
-    background-color: #ffe695;
+    background-color: #ffde74;
 }
 
 .course-info-box-elements {
