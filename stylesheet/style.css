@@ -410,9 +410,8 @@ ul.media li a {
 }
 
 .more-info-links:hover {
-    text-decoration: underline;
     text-decoration-thickness: 3px;
-    font-size: larger;
+
 }
 
 /* course-info-tabs ----------------------------------------------------- */
