@@ -401,7 +401,8 @@ ul.media li a {
 
 .more-info-links {
     display: block;
-    text-decoration: none;
+    text-decoration: underline;
+    text-decoration-color: #ffd500;
     color: black;
     transition: color 0.3s ease, font-size 0.3s ease;
     text-decoration-thickness: 2px;
@@ -410,7 +411,6 @@ ul.media li a {
 
 .more-info-links:hover {
     text-decoration: underline;
-    text-decoration-color: #ffd500;
     text-decoration-thickness: 3px;
     font-size: larger;
 }
