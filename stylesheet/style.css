@@ -1,7 +1,7 @@
 html {
     font-family: sans-serif;
     scroll-behavior: smooth;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 body {
@@ -221,7 +221,6 @@ nav {
 }
 
 #more-content a {
-    text-decoration: none;
     color: black;
     font-size: larger;
     text-decoration: underline;
@@ -446,7 +445,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     padding: 14px 16px;
     transition: 0.3s;
     font-size: 17px;
-    border-radius: 10px;
+    border-radius: 3px;
     margin: 1px;
 }
 
@@ -527,6 +526,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 .clickable-info-box {
     text-decoration: none;
+    margin-right: -1px;
 }
 
 .course-info-box {
@@ -570,18 +570,55 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     border-top: 1px dashed;
     height: 1px;
     color: #0000004e;
+    margin: auto;
 }
 
-#tabcontent-btt {
+#tabcontent-btt>button {
+    background-color: #ffde74;
+    border-color: #00000000;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: 0.3s background-color ease;
+}
+
+#tabcontent-btt>button:hover {
+    background-color: #ffd500;
+}
+
+#course-glance {
+    margin: 10px;
+}
+
+#course-glance-container>svg {
+    margin: 10px;
+}
+
+#course-glance-container{
+    display: flex;
+    flex-wrap: flex;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    justify-content: space-between;
     text-decoration: none;
     color: black;
-    font-size: larger;
-    text-decoration: underline;
-    text-decoration-color: #ffd500;
-    text-decoration-thickness: 2px;
+    transition: 0.3s background-color ease;
+}
+#course-glance-container:hover{
+background-color: #ffde74;
 }
 
-#tabcontent-btt:hover {
+#course-glance-points>p {
+    margin: 10px;
+    margin-right: 15px;
+    margin-left: 0px;   
+}
 
-    text-decoration-thickness: 3px;
+#course-glance-points{
+    display: flex;
+    flex-wrap: flex;
+    margin: 10px;
+    margin-right: 15px;
+    margin-left: 0px;
 }
