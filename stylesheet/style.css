@@ -59,18 +59,28 @@ header {
     padding: 10px;
 }
 
+#search-button{
+    color: #ffd500;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border: none;
+    font-size: 28px;
+    padding-top: 16px;
+}
+
 /* dropdown-menu ------------------------------------------------------------------- */
 /* from w3school */
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_right */
 .dropbtn {
     background-color: #3B3941;
     color: #ffd500;
-    padding: 20x;
     font-size: 35px;
     border: none;
     cursor: pointer;
     width: 60px;
     height: 60px;
+    float: right;
 }
 
 .dropdown {
@@ -118,7 +128,7 @@ header {
     overflow: hidden;
     margin: 0 auto;
     border-radius: 30px;
-    border: 5px solid #ffd500;
+    border: 3px solid #ffd500;
     margin-top: 50px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.112);
 }
@@ -336,12 +346,8 @@ nav {
     padding: 5% 5%;
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
-    /* border-bottom-left-radius: 20px; */
-    /* border-bottom-right-radius: 20px; */
-    width: 70%;
     margin: auto;
     border-radius: 10px;
-    min-width: 250px;
 }
 
 .more-info-tab {
@@ -352,12 +358,10 @@ nav {
 
 .more-info-tab button {
     cursor: pointer;
-    background-color: #00000017;
+    background-color: #0000000c;
     border: 1px;
     border-radius: 5px;
 }
-
-
 
 .moreInfo {
     overflow: hidden;
@@ -365,7 +369,7 @@ nav {
     background: #00000022;
     text-align: center;
     margin-top: 5em;
-    min-height: 650px;
+    height: fit-content;
 }
 
 #footer .row {
@@ -435,14 +439,12 @@ ul.media li a {
     text-decoration: underline;
     text-decoration-color: #ffd500;
     color: black;
-    transition: color 0.3s ease, font-size 0.3s ease;
     text-decoration-thickness: 2px;
-
+    transition: 0.3s text-decoration-thickness ease;
 }
 
 .more-info-links:hover {
     text-decoration-thickness: 3px;
-
 }
 
 /* course-info-tabs ----------------------------------------------------- */
