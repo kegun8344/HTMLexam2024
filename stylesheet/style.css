@@ -225,19 +225,6 @@ nav {
     margin: auto;
 }
 
-#more-content a {
-    color: black;
-    font-size: larger;
-    text-decoration: underline;
-    text-decoration-color: #ffd500;
-    text-decoration-thickness: 2px;
-}
-
-#more-content a:hover {
-
-    text-decoration-thickness: 3px;
-}
-
 #course-summary {
     min-width: 285px;
     max-width: 60%;
@@ -318,7 +305,7 @@ nav {
 }
 
 #studies tr:nth-child(even) {
-    background-color: #fff4c0;
+    background-color: #e7e7e7;
     transition: 0.3s background-color ease;
 }
 
@@ -328,7 +315,7 @@ nav {
 }
 
 #studies tr:hover {
-    background-color: #ffd5009e;
+    background-color: #ffd50075;
 }
 
 
