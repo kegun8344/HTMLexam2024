@@ -59,7 +59,7 @@ header {
     padding: 10px;
 }
 
-#search-button{
+#search-button {
     color: #ffd500;
     width: 60px;
     height: 60px;
@@ -440,7 +440,6 @@ ul.media li a {
     text-decoration-color: #ffd500;
     color: black;
     text-decoration-thickness: 2px;
-    transition: 0.3s text-decoration-thickness ease;
 }
 
 .more-info-links:hover {
