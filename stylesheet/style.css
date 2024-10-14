@@ -203,11 +203,11 @@ nav {
 }
 
 .detail-box {
-    width: 200px;
+    width: 13em;
     margin: 0.6%;
     border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 10px;
+    padding: 1em;
+    border-radius: 1em;
 }
 
 .main-content {
@@ -226,8 +226,8 @@ nav {
 }
 
 #course-summary {
-    min-width: 285px;
-    max-width: 60%;
+    min-width: 1em;
+    max-width: 50em;
     /* margin: auto; */
     padding: 30px 0;
 }
