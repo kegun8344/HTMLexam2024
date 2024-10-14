@@ -93,7 +93,7 @@ header {
     position: absolute;
     right: 0;
     background-color: #ffd500;
-    min-width: 250px;
+    min-width: 14em;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     font-size: larger;
@@ -185,10 +185,20 @@ nav {
 
 /* main ----------------------------------------------------- */
 
+/* for desktop */
 #main {
     margin-left: 15%;
     margin-right: 15%;
     padding-top: 50px;
+}
+
+/* for mobile */
+@media (max-width: 600px) {
+    #main {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 20px;
+    }
 }
 
 #main-content>h2 {
@@ -227,11 +237,10 @@ nav {
 
 #course-summary {
     max-width: 40em;
-    margin: auto;
-    padding: 0 0 2em 0;
+    padding: 4em 0;
 }
 
-#course-summary>h2{
+#course-summary>h2 {
     margin-top: 0;
 }
 
@@ -321,6 +330,14 @@ nav {
     background-color: #ffd50075;
 }
 
+#course-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Videre-studiemuligheter-ved-OsloMet>#course-glance-container {
+    margin: 0;
+}
 
 /* footer ------------------------------------------------- */
 /*** Adding Styles to Company Details ***/
@@ -431,6 +448,13 @@ ul.media li a {
     text-decoration-thickness: 3px;
 }
 
+/* more-content ----------------------------------------------------------*/
+
+.more-content-boxes>h2 {
+    margin-bottom: 0.5em;
+    margin-top: 1.5em;
+}
+
 /* course-info-tabs ----------------------------------------------------- */
 
 /* tabs style copied from w3schools, then customized
@@ -451,6 +475,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     min-width: 285px;
 }
 
+/* for mobile */
+@media (max-width: 1160px) {
+    .tab {
+        flex-direction: column;
+    }
+}
+
 /* Style the buttons inside the tab */
 .tab button {
     background-color: inherit;
@@ -468,11 +499,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ffe58f;
+    scale: 1.015;
 }
 
 /* Create an active/current tablink class */
 .tab button.active {
     background-color: #ffd500;
+    scale: 1.015;
 }
 
 /* Style the tab content */
@@ -596,8 +629,14 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     background-color: #ffd500;
 }
 
+/* course-cards ---------------------------------------------- */
+
 #course-glance {
-    margin: 10px;
+    margin: 1em;
+}
+
+#course-glance>h3 {
+    margin: 0.5em 0;
 }
 
 #course-glance-container>svg {
@@ -606,29 +645,45 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 #course-glance-container {
     display: flex;
-    flex-wrap: flex;
     border: 1px solid #ccc;
     border-radius: 10px;
     justify-content: space-between;
     text-decoration: none;
     color: black;
-    transition: 0.3s background-color ease;
+    transition: 0.3s all ease;
+    scale: 1;
+    margin: 0 1em 1em 0;
 }
 
 #course-glance-container:hover {
     background-color: #ffde74;
+    scale: 1.02;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
+
 }
 
 #course-glance-points>p {
     margin: 10px;
     margin-right: 15px;
     margin-left: 0px;
+    min-width: fit-content;
 }
 
 #course-glance-points {
     display: flex;
-    flex-wrap: flex;
-    margin: 10px;
+    flex-wrap: wrap;
     margin-right: 15px;
     margin-left: 0px;
+}
+
+@media (max-width: 750px) {
+    #Videre-studiemuligheter-ved-OsloMet>#course-glance-container>svg {
+        scale: 2;
+    }
+}
+
+@media (max-width: 600px) {
+    #course-glance>h3 {
+        max-width: 7em;
+    }
 }
