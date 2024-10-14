@@ -10,8 +10,8 @@ body {
     padding: 0%;
 }
 
-#separator {
-    margin: 75px 0;
+.separator {
+    margin: 4em 0;
 }
 
 hr {
@@ -226,10 +226,14 @@ nav {
 }
 
 #course-summary {
-    min-width: 1em;
-    max-width: 50em;
-    /* margin: auto; */
-    padding: 30px 0;
+    min-width: 18em;
+    max-width: 40em;
+    margin: auto;
+    padding: 0 0 2em 0;
+}
+
+#course-summary>h2{
+    margin-top: 0;
 }
 
 
@@ -506,13 +510,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     to {
         opacity: 1;
     }
-}
-
-#course-summary {
-    max-width: 60%;
-    /* margin: auto; */
-    padding: 50px 0;
-    font-weight: 100;
 }
 
 .course-info-links {
