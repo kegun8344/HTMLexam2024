@@ -93,7 +93,7 @@ header {
     position: absolute;
     right: 0;
     background-color: #ffd500;
-    min-width: 14em;
+    min-width: 16rem;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     font-size: larger;
@@ -126,11 +126,22 @@ header {
     /* <----- 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
-    margin: 0 auto;
+    margin: auto;
     border-radius: 30px;
     border: 3px solid #ffd500;
     margin-top: 50px;
     box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.112);
+}
+
+@media (max-width: 600px) {
+    .video-container {
+        max-width: 90%;
+        /* <----- 16:9 aspect ratio */
+        padding-bottom: 50.63%;
+        /* <----- 16:9 aspect ratio */
+        margin-top: 5%;
+    }
+
 }
 
 iframe {
@@ -212,12 +223,18 @@ nav {
     padding: 0% 0%;
 }
 
+@media (max-width: 600px) {
+    #course-key-points {
+        justify-content: center;
+    }
+}
+
 .detail-box {
-    width: 13em;
+    width: 13rem;
     margin: 0.6%;
     border: 1px solid #ddd;
-    padding: 1em;
-    border-radius: 1em;
+    padding: 1rem;
+    border-radius: 1rem;
 }
 
 .main-content {
@@ -236,7 +253,7 @@ nav {
 }
 
 #course-summary {
-    max-width: 40em;
+    max-width: 50rem;
     padding: 4em 0;
 }
 
@@ -264,72 +281,6 @@ nav {
 
 }
 
-#studies {
-    border-collapse: collapse;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.164);
-}
-
-#studies th {
-    text-decoration: none;
-    border: 2px solid black;
-    padding: 10px;
-    text-align: center;
-    height: 30px;
-    overflow: hidden;
-    font-weight: bolder;
-    background-color: #ffd500d3;
-}
-
-.header-row,
-.row-link {
-    display: flex;
-    text-decoration: none;
-    color: inherit;
-}
-
-.header-row span,
-.row-link span {
-    flex: 1;
-    padding: 5px;
-    border-right: 1px solid #a7a7a7;
-}
-
-.header-row,
-.row-link span:last-child {
-    border-right: none;
-}
-
-#studies td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-    height: 40px;
-    overflow: hidden;
-    transition: 0.3s height ease;
-}
-
-#studies td a {
-    text-decoration: none;
-    color: black;
-}
-
-#studies tr:nth-child(even) {
-    background-color: #e7e7e7;
-    transition: 0.3s background-color ease;
-}
-
-#studies tr:nth-child(odd) {
-    background-color: #ffffff00;
-    transition: 0.3s background-color ease;
-}
-
-#studies tr:hover {
-    background-color: #ffd50075;
-}
-
 #course-cards {
     display: flex;
     flex-wrap: wrap;
@@ -352,6 +303,16 @@ nav {
     border-radius: 10px;
 }
 
+.more-info-tabcontent>a{
+    transition: 0.2s all ease;
+    padding: 0.6rem 0;
+}
+
+.more-info-tabcontent>a:hover{
+    scale: 1.11;
+    background-color: #cccccc;
+}
+
 .more-info-tab {
     background-color: #00000000;
     margin: auto;
@@ -367,7 +328,7 @@ nav {
 
 .moreInfo {
     overflow: hidden;
-    padding: 3em 0em;
+    padding: 3rem 0em;
     background: #00000022;
     text-align: center;
     margin-top: 5em;
@@ -390,13 +351,13 @@ nav {
 
 #footer #icon {
     display: block;
-    margin-bottom: 1em;
-    font-size: 3em;
+    margin-bottom: 1rem;
+    font-size: 3rem;
 }
 
 .mediabox {
     overflow: hidden;
-    padding: 3em 0em;
+    padding: 3rem 0em;
     border-top: 20px solid rgba(255, 255, 255, 0.08);
     text-align: center;
     background: #3B3941;
@@ -404,7 +365,7 @@ nav {
 
 .mediabox p {
     letter-spacing: 1px;
-    font-size: 0.90em;
+    font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
 }
 
@@ -416,14 +377,14 @@ nav {
 /* Styling Social Icons */
 ul.media {
     margin: 0;
-    padding: 2em 0em 0em 0em;
+    padding: 2rem 0 0 0;
     list-style: none;
 }
 
 ul.media li {
     display: inline-block;
-    padding: 0em 0.10em;
-    font-size: 2em;
+    padding: 0 0.10rem;
+    font-size: 2rem;
 }
 
 ul.media li a {
@@ -451,9 +412,14 @@ ul.media li a {
 /* more-content ----------------------------------------------------------*/
 
 .more-content-boxes>h2 {
-    margin-bottom: 0.5em;
-    margin-top: 1.5em;
+    margin-bottom: 0.5rem;
+    margin-top: 1.5rem;
 }
+
+.more-content-boxes {
+    margin-bottom: 4rem;
+}
+
 
 /* course-info-tabs ----------------------------------------------------- */
 
@@ -650,16 +616,23 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     justify-content: space-between;
     text-decoration: none;
     color: black;
-    transition: 0.3s all ease;
+    transition: 0.3s box-shadow ease;
+    transition: 0.3s background-color ease;
+    transition: 0.3s scale ease;
     scale: 1;
     margin: 0 1em 1em 0;
 }
 
+@media (max-width: 750px) {
+    #course-glance-container {
+        margin: 0 0 1em 0;
+    }
+}
+
 #course-glance-container:hover {
     background-color: #ffde74;
-    scale: 1.02;
+    scale: 1.0125;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
-
 }
 
 #course-glance-points>p {
@@ -682,8 +655,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     }
 }
 
-@media (max-width: 600px) {
-    #course-glance>h3 {
-        max-width: 7em;
+
+@media (max-width: 750px) {
+    #other-studies {
+        margin: auto;
     }
 }
