@@ -225,8 +225,8 @@ nav {
 
 /* for desktop */
 #main {
-    margin-left: 5em;
-    margin-right: 5em;
+    margin-left: 15%;
+    margin-right: 15%;
     padding-top: 50px;
 }
 
@@ -321,6 +321,7 @@ nav {
 /*** Adding Styles to Company Details ***/
 
 .more-info-tabcontent {
+    background-color: #00000008;
     display: none;
     padding: 5% 5%;
     -webkit-animation: fadeEffect 1s;
@@ -336,7 +337,7 @@ nav {
 
 .more-info-tabcontent>a:hover {
     scale: 1.11;
-    background-color: #00000022;
+    background-color: #cccccc;
 }
 
 .more-info-tab {
@@ -355,7 +356,7 @@ nav {
 .moreInfo {
     overflow: hidden;
     padding: 3rem 0em;
-    background: #ffd500;
+    background: #00000022;
     text-align: center;
     margin-top: 5em;
     height: fit-content;
