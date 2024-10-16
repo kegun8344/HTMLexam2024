@@ -297,15 +297,15 @@ nav {
 #studenthistorier-container {
     width: 100%;
     transition: 0.2s all ease;
-    padding-right: 50px;
+    padding-right: 35px;
     overflow: hidden;
 }
 
 #link-chevron {
     position: absolute;
     top: 45%;
-    /* right setter ikonet 50px til venstre fra høyre kant */
-    right: 50px;
+    /* right setter ikonet 35px til venstre fra høyre kant */
+    right: 35px;
     /* gjør at den flytter seg, right 50px --> 0px */
     transition: 0.2s all ease;
     z-index: -1;
@@ -326,6 +326,8 @@ nav {
     object-fit: cover;
     width: 50%;
     transition: 0.2s all ease;
+    /* border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px; */
 }
 
 #studenthistorier-container>a {
@@ -334,10 +336,11 @@ nav {
     display: flex;
     flex-direction: row;
     background-color: #ffd500;
+    /* border-radius: 15px; */
 }
 
 #text {
-    margin: 3em;
+    margin: 3em 3.5em;
 }
 
 #text>h2 {
@@ -346,6 +349,39 @@ nav {
 
 #text>p {
     margin: 0;
+}
+
+@media (max-width:960px) {
+    #studenthistorier-container>a {
+        display: flex;
+        flex-direction: column-reverse;
+        scale: 0.8;
+    }
+
+    #studenthistorier-image {
+        width: 100%;
+    }
+
+    #studenthistorier-container:hover #link-chevron {
+        right: -35px;
+    }
+
+    #link-chevron {
+        right: -25px;
+        top: 48%;
+    }
+
+    #studenthistorier-container {
+        margin-top: -2.5em;
+        padding-right: 0;
+    }
+    #text>h2 {
+        font-size: xx-large;
+    }
+    
+    #text>p {
+        font-size: larger;
+    }
 }
 
 /* studies ----------------------------------------------- */
