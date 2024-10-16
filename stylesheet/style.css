@@ -10,7 +10,7 @@ body {
     padding: 0%;
 }
 
-#site-background{
+#site-background {
     background-image: url("../images/background.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -288,6 +288,65 @@ nav {
     margin-top: 0;
 }
 
+/* studenthistorier -------------------------------------- */
+
+#studenthistorier {
+    margin-top: 5em;
+}
+
+#studenthistorier-container {
+    width: 100%;
+    transition: 0.2s all ease;
+    padding-right: 50px;
+    overflow: hidden;
+}
+
+#link-chevron {
+    position: absolute;
+    top: 45%;
+    /* right setter ikonet 50px til venstre fra høyre kant */
+    right: 50px;
+    /* gjør at den flytter seg, right 50px --> 0px */
+    transition: 0.2s all ease;
+    z-index: -1;
+    opacity: 0;
+}
+
+#studenthistorier-container:hover #link-chevron {
+    /* right her setter ikonet 0px fra høyre kant, den blir altså synlig */
+    right: 0px;
+    opacity: 1;
+}
+
+#studenthistorier-container:hover {
+    scale: 1.01;
+}
+
+#studenthistorier-image {
+    object-fit: cover;
+    width: 50%;
+    transition: 0.2s all ease;
+}
+
+#studenthistorier-container>a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffd500;
+}
+
+#text {
+    margin: 3em;
+}
+
+#text>h2 {
+    margin: 0 0 1em 0;
+}
+
+#text>p {
+    margin: 0;
+}
 
 /* studies ----------------------------------------------- */
 
@@ -306,11 +365,6 @@ nav {
     border-radius: 5px;
     box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.267);
 
-}
-
-#course-cards {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 #Videre-studiemuligheter-ved-OsloMet>#course-glance-container {
@@ -348,7 +402,7 @@ nav {
 
 .more-info-tab button {
     cursor: pointer;
-    background-color: #0000000c;
+    background-color: #00000015;
     border: 1px;
     border-radius: 5px;
 }
@@ -625,12 +679,19 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* course-cards ---------------------------------------------- */
 
+#course-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 #course-glance {
     margin: 1em;
 }
 
 #course-glance>h3 {
     margin: 0.5em 0;
+    color: black;
+
 }
 
 #course-glance-container>svg {
@@ -643,11 +704,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     border-radius: 10px;
     justify-content: space-between;
     text-decoration: none;
-    color: black;
-    transition: 0.3s box-shadow ease;
-    transition: 0.3s background-color ease;
-    transition: 0.3s scale ease;
-    scale: 1;
+    transition: 0.2s all ease;
     margin: 0 1em 1em 0;
 }
 
@@ -668,6 +725,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     margin-right: 15px;
     margin-left: 0px;
     min-width: fit-content;
+    color: black;
 }
 
 #course-glance-points {
