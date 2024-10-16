@@ -321,7 +321,6 @@ nav {
 /*** Adding Styles to Company Details ***/
 
 .more-info-tabcontent {
-    background-color: #00000014;
     display: none;
     padding: 5% 5%;
     -webkit-animation: fadeEffect 1s;
