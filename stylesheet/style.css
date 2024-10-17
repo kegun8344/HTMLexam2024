@@ -36,12 +36,15 @@ h1 {
     h1 {
         font-size: 30px;
     }
+    #site-background {
+        top: 150px;
+    }
 }
 
-/* h2 {
-    font-weight: 33.28px;
+ h2 {
+    font-weight: 400;
 }
-
+/*
 h3 {
     font-size: 27.69px;
 }
@@ -294,6 +297,10 @@ nav {
     margin-top: 5em;
 }
 
+#studenthistorier>h2{
+    font-size: xx-large;
+}
+
 #studenthistorier-container {
     width: 100%;
     transition: 0.2s all ease;
@@ -330,7 +337,7 @@ nav {
     border-bottom-right-radius: 15px; */
 }
 
-#studenthistorier-container>a {
+#link-box-story {
     text-decoration: none;
     color: black;
     display: flex;
@@ -351,8 +358,36 @@ nav {
     margin: 0;
 }
 
+#link-box-more-stories{
+    margin: 5em 10em;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    cursor: default;
+}
+
+#link-box-more-stories>div:hover{
+    scale: 1.02;
+    cursor: pointer;
+}
+
+#link-box-more-stories>div{
+    display: flex;
+    align-items: center;
+    height: 4em;
+    background-color: #ffd500;
+    padding: 1em 2em;
+    transition: 0.2s scale ease;
+}
+
+#link-box-more-stories>div>h2{
+    margin: 0;
+}
+
 @media (max-width:960px) {
-    #studenthistorier-container>a {
+
+    #link-box-story {
         display: flex;
         flex-direction: column-reverse;
         scale: 0.8;
@@ -372,7 +407,7 @@ nav {
     }
 
     #studenthistorier-container {
-        margin-top: -2.5em;
+        margin-top: -4.5em;
         padding-right: 0;
     }
     #text>h2 {
@@ -381,6 +416,10 @@ nav {
     
     #text>p {
         font-size: larger;
+    }
+
+    #link-box-more-stories{
+        margin: 0;
     }
 }
 
