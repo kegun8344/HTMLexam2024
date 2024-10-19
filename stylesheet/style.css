@@ -493,7 +493,7 @@ nav {
 .moreInfo {
     overflow: hidden;
     padding: 3rem 0em;
-    background: #00000022;
+    background: #7f7f7f17;
     text-align: center;
     margin-top: 5em;
     height: fit-content;
@@ -600,10 +600,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     flex-wrap: wrap;
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
-    width: 80%;
+    background-color: #7f7f7f17;
     margin: auto;
-    min-width: 285px;
+    min-width: 20em;
+    max-width: 40em;
 }
 
 /* for mobile */
@@ -615,7 +615,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* Style the buttons inside the tab */
 .tab button {
-    background-color: inherit;
+    flex-grow: 1;
     float: left;
     border: none;
     outline: none;
@@ -641,7 +641,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* Style the tab content */
 .tabcontent {
-    background-color: #f1f1f1;
+    background-color: #7f7f7f17;
     display: none;
     padding: 5% 5%;
     -webkit-animation: fadeEffect 1s;
@@ -650,7 +650,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     border-bottom-right-radius: 20px;
     width: 70%;
     margin: auto;
-    border: 1px solid #f1f1f1;
+    border: 1px solid #7f7f7f17;
     min-width: 250px;
 }
 
