@@ -831,3 +831,31 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
         margin: auto;
     }
 }
+
+/* GITHUB PAGE ---------------------------------------------------------*/
+
+.video-container-github {
+    display: flex; 
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+}
+
+.video-item {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 10px;
+    margin: 10px; 
+    flex: 1 1 45%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.video-item img {
+    max-width: 100%;
+    height: auto; 
+    border-radius: 30px;
+    margin: 5px 0; 
+    border: 3px solid #ffd500;
+}
+
+/* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
