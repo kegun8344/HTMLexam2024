@@ -605,8 +605,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     border: 1px solid #ccc;
     background-color: #7f7f7f17;
     margin: auto;
-    /* max-width: 49em; */
-    width: 100%;
+    max-width: 49em;
 }
 
 /* for mobile */
@@ -650,8 +649,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     animation: fadeEffect 1s;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    /* max-width: 41em; */
-    width: 90%;
+    max-width: 41em;
     margin: auto;
     border: 1px solid #7f7f7f17;
     /* min-width: 250px; */
