@@ -42,20 +42,10 @@ h1 {
 }
 
  h2 {
+    font-size: 1.6em;
     font-weight: 400;
 }
-/*
-h3 {
-    font-size: 27.69px;
-}
 
-h4 {
-    font-size: 23.04px;
-}
-
-h5 {
-    font-size: 19.17px;
-} */
 
 /* header ------------------------------------- */
 header {
@@ -450,7 +440,7 @@ main {
 
 }
 
-#Videre-studiemuligheter-ved-OsloMet>#course-glance-container {
+#course-glance-container {
     margin: 0;
 }
 
@@ -652,7 +642,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     max-width: 51em;
     margin: auto;
     border: 1px solid #7f7f7f17;
-    min-width: 250px;
+    /* min-width: 250px; */
 }
 
 /* Fade in tabs */
@@ -773,7 +763,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 #course-glance>h3 {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
     color: black;
 
 }
@@ -789,12 +779,18 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     justify-content: space-between;
     text-decoration: none;
     transition: 0.1s all ease;
-    margin: 0 1em 1em 0;
+    margin: 0 1rem 1rem 0;
 }
 
 @media (max-width: 750px) {
     #course-glance-container {
-        margin: 0 0 1em 0;
+        margin: 0 0 0.5rem 0;
+    }
+}
+
+@media (max-width: 515px) {
+    #Videre-studiemuligheter-ved-OsloMet{
+        padding: 1em 1em;
     }
 }
 
