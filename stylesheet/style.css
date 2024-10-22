@@ -789,7 +789,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 @media (max-width: 515px) {
-    #Videre-studiemuligheter-ved-OsloMet{
+    .tabcontent{
         padding: 1em 1em;
     }
 }
