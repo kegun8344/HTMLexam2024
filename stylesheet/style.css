@@ -282,12 +282,12 @@ nav {
     margin: auto;
 }
 
-#course-summary {
+#course-short-summary {
     max-width: 50rem;
     padding: 4em 0;
 }
 
-#course-summary>h2 {
+#course-short-summary>h2 {
     margin-top: 0;
 }
 
@@ -346,15 +346,15 @@ nav {
     /* border-radius: 15px; */
 }
 
-#text {
+#studenthistorier-text {
     margin: 3em 3.5em;
 }
 
-#text>h2 {
+#studenthistorier-text>h2 {
     margin: 0 0 1em 0;
 }
 
-#text>p {
+#studenthistorier-text>p {
     margin: 0;
 }
 
@@ -411,11 +411,11 @@ nav {
         margin-top: -4.5em;
         padding-right: 0;
     }
-    #text>h2 {
+    #studenthistorier-text>h2 {
         font-size: xx-large;
     }
     
-    #text>p {
+    #studenthistorier-text>p {
         font-size: larger;
     }
 
@@ -605,7 +605,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     border: 1px solid #ccc;
     background-color: #7f7f7f17;
     margin: auto;
-    max-width: 49em;
+    /* max-width: 49em; */
+    width: 100%;
 }
 
 /* for mobile */
@@ -649,10 +650,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     animation: fadeEffect 1s;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    max-width: 41em;
+    /* max-width: 41em; */
+    width: 90%;
     margin: auto;
     border: 1px solid #7f7f7f17;
-    min-width: 250px;
+    /* min-width: 250px; */
 }
 
 /* Fade in tabs */
