@@ -1,3 +1,4 @@
+//course-info-tabs js copied from w3schools
 function openTab(evt, tabName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
@@ -12,6 +13,7 @@ function openTab(evt, tabName) {
     evt.currentTarget.className += " active";
 }
 
+//more-info-tab in footer w3schools and modified
 document.getElementById('toggle-tab').addEventListener('click', function () {
     const tabContent = document.getElementById('more-info-tab');
     const iconPath = document.querySelector('#toggle-icon path');
