@@ -42,20 +42,10 @@ h1 {
 }
 
  h2 {
+    font-size: 1.6em;
     font-weight: 400;
 }
-/*
-h3 {
-    font-size: 27.69px;
-}
 
-h4 {
-    font-size: 23.04px;
-}
-
-h5 {
-    font-size: 19.17px;
-} */
 
 /* header ------------------------------------- */
 header {
@@ -227,7 +217,7 @@ nav {
 /* main ----------------------------------------------------- */
 
 /* for desktop */
-#main {
+main {
     margin-left: 15%;
     margin-right: 15%;
     padding-top: 50px;
@@ -235,7 +225,7 @@ nav {
 
 /* for mobile */
 @media (max-width: 600px) {
-    #main {
+    main {
         margin-left: 5%;
         margin-right: 5%;
         padding-top: 20px;
@@ -446,11 +436,11 @@ nav {
 #img-krhel3944 {
     max-width: 8em;
     border-radius: 5px;
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.267);
+    box-shadow: -2px 4px 5px 0px rgba(0, 0, 0, 0.267);
 
 }
 
-#Videre-studiemuligheter-ved-OsloMet>#course-glance-container {
+#course-glance-container {
     margin: 0;
 }
 
@@ -605,8 +595,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     border: 1px solid #ccc;
     background-color: #7f7f7f17;
     margin: auto;
-    /* max-width: 49em; */
-    width: 100%;
+    max-width: 59em;
 }
 
 /* for mobile */
@@ -650,8 +639,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     animation: fadeEffect 1s;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    /* max-width: 41em; */
-    width: 90%;
+    max-width: 51em;
     margin: auto;
     border: 1px solid #7f7f7f17;
     /* min-width: 250px; */
@@ -775,7 +763,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 #course-glance>h3 {
-    margin: 0.5em 0;
+    margin: 0.5rem 0;
     color: black;
 
 }
@@ -791,12 +779,18 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     justify-content: space-between;
     text-decoration: none;
     transition: 0.1s all ease;
-    margin: 0 1em 1em 0;
+    margin: 0 1rem 1rem 0;
 }
 
 @media (max-width: 750px) {
     #course-glance-container {
-        margin: 0 0 1em 0;
+        margin: 0 0 0.5rem 0;
+    }
+}
+
+@media (max-width: 515px) {
+    .tabcontent{
+        padding: 1em 1em;
     }
 }
 
@@ -843,13 +837,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 .video-item {
-    background-color: transparent;
-    border: 1px solid transparent;
-    border-radius: 30px;
     padding: 10px;
     margin: 10px; 
-    flex: 1 1 45%;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    flex: 1 1 45%; 
 }
 
 .video-item img {
@@ -861,3 +851,32 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 /* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
+.split {
+    height: 100%;
+    width: 45%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.split-left, .split-right {
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 30px;
+}
+
+.split-left {
+    background-color: #ffd500;
+}
+
+.split-right {
+    background-color: #ccc;
+}
+#main-github {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
