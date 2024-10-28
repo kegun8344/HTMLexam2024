@@ -577,10 +577,6 @@ ul.media li a {
 
 /* course-info-tabs ----------------------------------------------------- */
 
-.tabcontent>h2{
-    /* margin: 0 0 1em 0; */
-}
-
 /* tabs style copied from w3schools, then customized
 https://www.w3schools.com/howto/howto_js_tabs.asp
 https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
