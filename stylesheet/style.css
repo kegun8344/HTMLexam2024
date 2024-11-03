@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif, Verdana, Geneva, Tahoma;
+    font-family: sans-serif;
     scroll-behavior: smooth;
     line-height: 1.5;
 }
@@ -488,21 +488,21 @@ main {
     height: fit-content;
 }
 
-footer .row {
+#footer .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-footer #col1,
-footer #col2,
-footer #col3 {
+#footer #col1,
+#footer #col2,
+#footer #col3 {
     float: left;
     width: 320px;
     padding: 40px 40px 40px 40px;
 }
 
-footer #icon {
+#footer #icon {
     display: block;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -848,7 +848,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
 h1.github{
-    margin: 60px;
+    margin: 20px;
 }
 #main-github {
     display: flex;
