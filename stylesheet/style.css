@@ -826,19 +826,19 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* GITHUB PAGE ---------------------------------------------------------*/
 
-.video-container-github {
+.img-container-github {
     display: flex; 
     justify-content: space-between; 
     flex-wrap: wrap; 
 }
 
-.video-item {
+.img-item {
     padding: 10px;
     margin: 10px; 
     flex: 1 1 45%; 
 }
 
-.video-item img {
+.img-item img {
     max-width: 100%;
     height: auto; 
     border-radius: 30px;
@@ -847,21 +847,31 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 /* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
-.split {
-    height: 100%;
-    width: 45%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+#main-github {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 150vh;
+    box-sizing: border-box;
+}
+
+.split-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px;
 }
 
 .split-left, .split-right {
-    width: 50%;
-    padding: 20px;
+    width: 49%;
+    padding: 10px;
     box-sizing: border-box;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border: 3px solid #3B3941;
 }
 
 .split-left {
@@ -871,8 +881,26 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 .split-right {
     background-color: #ccc;
 }
-#main-github {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+.content-box {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    height: 40%;
 }
+
+.separator.centered {
+    margin: 5px auto;
+    width: 80%;
+    border-top: 2px solid #3B3941;
+}
+
+.content-box h2 {
+    margin: 0;
+}
+
+
+
+
+
+

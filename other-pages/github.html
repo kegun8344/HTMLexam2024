@@ -10,9 +10,9 @@
 </head>
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
-    <div class="img-container">
-        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_CFA30B.png" alt="OsloMet Logo">
-    </div>
+    <a href="https://www.oslomet.no/" class="img-container">
+        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
+    </a>
     <nav>
         <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
         <div class="dropdown" style="float:right;">
@@ -22,52 +22,62 @@
                 <a href="accessibility.html">Accessibility</a>
                  <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a> 
             </div>
-          </div>
+        </div>
     </nav>
 </header>
 
 <body>
-    <article id="main">
+    <main>
         <h1>Presentasjon av Github</h1>
-            <div class="video-container-github">
-                <div class="video-item">
+            <div class="img-container-github">
+                <div class="img-item">
                     <h2>Commit History i GIT</h2>
                     <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 1 commit">
-                    <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 2 commit>">
+                    <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 2 commit">
                 </div>
-                <div class="video-item">
+                <div class="img-item">
                     <h2>Specific Change i GIT</h2>
                     <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 3 commit">
                     <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 4 commit">
                 </div>
             </div>
         <section id="main-github">
-            <div class="split-left">
-                <h2>Koding på Samme Dokument med GitHub</h2>
-                <p>Github øker effektiviteten når en gruppe skal kode på samme dokument.
-                    Noe viktig å påpeke er at Github gir mulighet for at brukere kan jobbe samtidig uten å 
-                    overskrive andres koder. Effektiviteten og selvstendigheten av å kode samtidig kommer av "branches", som 
-                    er egne kopier av hoved filen, der brukere kan jobbe selv uten å påvirke hovedbranch, ofte kalt "main" branch.
-                </p>
-                <hr class="separator">
-                <h2>Sporing av koder</h2>
-                <p>Alle branches som blir lagd, kan lastes inn på hoved filen via "commits". Der kan 
-                    alle se hvem som har gjort hva på koden, og det som er endret. I tillegg er det overskrifter
-                    i "source controll" som gjør det mulig å lett se hva som er de siste endringene. GitHub-Desktop er en 
-                    app som gjør det mulig å lett finne frem til disse tidligere kodene, og se på endringene som er gjort før
-                    "branches" blir lagt ut.
-                </p>
-            </div>
-            <div class="split-right">
-                <h2>subheading 3:</h2>
-                <h3>text</h3>
-                <hr class="separator">
-                <h2>Subheading 4:</h2>
-                <h3>Text:</h3>
+            <div class="split-container">
+                <div class="split-left">
+                    <div class="content-box">
+                        <h2>Koding på Samme Dokument med GitHub</h2>
+                        <p>Github øker effektiviteten når en gruppe skal kode på samme dokument.
+                            Noe viktig å påpeke er at Github gir mulighet for at brukere kan jobbe samtidig uten å 
+                         overskrive andres koder. Effektiviteten og selvstendigheten av å kode samtidig kommer av "branches", som 
+                         er egne kopier av hoved filen, der brukere kan jobbe selv uten å påvirke hovedbranch, ofte kalt "main" branch.
+                        </p>
+                    </div>    
+                    <hr class="separator centered">
+                    <div class="content-box">
+                        <h2>Sporing av koder</h2>
+                        <p>Alle branches som blir lagd, kan lastes inn på hoved filen via "commits". Der kan 
+                            alle se hvem som har gjort hva på koden, og det som er endret. I tillegg er det overskrifter
+                            i "source controll" som gjør det mulig å lett se hva som er de siste endringene. GitHub-Desktop er en 
+                            app som gjør det mulig å lett finne frem til disse tidligere kodene, og se på endringene som er gjort før
+                            "branches" blir lagt ut.
+                        </p>
+                    </div>    
+                </div>
+                <div class="split-right">
+                    <div class="content-box">
+                        <h2>subheading 3:</h2>
+                        <p>text</p>
+                    </div>    
+                    <hr class="separator centered">
+                    <div class="content-box">
+                        <h2>Subheading 4:</h2>
+                        <p>Text:</p>
+                    </div>    
+                </div>
             </div>
         </section>         
-    </article>
-
+    </main>
+    
    <!-- Footer Menu -->
    <footer id="footer">
 
