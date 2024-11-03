@@ -847,6 +847,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 /* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
+h1.github{
+    margin: 60px;
+}
 #main-github {
     display: flex;
     justify-content: space-between;
