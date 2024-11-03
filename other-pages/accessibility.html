@@ -10,9 +10,9 @@
 </head>
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
-    <div class="img-container">
-        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_CFA30B.png" alt="OsloMet Logo">
-    </div>
+    <a href="https://www.oslomet.no/" class="img-container">
+        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
+    </a>
     <nav>
         <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
         <div class="dropdown" style="float:right;">
@@ -28,7 +28,28 @@
 </header>
 
 <body>
+    <main>
+        <article>
+            <h1>Accessibility</h1>
+            <p>For å lage en nettside med universell god design, sørget vi for å inkludere alternativ tekst
+                for ikke-tekstlig innhold og bruke sans-serif-fonter for god lesbarhet. Like viktig er struktur og en behagelig 
+                lese opplevelse til nettstedet derfor er det delt inn i flere seksjoner og avsnitt ved hjelp av overskrifter, underoverskrifter,
+                marginer, paddinger og skillelinjer. Vi brukte tabs for å minimere den generelle scrolling for brukeren og opprette
+                en renere og forenklet nettside. 
+            </p>
+            <div class="img-container"></div>
+            <p>Siden nettsidene skal være brukbare på en rekke skjermstørrelser, brukte vi media queries. Uten det ville føre til en
+                noen problemer. Som et eksempel, skjermbredden på en telefon og bærbar PC, paddinger og margene strukturen plassering
+                av noen få elementer må være forskjellige for en god seeropplevelse. Nettsiden sørger også for å lage innhold
+                vises og fungerer på forutsigbare måter med understrekingsfarge og pil-ikoner for å kunne identifisere koblingene korrekt.
+                Vi inkluderte også ikonene inni footer for å forbedre forutsigbarheten ytterligere. For å skape kjent estetikk
+                layout og navigasjon må være konsekvente på alle sidene unntatt aktivitetssiden, så navigasjonslinjen og footer
+                er nøyaktig den samme, nettsidene har samme fargepalett, stilen til hvert element forblir lik.
+            </p>
 
+
+        </article>
+    </main>
 <!-- Footer Menu -->
 <footer>
 
@@ -57,7 +78,7 @@
             <div id="col3">
                 <span id="icon" class="fa fa-info" alt="Info"></span>
                 <span>
-                    <h3> More Info</h3>
+                    <h3> Mer Info</h3>
                     <div class="more-info-tab">
                         <button id="toggle-tab" class="more-info-tab-button">
                             <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"

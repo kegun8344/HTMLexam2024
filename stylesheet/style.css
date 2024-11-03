@@ -488,21 +488,21 @@ main {
     height: fit-content;
 }
 
-#footer .row {
+footer .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#footer #col1,
-#footer #col2,
-#footer #col3 {
+footer #col1,
+footer #col2,
+footer #col3 {
     float: left;
     width: 320px;
     padding: 40px 40px 40px 40px;
 }
 
-#footer #icon {
+footer #icon {
     display: block;
     margin-bottom: 1rem;
     font-size: 3rem;
