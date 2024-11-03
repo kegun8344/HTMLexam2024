@@ -32,6 +32,10 @@ h1 {
     font-size: 40px;
 }
 
+p{
+    font-size: larger;
+}
+
 @media(max-width:600px) {
     h1 {
         font-size: 30px;
