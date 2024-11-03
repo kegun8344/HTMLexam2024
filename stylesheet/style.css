@@ -853,8 +853,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-
 }
+
 .split-container {
     display: flex;
     justify-content: space-between;
@@ -862,22 +862,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     margin: 20px;
 }
 
-.split {
-    height: 100%;
-    width: 45%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
-}
-
 .split-left, .split-right {
     width: 49%;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 30px;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -892,23 +881,23 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 .split-right {
     background-color: #ccc;
 }
+
 .content-box {
-    background-color: transparent;
     padding: 10px;
     border-radius: 5px;
     margin: 5px;
     height: 40%;
-    padding-top: 5px;
 }
+
 .separator.centered {
     margin: 5px auto;
     width: 80%;
     border-top: 2px solid #3B3941;
 }
+
 .content-box h2 {
     margin: 0;
 }
-
 
 
 
