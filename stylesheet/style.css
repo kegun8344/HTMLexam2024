@@ -340,15 +340,15 @@ main {
     /* border-radius: 15px; */
 }
 
-#studenthistorier-text {
+#text {
     margin: 3em 3.5em;
 }
 
-#studenthistorier-text>h2 {
+#text>h2 {
     margin: 0 0 1em 0;
 }
 
-#studenthistorier-text>p {
+#text>p {
     margin: 0;
 }
 
