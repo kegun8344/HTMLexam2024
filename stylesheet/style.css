@@ -32,7 +32,7 @@ h1 {
     font-size: 2.5rem;
 }
 
-p{
+p {
     font-size: larger;
 }
 
@@ -40,12 +40,13 @@ p{
     h1 {
         font-size: 1.875rem;
     }
+
     #site-background {
         top: 2rem;
     }
 }
 
- h2 {
+h2 {
     font-size: 1.6em;
     font-weight: 400;
 }
@@ -104,6 +105,7 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
+    top: 4rem;
     right: 0;
     background-color: #ffd500;
     min-width: 16rem;
@@ -126,9 +128,10 @@ header {
 
 }
 
+/* 
 .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
 /* Video ------------------------------------------------------------*/
 .video-container {
@@ -291,7 +294,7 @@ main {
     margin-top: 5em;
 }
 
-#studenthistorier>h2{
+#studenthistorier>h2 {
     font-size: xx-large;
 }
 
@@ -352,7 +355,7 @@ main {
     margin: 0;
 }
 
-#link-box-more-stories{
+#link-box-more-stories {
     margin: 5em 10em;
     display: flex;
     justify-content: center;
@@ -361,12 +364,12 @@ main {
     cursor: default;
 }
 
-#link-box-more-stories>div:hover{
+#link-box-more-stories>div:hover {
     scale: 1.02;
     cursor: pointer;
 }
 
-#link-box-more-stories>div{
+#link-box-more-stories>div {
     display: flex;
     align-items: center;
     height: 4em;
@@ -375,7 +378,7 @@ main {
     transition: 0.2s scale ease;
 }
 
-#link-box-more-stories>div>h2{
+#link-box-more-stories>div>h2 {
     margin: 0;
     text-align: center;
 }
@@ -405,15 +408,16 @@ main {
         margin-top: -4.5em;
         padding-right: 0;
     }
+
     #studenthistorier-text>h2 {
         font-size: xx-large;
     }
-    
+
     #studenthistorier-text>p {
         font-size: larger;
     }
 
-    #link-box-more-stories{
+    #link-box-more-stories {
         margin: 0;
     }
 }
@@ -431,8 +435,8 @@ main {
     font-weight: 100;
 }
 
-@media (max-width: 396px){
-    .divider{
+@media (max-width: 396px) {
+    .divider {
         opacity: 0;
     }
 }
@@ -505,7 +509,8 @@ footer #col3 {
     width: 20rem;
     padding: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
-.address-font{
+
+.address-font {
     font-style: normal;
 }
 
@@ -788,7 +793,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 
 @media (max-width: 515px) {
-    .tabcontent{
+    .tabcontent {
         padding: 1em 1em;
     }
 }
@@ -829,32 +834,34 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 
 }
+
 /* GITHUB PAGE ---------------------------------------------------------*/
 
 .img-container-github {
-    display: flex; 
-    justify-content: space-between; 
-    flex-wrap: wrap; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .img-item {
     padding: 10px;
-    margin: 10px; 
-    flex: 1 1 45%; 
+    margin: 10px;
+    flex: 1 1 45%;
 }
 
 .img-item img {
     max-width: 100%;
-    height: auto; 
+    height: auto;
     border-radius: 30px;
-    margin: 5px 0; 
+    margin: 5px 0;
     border: 3px solid #ffd500;
 }
 
 /* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
-h1.github{
+h1.github {
     margin: 20px;
 }
+
 #main-github {
     display: flex;
     justify-content: space-between;
@@ -868,7 +875,8 @@ h1.github{
     display: flex;
 }
 
-.split-left, .split-right {
+.split-left,
+.split-right {
     width: 49%;
     padding: 5px;
     box-sizing: border-box;
@@ -909,12 +917,10 @@ h1.github{
     .split-container {
         display: inline;
     }
-    
-    .split-left, .split-right {
+
+    .split-left,
+    .split-right {
         width: 100%;
         padding: 0px;
     }
 }
-
-
-
