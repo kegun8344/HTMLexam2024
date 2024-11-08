@@ -517,7 +517,7 @@ footer #icon {
     overflow: hidden;
     padding: 3rem 0em;
     border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
-    text-align: center;
+    justify-content: center;
     background: #3B3941;
 }
 
