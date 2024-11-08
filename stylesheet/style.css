@@ -29,15 +29,19 @@ hr {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
+}
+
+p{
+    font-size: larger;
 }
 
 @media(max-width:600px) {
     h1 {
-        font-size: 30px;
+        font-size: 1.875rem;
     }
     #site-background {
-        top: 150px;
+        top: 9.375rem;
     }
 }
 
@@ -50,32 +54,32 @@ h1 {
 /* header ------------------------------------- */
 header {
     background-color: #3B3941;
-    box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.375rem 1rem 0rem rgba(0, 0, 0, 0.2);
 
 }
 
 #header-logo {
-    margin-left: 15px;
-    margin-top: 15px;
-    max-width: 100px;
-    min-width: 15mm;
+    margin-left: 0.9rem;
+    margin-top: 0.9rem;
+    max-width: 6.25rem;
+    min-width: 3.54rem;
 }
 
 .img-container {
     position: absolute;
     top: 0;
     left: 0;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 #search-button {
     color: #ffd500;
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     cursor: pointer;
     border: none;
-    font-size: 28px;
-    padding-top: 16px;
+    font-size: 1.75rem;
+    padding-top: 1rem;
 }
 
 /* dropdown-menu ------------------------------------------------------------------- */
@@ -84,11 +88,11 @@ header {
 .dropbtn {
     background-color: #3B3941;
     color: #ffd500;
-    font-size: 35px;
+    font-size: 2.19rem;
     border: none;
     cursor: pointer;
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     float: right;
 }
 
@@ -103,18 +107,18 @@ header {
     right: 0;
     background-color: #ffd500;
     min-width: 16rem;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
     z-index: 1;
     font-size: larger;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 16px 16px;
+    padding: 1rem 1rem;
     text-decoration: none;
     display: block;
     transition: 0.2s background-color ease;
-    border-top: 1px solid rgb(92, 92, 92);
+    border-top: 0.06rem solid rgb(92, 92, 92);
 }
 
 .dropdown-content a:hover {
@@ -129,19 +133,17 @@ header {
 /* Video ------------------------------------------------------------*/
 .video-container {
     position: relative;
-    /* max-width: 75%; */
     max-width: 100%;
     /* <----- 16:9 aspect ratio */
-    /* padding-bottom: 42.1875%; */
     padding-bottom: 56.25%;
     /* <----- 16:9 aspect ratio */
     height: 0;
     overflow: hidden;
     margin: auto;
-    border-radius: 30px;
-    border: 3px solid #ffd500;
-    margin-top: 50px;
-    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.112);
+    border-radius: 1.875rem;
+    border: 0.19rem solid #ffd500;
+    margin-top: 3.125rem;
+    box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.112);
 }
 
 @media (max-width: 600px) {
@@ -153,7 +155,7 @@ header {
         margin-top: 0;
         box-shadow: none;
         border-radius: 0;
-        border: 3px solid #ffd500;
+        border: 0.19rem solid #ffd500;
     }
 
 }
@@ -173,8 +175,8 @@ nav {
     display: flex;
     justify-content: right;
     align-items: center;
-    padding: 10px 20px;
-    min-height: 90px;
+    padding: 0.625rem 1.25rem;
+    min-height: 5.625rem;
 }
 
 /* muligens endre størrelse på nav på mobile */
@@ -188,7 +190,7 @@ nav {
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 1.125rem;
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 15%;
@@ -197,9 +199,9 @@ nav {
 
 .nav-links li {
     display: inline;
-    padding: 15px;
+    padding: 0.9rem;
     background-color: #00000022;
-    border-radius: 10px;
+    border-radius: 0.625rem;
     transition: background-color 0.3s ease;
 }
 
@@ -209,7 +211,7 @@ nav {
 
 .nav-links a {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 0.625rem;
     text-decoration: none;
     color: #ffd500;
     font-weight: bold;
@@ -222,7 +224,7 @@ nav {
 main {
     margin-left: 15%;
     margin-right: 15%;
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 
 /* for mobile */
@@ -230,7 +232,7 @@ main {
     main {
         margin-left: 5%;
         margin-right: 5%;
-        padding-top: 20px;
+        padding-top: 1.25rem;
     }
 }
 
@@ -254,7 +256,7 @@ main {
 .detail-box {
     width: 13rem;
     margin: 0.6%;
-    border: 1px solid #ddd;
+    border: 0.06rem solid #ddd;
     padding: 1rem;
     border-radius: 1rem;
 }
@@ -296,7 +298,7 @@ main {
 #studenthistorier-container {
     width: 100%;
     transition: 0.2s all ease;
-    padding-right: 35px;
+    padding-right: 2.19rem;
     overflow: hidden;
 }
 
@@ -304,7 +306,7 @@ main {
     position: absolute;
     top: 45%;
     /* right setter ikonet 35px til venstre fra høyre kant */
-    right: 35px;
+    right: 2.19rem;
     /* gjør at den flytter seg, right 50px --> 0px */
     transition: 0.2s all ease;
     z-index: -1;
@@ -391,11 +393,11 @@ main {
     }
 
     #studenthistorier-container:hover #link-chevron {
-        right: -35px;
+        right: -2.19rem;
     }
 
     #link-chevron {
-        right: -25px;
+        right: -1.56rem;
         top: 48%;
     }
 
@@ -419,7 +421,7 @@ main {
 /* studies ----------------------------------------------- */
 
 #person-text {
-    padding-left: 10px;
+    padding-left: 0.625rem;
     display: inline-block;
 }
 
@@ -437,8 +439,8 @@ main {
 
 #img-krhel3944 {
     max-width: 8em;
-    border-radius: 5px;
-    box-shadow: -2px 4px 5px 0px rgba(0, 0, 0, 0.267);
+    border-radius: 0.32rem;
+    box-shadow: -0.125rem 0.25rem 0.31rem 0rem rgba(0, 0, 0, 0.267);
 
 }
 
@@ -456,7 +458,7 @@ main {
     -webkit-animation: fadeEffect 1s;
     animation: fadeEffect 1s;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .more-info-tabcontent>a {
@@ -477,8 +479,8 @@ main {
 .more-info-tab button {
     cursor: pointer;
     background-color: #7f7f7f17;
-    border: 1px;
-    border-radius: 5px;
+    border: 0.0625rem;
+    border-radius: 0.31rem;
 }
 
 .moreInfo {
@@ -490,21 +492,21 @@ main {
     height: fit-content;
 }
 
-#footer .row {
+footer .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-#footer #col1,
-#footer #col2,
-#footer #col3 {
+footer #col1,
+footer #col2,
+footer #col3 {
     float: left;
-    width: 320px;
-    padding: 40px 40px 40px 40px;
+    width: 20rem;
+    padding: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 
-#footer #icon {
+footer #icon {
     display: block;
     margin-bottom: 1rem;
     font-size: 3rem;
@@ -513,13 +515,13 @@ main {
 .mediabox {
     overflow: hidden;
     padding: 3rem 0em;
-    border-top: 20px solid rgba(255, 255, 255, 0.08);
+    border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
     text-align: center;
     background: #3B3941;
 }
 
 .mediabox p {
-    letter-spacing: 1px;
+    letter-spacing: 0.06rem;
     font-size: 0.9rem;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -780,11 +782,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     margin: 0 1rem 1rem 0;
 }
 
-@media (max-width: 750px) {
-    #course-glance-container {
-        margin: 0 0 0.5rem 0;
-    }
-}
+
 
 @media (max-width: 515px) {
     .tabcontent{
@@ -814,33 +812,35 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 @media (max-width: 750px) {
-    #Videre-studiemuligheter-ved-OsloMet>#course-glance-container>svg {
-        scale: 2;
+    #course-glance-container {
+        margin: 0 0 0.5rem 0;
     }
-}
 
-
-@media (max-width: 750px) {
     #other-studies {
         margin: auto;
     }
-}
 
+    #Videre-studiemuligheter-ved-OsloMet>#course-glance-container>svg {
+        scale: 2;
+    }
+
+
+}
 /* GITHUB PAGE ---------------------------------------------------------*/
 
-.video-container-github {
+.img-container-github {
     display: flex; 
     justify-content: space-between; 
     flex-wrap: wrap; 
 }
 
-.video-item {
+.img-item {
     padding: 10px;
     margin: 10px; 
     flex: 1 1 45%; 
 }
 
-.video-item img {
+.img-item img {
     max-width: 100%;
     height: auto; 
     border-radius: 30px;
@@ -849,21 +849,31 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 /* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
-.split {
-    height: 100%;
-    width: 45%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    overflow-x: hidden;
-    padding-top: 20px;
+h1.github{
+    margin: 20px;
+}
+#main-github {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.split-container {
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px;
+    display: flex;
 }
 
 .split-left, .split-right {
-    width: 50%;
-    padding: 20px;
+    width: 49%;
+    padding: 5px;
     box-sizing: border-box;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid #3B3941;
 }
 
 .split-left {
@@ -873,8 +883,35 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 .split-right {
     background-color: #ccc;
 }
-#main-github {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+
+.content-box {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px;
+    min-height: 40%;
 }
+
+.separator.centered {
+    margin: 5px auto;
+    width: 80%;
+    border-top: 2px solid #3B3941;
+    margin-top: 5px;
+}
+
+.content-box h2 {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    .split-container {
+        display: inline;
+    }
+    
+    .split-left, .split-right {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+
+

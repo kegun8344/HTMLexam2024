@@ -10,133 +10,163 @@
 </head>
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
-    <div class="img-container">
-        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_CFA30B.png" alt="OsloMet Logo">
-    </div>
+    <a href="https://www.oslomet.no/" class="img-container">
+        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
+    </a>
     <nav>
+        <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
         <div class="dropdown" style="float:right;">
-            <button class="dropbtn"><i class="fa fa-bars"></i></button>
+            <button class="dropbtn"><i class="fa fa-bars" alt="Meny"></i></button>
             <div class="dropdown-content">
-                 <a href="#">Studier</a> 
-                 <a href="#">Forskningen vår</a> 
-                 <a href="#">Universitetsbibliotek</a> 
-                 <a href="#">For studenter</a> 
-                 <a href="activity.html">Activity</a> 
-                 <a href="accessibility.html">Accessibility</a> 
-                 <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a> 
+                <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>      
+                <a href="activity.html">Activity</a>
+                <a href="accessibility.html">Accessibility</a>
+                <a href="github.html">GitHub</a>
             </div>
-          </div>
+        </div>
     </nav>
 </header>
 
 <body>
-    <article id="main">
-        <h1>Presentasjon av Github</h1>
-            <div class="video-container-github">
-                <div class="video-item">
+    <main>
+        <h1 class="github">Github og GIT</h1>
+            <div class="img-container-github">
+                <div class="img-item">
                     <h2>Commit History i GIT</h2>
                     <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 1 commit">
-                    <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 2 commit>">
+                    <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 2 commit">
                 </div>
-                <div class="video-item">
+                <div class="img-item">
                     <h2>Specific Change i GIT</h2>
                     <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 3 commit">
                     <img src="https://media.istockphoto.com/id/1320815200/photo/wall-black-background-for-design-stone-black-texture-background.jpg?s=612x612&w=0&k=20&c=hqcH1pKLCLn_ZQ5vUPUfi3BOqMWoBzbk5-61Xq7UMsU=" alt="bilde 4 commit">
                 </div>
             </div>
         <section id="main-github">
-            <div class="split-left">
-                <h2>Koding på Samme Dokument med GitHub</h2>
-                <p>Github øker effektiviteten når en gruppe skal kode på samme dokument.
-                    Noe viktig å påpeke er at Github gir mulighet for at brukere kan jobbe samtidig uten å 
-                    overskrive andres koder. Effektiviteten og selvstendigheten av å kode samtidig kommer av "branches", som 
-                    er egne kopier av hoved filen, der brukere kan jobbe selv uten å påvirke hovedbranch, ofte kalt "main" branch.
-                </p>
-                <hr class="separator">
-                <h2>Sporing av koder</h2>
-                <p>Alle branches som blir lagd, kan lastes inn på hoved filen via "commits". Der kan 
-                    alle se hvem som har gjort hva lagt inn hva av koden, og det som er endret. 
-                </p>
-            </div>
-            <div class="split-right">
-                <h2>Subheading 3:</h2>
-                <h3>Text:</h3>
-                <hr class="separator">
-                <h2>Subheading 4:</h2>
-                <h3>Text:</h3>
+            <div class="split-container">
+                <div class="split-left">
+                    <div class="content-box">
+                        <h2>GIT som et versjonskontrollsystem</h2>
+                        <p>Git er et versjonskontrollsystem, som er et program som holder orden på nye og tidligere
+                            filer. Filene slettes ikke, men lagres i en database. Vi bruker GitHub. Dette gjør det mulig
+                            å spore filer, eller endringer i kodeprosjektet vårt, og generelt øker orden på prosjektet.
+                            Git gjør det mulig å enkelt gå tilbake til tidligere versjoner av en kode, og se forskjellen det utgjør på nettsiden.
+                        </p>
+                    </div>    
+                    <hr class="separator centered">
+                    <div class="content-box">
+                        <h2>Arbeid samtidig på samme projekt</h2>
+                        <p>Git lar brukere lage det som heter "branches", som er separate filer fra hovedprojektet. Hovedbranchen kalles oftest 
+                            for "main", og dette er her vi danner branches fra. Uten branches ville samarbeid på et projekt vær
+                            utfordrende, og forstyrrende. Når en branch er ferdig, kan den testest eller sjekkes, og integreres til 'main'. 
+                        </p>
+                    </div>    
+                </div>
+                <div class="split-right">
+                    <div class="content-box">
+                        <h2>Bruk av Pull requests og Merge</h2>
+                        <p>Når en branch er ferdig, sendes den over til Github, og der kan andre brukere på projektet se koden.
+                            Dette er for å foreslå endringer, uten å direkte legge koden inn i projektet. Pull requests øker
+                            samarbeid mellom brukere, og gjør det lettere å forbedre koden til selve projektet. Merge er når 
+                            den foreslåtte koden blir godkjent, og er klar for å integreres til 'main'. Nå er den utviklede branchen ferdig. </p>
+                    </div>    
+                    <hr class="separator centered">
+                    <div class="content-box">
+                        <h2>Github gjør mulighet for Sporing av Bidrag</h2>
+                        <p>Github registerer aktiviteten til brukere, og ser hvem som har gjort hva. Dette gir 
+                            oss mulighet til å få oversikt over hvem som har gjort hvilken del av projektet.
+                        </p>
+                    </div>   
+                </div>
             </div>
         </section>         
-    </article>
+    </main>
     
-    <!-- Footer Menu -->
-    <footer id="footer">
+   <!-- Footer Menu -->
+   <footer>
 
-        <div class="moreInfo">
-            <div class="row">
-                <div id="col1">
-                    <span id="icon" class="fa fa-map-marker"></span>
+    <div class="moreInfo">
+        <div class="row">
+            <div id="col1">
+                <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
 
-                    <span>
-                        <h4>Oslo Metropolitan University</h4>
-                        <p>Storbyuniversitetet</p>
-                        Postboks 4, St. Olavs plass
-                        0130 Oslo
-                    </span>
-                </div>
+                <span>
+                    <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9"><h3>Oslo Metropolitan University</h3></a>
+                    <p>Storbyuniversitetet</p>
+                    Postboks 4, St. Olavs plass
+                    0130 Oslo
+                </span>
+            </div>
 
-                <div id="col2">
-                    <span id="icon" class="fa fa-phone"></span>
+            <div id="col2">
+                <span id="icon" class="fa fa-phone" alt="Telefon"></span>
 
-                    <span>
-                        <h4>Kontakt oss</h4>
-                        <p>Tlf.: 67 23 50 00</p>
-                    </span>
-                </div>
+                <span>
+                    <h3>Kontakt oss</h3>
+                    <p>Tlf.: 67 23 50 00</p>
+                </span>
+            </div>
 
-                <div id="col3">
-                    <span id="icon" class="fa fa-info"></span>
-                    <span>
-                        <h4> More Info</h4>
-                        <p>
-                            <a class="more-info-links" href="#">English</a><br>
-                            <a class="more-info-links" href="#">Alumni</a><br />
-                            <a class="more-info-links" href="#">Ansatteoversikt</a><br>
-                            <a class="more-info-links" href="#">Arrangementsoversikt</a><br>
-                            <a class="more-info-links" href="#">For ansatte</a><br>
-                            <a class="more-info-links" href="#">For studenter</a><br>
-                            <a class="more-info-links" href="#">Ledige stillinger</a><br>
-                            <a class="more-info-links" href="#">Personvernerklæring og <br> informasjonskapslar</a><br>
-                            <a class="more-info-links" href="#">Pressekontakt</a><br>
-                            <a class="more-info-links" href="#">Tilgjengelegheitserklæring</a><br>
-                            <a class="more-info-links" href="#">Admin</a><br>
-
-                        </p>
-                    </span>
-                </div>
+            <div id="col3">
+                <span id="icon" class="fa fa-info" alt="Info"></span>
+                <span>
+                    <h3> Mer Info</h3>
+                    <div class="more-info-tab">
+                        <button id="toggle-tab" class="more-info-tab-button">
+                            <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                viewBox="2 1 20 20" alt=" Nedover pil">
+                                <path fill-rule="evenodd"
+                                    d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="more-info-tab" class="more-info-tabcontent">
+                        <a class="more-info-links" href="https://www.oslomet.no/en">English</a>
+                        <a class="more-info-links" href="https://www.oslomet.no/alumni">Alumni</a>
+                        <a class="more-info-links"
+                            href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a>
+                        <a class="more-info-links"
+                            href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangementsoversikt</a>
+                        <a class="more-info-links" href="https://www.oslomet.no/om/for-ansatte">For ansatte</a>
+                        <a class="more-info-links" href="https://www.oslomet.no/om/for-studenter">For
+                            studenter</a>
+                        <a class="more-info-links" href="https://www.oslomet.no/om/ledige-stillinger">Ledige
+                            stillinger</a>
+                        <a class="more-info-links"
+                            href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring
+                            og <br> informasjonskapslar</a>
+                        <a class="more-info-links" href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a>
+                        <a class="more-info-links"
+                            href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelegheitserklæring</a>
+                        <a class="more-info-links"
+                            href="https://www-admin.oslomet.no/admin/view/content/58148">Admin</a>
+                    </div>
+                    <script src="../javascript/index-tabs"></script>
+                </span>
             </div>
         </div>
-        <!-- Social Media links -->
-        <div class="mediabox">
+    </div>
+    <!-- Social Media links -->
+    <div class="mediabox">
 
-            <ul class="media">
-                <li>
-                    <a href="https://x.com/oslomet" class="fa fa-twitter"> </a>
-                </li>
+        <ul class="media">
+            <li>
+                <a href="https://x.com/oslomet" class="fa fa-twitter" alt="Twitter"> </a>
+            </li>
 
-                <li>
-                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook"></a>
-                </li>
+            <li>
+                <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook" ></a>
+            </li>
 
-                <li>
-                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram"></a>
-                </li>
-            </ul>
-        </div>
-    </footer>
-
+            <li>
+                <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" alt="LinkedIn"></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" alt="Instagram"></a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </body>
 
 </html>
