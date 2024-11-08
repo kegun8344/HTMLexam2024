@@ -29,3 +29,22 @@ document.getElementById('toggle-tab').addEventListener('click', function () {
         iconPath.setAttribute("d", "m12 6.586-8.707 8.707 1.414 1.414L12 9.414l7.293 7.293 1.414-1.414L12 6.586z");
     }
 });
+
+
+// Hamburger menu in nav bar
+document.addEventListener("DOMContentLoaded", () => {
+    const menuButton = document.getElementById("menu-button");
+    const dropdownMenu = document.getElementById("dropdown-menu");
+
+    menuButton.addEventListener("click", () => {
+        // Toggle the visibility of the dropdown menu
+        dropdownMenu.style.display = dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+
+    // Optional: Click outside to close the menu
+    document.addEventListener("click", (event) => {
+        if (!menuButton.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = "none";
+        }
+    });
+});
