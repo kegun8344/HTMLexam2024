@@ -6,117 +6,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheet/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Activity</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon_io/favicon.ico">
+    <title> guide </title>
 </head>
+
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
     <a href="https://www.oslomet.no/" class="img-container">
         <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
     </a>
     <nav>
-        <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
-        <div class="dropdown">
-            <button class="dropbtn" id="menu-button"><i class="fa fa-bars" alt="Meny"></i></button>
-            <div class="dropdown-content" id="dropdown-menu">
-                <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>
-                <a href="activity.html">Activity</a>
-                <a href="accessibility.html">Accessibility</a>
-                <a href="github.html">GitHub</a>
+        <div class="dropdown" style="float:right;">
+            <button class="dropbtn"><i class="fa fa-bars"></i></button>
+            <div class="dropdown-content">
+                 <a href="index.html">Oslomet nettside</a> 
+                 <a href="accessibility.html">Accessibility</a> 
+                 <a href="github.html">Github</a> 
+
+
             </div>
         </div>
     </nav>
 </header>
 
-<body>
 
-    <!-- Footer Menu -->
-    <footer>
+<body class="activity">
+    <div id="accessibility-background"></div>
+    <article>
+        <div class="container">
+            <h1 class="top-page">Utforsk Oslo på en ny måte!</h1>
+            <p class="info-box">Velkommen til din guide til Oslo,
+                hvor vi har samlet de beste tipsene innen fire spennende kategorier.
+                Enten du er ute etter å oppdage Oslos skjulte perler, finne en hyggelig kafé, oppleve byens
+                kulturattraksjoner eller utforske det pulserende utelivet, har vi noe for alle.
+                La deg inspirere og gjør deg klar til å utforske Oslo fra et nytt perspektiv!
+            </p>
 
-        <article class="more-info">
-            <div class="row">
-                <section id="col1">
-                    <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
+        </div>
+    </article>
+    
 
-                    <address class="address-font">
-                        <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9">
-                            <h3>Oslo Metropolitan University</h3>
-                        </a>
-                        <p>Storbyuniversitetet</p>
-                        Postboks 4, St. Olavs plass
-                        0130 Oslo
-                    </address>
-                </section>
+    <article class="category-box-container">
+        <section class="category-box">
+            <h2> Uteliv </h2>
+            <a class="more-info-links" href="#uteliv"> 
+                <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 -4 24 24">
+                    <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                </svg>
+            </a>
 
-                <section id="col2">
-                    <span id="icon" class="fa fa-phone" alt="Telefon"></span>
+            <picture>
+                <source srcset="/images/utelivBg1.jpg" media="(min-width: 600px)">
+                <source srcset="/images/utelivBg1.jpg" media="(max-width: 599px)">
+                <img src="/images/utelivBg1" alt="bilde av kafe" style="width: 100%;">
+            </picture>
+            
+            <p> Utforsk Oslos fantastiske uteliv! Utforsk byens spennende uteliv!
+                Uansett om du liker eksklusive cocktailbarer, livlige klubber eller
+                koselige puber, finnes det noe for enhver smak.
+            </p>
 
-                    <address class="address-font">
-                        <h3>Kontakt oss</h3>
-                        <p>Tlf.: 67 23 50 00</p>
-                    </address>
-                </section>
+        </section>
 
-                <section id="col3">
-                    <span id="icon" class="fa fa-info" alt="Info"></span>
-                    <span>
-                        <h3> Mer Info</h3>
-                        <div class="more-info-tab">
-                            <button id="toggle-tab" class="more-info-tab-button">
-                                <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
-                                    viewBox="2 1 20 20" alt=" Nedover pil">
-                                    <path fill-rule="evenodd"
-                                        d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z" />
-                                </svg>
-                            </button>
+        <section class="category-box">
+            <h2> Kafe </h2>
+            <a class="more-info-links" href="#uteliv"> 
+                <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 -4 24 24">
+                    <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                </svg>
+            </a>
+
+            <picture>
+                <source srcset="/images/cafeBg2.jpg" media="(min-width: 600px)">
+                <source srcset="/images/kafe1.1.jpg" media="(max-width: 599px)">
+                <img src="/images/kafe1.jpg" alt="bilde av kafe" style="width: 100%;">
+            </picture>
+
+            <p> Nyt en avslappende stund på en av byens mange kaféer.
+                Enten du foretrekker en kopp kaffe, te, eller kanskje noe
+                søtt ved siden av, finner du et sted som passer din stil.
+            </p>
+        </section>
+
+        <section class="category-box">
+            <h2> Attraksjoner </h2>
+            <a class="more-info-links" href="#uteliv"> 
+                <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 -4 24 24">
+                    <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                </svg>
+            </a>
+
+            <picture>
+                <source srcset="/images/attractionsBg3.jpg" media="(min-width: 600px)">
+                <source srcset="/images/attractionsBg3.jpg" media="(max-width: 599px)">
+                <img src="/images/attractionsBg3" alt="bilde av kafe" style="width: 100%;">
+            </picture>
+
+            <p> Oslo er hjem til mange spennende og ikoniske attraksjoner.
+                Byen har mange ikoniske og spennende attraksjoner! Oppdag vakre parker,
+                imponerende museer og historiske monumenter som gir innblikk i kultur og
+                historie.
+                <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+
+
+            </p>
+        </section>
+
+        <section class="category-box">
+            <h2> Aktiviteter </h2>
+            <a class="more-info-links" href="#uteliv"> 
+                <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 -4 24 24">
+                    <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                </svg>
+            </a>
+            <picture>
+                <source srcset="/images/activitiesBg4.jpg" media="(min-width: 600px)">
+                <source srcset="/images/activitiesBg4.jpg" media="(max-width: 599px)">
+                <img src="/images/activitiesBg4.jpg" alt="bilde av kafe" style="width: 100%;">
+            </picture>
+
+            <p> Oslo tilbyr et bredt utvalg av aktiviteter for alle aldre og interesser.
+                Det finnes aktiviteter for alle interesser! Fra naturopplevelser i skog
+                og mark til urbane eventyr og sportsaktiviteter – her er det mye å utforske
+                året rundt.
+            </p>
+        </section>
+
+        <section class="category-box">
+            <h2> Budsjettvennlig </h2>
+            <a class="more-info-links" href="#uteliv"> 
+                <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 -4 24 24">
+                    <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                </svg>
+            </a>
+            <picture>
+                <source srcset="/images/cafeBg2.jpg" media="(min-width: 600px)">
+                <source srcset="/images/kafe1.1.jpg" media="(max-width: 599px)">
+                <img src="/images/kafe1.jpg" alt="bilde av kafe" style="width: 100%;">
+            </picture>
+
+            <p> Oslo trenger ikke å være dyrt! Hvis du er ute etter rimelige opplevelser,
+                finnes det mange steder som tilbyr fantastisk verdi. Oppdag gratis opplevelser,
+                rimelige spiseplasser og vakre utendørsområder som byr på flotte opplevelser.
+            </p>
+        </section>
+
+    </article>
+
+    <div id="course-cards">
+   
+    </div>
+
+    <!--<article class="main-box">
+        <p id="uteliv">Uteliv i Oslo</p>
+    </article>
+
+    <article class="main-box">
+        <p>Kaffer i Oslo</p>
+    </article>
+
+    <article class="main-box">
+        <p>Utforsk Oslo</p>
+    </article>-->
+
+    <!--<article class="main-box">
+        <h3> slay </h3>
+        <div id="slider">
+             Radio Buttons for Each Slide 
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+        
+             Overflow Container for the Slider 
+            <div id="overflow">
+                <div class="inner">
+                     Individual Slides 
+                    <div class="slide slide_1">
+                        <div class="slide-content">
+                            <div class="text-content">
+                                <h3>megazone</h3>
+                            </div>
+                            <img src="/images/megazone.jpg" alt="slide1 Image" class="slide-image">
                         </div>
-                        <div id="more-info-tab" class="more-info-tabcontent">
-                            <a class="more-info-links" href="https://www.oslomet.no/en">English</a>
-                            <a class="more-info-links" href="https://www.oslomet.no/alumni">Alumni</a>
-                            <a class="more-info-links"
-                                href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a>
-                            <a class="more-info-links"
-                                href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangementsoversikt</a>
-                            <a class="more-info-links" href="https://www.oslomet.no/om/for-ansatte">For ansatte</a>
-                            <a class="more-info-links" href="https://www.oslomet.no/om/for-studenter">For
-                                studenter</a>
-                            <a class="more-info-links" href="https://www.oslomet.no/om/ledige-stillinger">Ledige
-                                stillinger</a>
-                            <a class="more-info-links"
-                                href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring
-                                og <br> informasjonskapslar</a>
-                            <a class="more-info-links" href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a>
-                            <a class="more-info-links"
-                                href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelegheitserklæring</a>
-                            <a class="more-info-links"
-                                href="https://www-admin.oslomet.no/admin/view/content/58148">Admin</a>
+                    </div>
+                    <div class="slide slide_2">
+                        <div class="slide-content">
+                            <div class="text-content">
+                                <h3>escape room</h3>
+                            </div>
+                            <img src="/images/escaperoom.jpg" alt="slide2 Image" class="slide-image">
+                        </div>                       
+                    </div>
+                    <div class="slide slide_3">
+                        <div class="slide-content">
+                            <div class="text-content">
+                                <h3>paintball</h3>
+                            </div>
+                            <img src="/images/paintball.jpg" alt="slide3 Image" class="slide-image">
+                        </div>                       
+                    </div>
+                    <div class="slide slide_4">
+                        <div class="slide-content">
+                            <div class="text-content">
+                                <h3>VR games</h3>
+                            </div>
+                            <img src="/images/vrGames.jpg" alt="slide4 Image" class="slide-image">                        
                         </div>
-                        <script src="javascript/index-tabs"></script>
-                    </span>
-                </section>
+                    </div>
+                </div>
             </div>
-        </article>
-        <!-- Social Media links -->
-        <nav class="mediabox">
-
-            <ul class="media">
-                <li>
-                    <a href="https://x.com/oslomet" class="fa fa-twitter" alt="Twitter"> </a>
-                </li>
-
-                <li>
-                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook"></a>
-                </li>
-
-                <li>
-                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" alt="LinkedIn"></a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" alt="Instagram"></a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
-
+        
+             Control Buttons 
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+        
+        
 </body>
 
 </html>
