@@ -978,7 +978,9 @@ h1.github {
 
 /* activity page ---------------------------------------------------*/
 
-
+#hr-activity {
+    border-color: var(--skyBlue);
+}
 
 #accessibility-background {
     background-image: url("/images/activitybackground.png");
@@ -999,6 +1001,16 @@ h1.github {
 .category-box-container {
     text-decoration: none;
     color: var(--teal);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.category-box-container>a {
+    text-decoration: none;
 }
 
 .top-page {
@@ -1011,12 +1023,13 @@ h1.github {
 }
 
 .info-box {
-    background: var(--navy);
-    font-size: 1rem;
-    color: var(--teal);
+    background: var(--beige);
+    color: var(--navy);
     padding: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
+    font-size: 1.2em;
+    margin: 0;
 }
 
 
@@ -1052,7 +1065,7 @@ h1.github {
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-.category-box h2 {
+.category-box>h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
     font-weight: bold;
@@ -1060,7 +1073,7 @@ h1.github {
     color: var(--navy);
 }
 
-.category-box p {
+.category-box>p {
     font-size: 0.9em;
     margin-top: 10px;
     color: var(--teal);
