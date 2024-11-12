@@ -979,7 +979,8 @@ h1.github {
 /* activity page ---------------------------------------------------*/
 
 #hr-activity {
-    border-color: var(--skyBlue);
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #accessibility-background {
@@ -1034,11 +1035,15 @@ h1.github {
 
 
 .container {
-    width: 50%;
     max-width: 400px;
-    min-width: 200px;
     margin: 0 auto;
     padding: 1.5vw;
+}
+
+@media(max-width:400px) {
+    .container {
+        max-width: 100%;
+    }
 }
 
 .category-box-container {
@@ -1086,13 +1091,161 @@ h1.github {
 
 
 
-
 .activity-main-box {
-    background-color: var(--skyblue);
+    background-image: linear-gradient(var(--beige), var(--white));
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     flex: 1 1 calc(25% - 20px);
+}
+
+.activity-main-box>p {
+    color: var(--teal);
+}
+
+/* Slider Container */
+#slider {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+    position: relative;
+
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    color: var(--light);
+}
+
+.text-content h3 {
+    margin: 0;
+    font-size: 0.8em;
+    color: var(--light);
+}
+
+.text-content p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: var(--light);
+}
+
+/* Style the image in each slide */
+.slide-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Inner Wrapper for Slides */
+.inner {
+    display: flex;
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    /* Total width for four slides */
+    line-height: 0;
+    height: 300px;
+    /* Adjust slide height */
+
+}
+
+/* Individual Slide */
+.slide {
+    width: 25%;
+    /* Each slide takes up 25% of the inner container */
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1.5rem;
+    float: left;
+}
+
+/* Background Colors for Each Slide */
+.slide_1 {
+    background-color: var(--slide1);
+}
+
+.slide_2 {
+    background-color: var(--slide2);
+}
+
+.slide_3 {
+    background-color: var(--slide3);
+}
+
+.slide_4 {
+    background-color: var(--slide4);
+}
+
+/* Radio Checked CSS for Slider Positioning */
+#slide1:checked~#overflow .inner {
+    margin-left: 0;
+}
+
+#slide2:checked~#overflow .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~#overflow .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked~#overflow .inner {
+    margin-left: -300%;
+}
+
+/* Navigation Controls */
+#controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Labels as Controls */
+#controls label {
+    cursor: pointer;
+    width: 12px;
+    height: 12px;
+    background-color: var(--dark);
+    border-radius: 50%;
+    margin: 0 5px;
+    opacity: 0.4;
+    transition: opacity 0.2s ease-out;
+}
+
+/* Hover Effect for Controls */
+#controls label:hover {
+    opacity: 1;
+}
+
+/* Active Control */
+#slide1:checked~#controls label[for="slide1"],
+#slide2:checked~#controls label[for="slide2"],
+#slide3:checked~#controls label[for="slide3"],
+#slide4:checked~#controls label[for="slide4"] {
+    opacity: 1;
 }
