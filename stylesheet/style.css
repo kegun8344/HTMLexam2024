@@ -551,7 +551,7 @@ main {
 
 .more-info-tab button {
     cursor: pointer;
-    background-color: #7f7f7f17;
+    background-color: #7f7f7f00;
     border: 0.0625rem;
     border-radius: 0.31rem;
 }
@@ -693,6 +693,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     font-size: 17px;
     border-radius: 3px;
     margin: 1px;
+    background-color: #f3f3f3;
 }
 
 /* Change background color of buttons on hover */
@@ -993,7 +994,7 @@ h1.github {
     line-height: 1.5;
 }
 
-a {
+.category-box-container {
     text-decoration: none;
     color: var(--teal);
 }
