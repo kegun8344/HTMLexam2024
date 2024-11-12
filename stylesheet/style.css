@@ -791,7 +791,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 .course-info-box:hover {
-    /* --yellow but lighter */
+    /* alternate --yellow color */
     background-color: #ffde74;
 }
 
