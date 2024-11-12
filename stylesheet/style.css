@@ -976,7 +976,9 @@ h1.github {
 
 /* activity page ---------------------------------------------------*/
 
-
+#hr-activity{
+    border-color: var(--skyBlue);
+}
 
 #accessibility-background {
     background-image: url("/images/activitybackground.png");
