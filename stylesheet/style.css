@@ -126,6 +126,60 @@ header {
 
 }
 
+/* dropdown menu specifically for activity page */
+
+.dropbtn-activity {
+    background-color: #3B3941;
+    color: #C8D9E6;
+    font-size: 2.19rem;
+    border: none;
+    cursor: pointer;
+    width: 3.75rem;
+    height: 3.75rem;
+    float: right;
+}
+
+.dropdown-activity {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-activity {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: #C8D9E6;
+    min-width: 16rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: larger;
+}
+
+.dropdown-content-activity a {
+    color: black;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s background-color ease;
+    border-top: 0.06rem solid rgb(92, 92, 92);
+}
+
+.dropdown-content-activity a:hover {
+    background-color: #b9cfe0;
+
+}
+
+#search-button-activity {
+    color: #b9cfe0;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1.75rem;
+    padding-top: 1rem;
+}
+
 /* Video ------------------------------------------------------------*/
 .video-container {
     position: relative;
@@ -954,60 +1008,6 @@ a {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
 }
-
-/* Style The Dropdown Button */
-.dropbtn-activity {
-    background-color: var(--dark);
-    color: var(--slide3);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 100%; /* Ensures the button is full-width on smaller screens */
-    text-align: left; /* Left-aligns text for better readability */
-  }
-
-.dropdown-activity {
-    position: relative;
-    display: inline-block;
-    width: 100%; /* Ensures dropdown fills width on smaller screens */
-  }
-  
-  .dropdown-activity-content {
-    display: none;
-    position: absolute;
-    background-color: var(--slide2);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0;
-    z-index: 1;
-    width: 100%; /* Ensures dropdown content matches button width */
-
-  }
-
-  /* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    /* background-color: #567C8D; */
-  }
-  
-  /* Change color of dropdown links on hover */
-.dropdown-activity-content a:hover {
-    background-color: #f1f1f1
-}
-  
-.dropdown-activity:hover .dropdown-activity-content {
-    display: block;
-  }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown-acitivty:hover .dropbtn-activity {
-    background-color: #14ba14d1;
-  }
-
 
 
 .container {
