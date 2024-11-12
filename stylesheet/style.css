@@ -1035,11 +1035,15 @@ h1.github {
 
 
 .container {
-    width: 50%;
     max-width: 400px;
-    min-width: 200px;
     margin: 0 auto;
     padding: 1.5vw;
+}
+
+@media(max-width:400px) {
+    .container{
+        max-width: 100%;
+    }
 }
 
 .category-box-container {
@@ -1095,6 +1099,10 @@ h1.github {
     margin-top: 20px;
     margin-bottom: 20px;
     flex: 1 1 calc(25% - 20px);
+}
+
+.activity-main-box>p{
+    color: var(--teal);
 }
 
 /* Slider Container */
