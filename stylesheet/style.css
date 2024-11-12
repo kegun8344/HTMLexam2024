@@ -876,3 +876,299 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     justify-content: space-between;
     width: 100%;
 }
+
+/* activity page ---------------------------------------------------*/
+:root{
+    --navy: #2F4156;
+    --teal: #567C8D;
+    --skyBlue: #C8D9E6;
+    --beige: #F5EFEB;
+    --white: #edede9;
+
+    --dark: #292421;
+    --forest: #424245;
+
+    --slide1: #63574f;
+    --slide2: #71635b;
+    --slide3: #998980;
+    --slide4: #c6bdb8;
+}
+
+#accessibility-background {
+    background-image: url("/images/activitybackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.activity{
+    background-color: #FFF;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--teal);
+}
+
+.top-page {
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 1.2;
+    margin: 10px 0;
+    color: var(--navy);
+    text-align: center;
+}
+
+.info-box{
+    background: var(--navy);
+    font-size: 1rem; 
+    color: var(--teal);
+    padding: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+/* Style The Dropdown Button */
+.dropbtn-activity {
+    background-color: var(--dark);
+    color: var(--slide3);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%; /* Ensures the button is full-width on smaller screens */
+    text-align: left; /* Left-aligns text for better readability */
+  }
+
+.dropdown-activity {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ensures dropdown fills width on smaller screens */
+  }
+  
+  .dropdown-activity-content {
+    display: none;
+    position: absolute;
+    background-color: var(--slide2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0;
+    z-index: 1;
+    width: 100%; /* Ensures dropdown content matches button width */
+
+  }
+
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #567C8D;
+  }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-activity-content a:hover {
+    background-color: #f1f1f1
+}
+  
+.dropdown-activity:hover .dropdown-activity-content {
+    display: block;
+  }
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-acitivty:hover .dropbtn-activity {
+    background-color: #14ba14d1;
+  }
+
+
+
+.container {
+    width: 50%; 
+    max-width: 400px; 
+    min-width: 200px;
+    margin: 0 auto;
+    padding: 1.5vw;
+}
+
+.category-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.category-box{
+    flex: 1 1 calc(25% - 20px); 
+    background-color: var(--skyBlue);
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.category-box:hover{
+    background-color: var(--dark);
+    transform:scale(1.03);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.category-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: medium;
+    color: var(--navy);
+}
+
+.category-box p {
+    font-size: 1em;
+    margin-top: 10px;
+    color: var(--teal);
+}
+
+.info-box p {
+    font-size: 1em; 
+    margin: 0;
+}
+
+
+
+
+.main-box{
+    width: 72%;           
+    max-width: 400px;     
+
+    background-color: var(--skyBlue);
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 10px auto;
+
+    flex: 1 1 calc(25% - 20px); 
+}
+
+/* Slider Container */
+        #slider {
+            margin: 0 auto;
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            position: relative;
+            
+        }
+
+        #slider input[type=radio] {
+            display: none;
+        }
+
+        #overflow {
+            width: 100%;
+            overflow: hidden;
+        }
+        .slide-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+       
+.text-content {
+    flex: 1; 
+    padding-right: 20px;
+    color: var(--light);
+}
+
+.text-content h3 {
+    margin: 0;
+    font-size: 0.8em;
+    color: var(--light);
+}
+
+.text-content p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    color: var(--light);
+}
+
+/* Style the image in each slide */
+.slide-image {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+        /* Inner Wrapper for Slides */
+        .inner {
+            display: flex;
+            transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+            width: 400%; /* Total width for four slides */
+            line-height: 0;
+            height: 300px; /* Adjust slide height */
+            
+        }
+
+        /* Individual Slide */
+        .slide {
+            width: 25%; /* Each slide takes up 25% of the inner container */
+            color: var(--light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 1.5rem;
+            float: left;
+        }
+
+        /* Background Colors for Each Slide */
+        .slide_1 { background-color: var(--slide1); }
+        .slide_2 { background-color: var(--slide2); }
+        .slide_3 { background-color: var(--slide3); }
+        .slide_4 { background-color: var(--slide4); }
+
+        /* Radio Checked CSS for Slider Positioning */
+        #slide1:checked ~ #overflow .inner { margin-left: 0; }
+        #slide2:checked ~ #overflow .inner { margin-left: -100%; }
+        #slide3:checked ~ #overflow .inner { margin-left: -200%; }
+        #slide4:checked ~ #overflow .inner { margin-left: -300%; }
+
+        /* Navigation Controls */
+        #controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        /* Labels as Controls */
+        #controls label {
+            cursor: pointer;
+            width: 12px;
+            height: 12px;
+            background-color: var(--dark);
+            border-radius: 50%;
+            margin: 0 5px;
+            opacity: 0.4;
+            transition: opacity 0.2s ease-out;
+        }
+
+        /* Hover Effect for Controls */
+        #controls label:hover {
+            opacity: 1;
+        }
+
+        /* Active Control */
+        #slide1:checked ~ #controls label[for="slide1"],
+        #slide2:checked ~ #controls label[for="slide2"],
+        #slide3:checked ~ #controls label[for="slide3"],
+        #slide4:checked ~ #controls label[for="slide4"] {
+            opacity: 1;
+        }
