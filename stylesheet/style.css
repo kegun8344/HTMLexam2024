@@ -60,18 +60,16 @@ header {
 }
 
 #header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem;
     margin-left: 0.9rem;
     margin-top: 0.9rem;
     max-width: 6.25rem;
     min-width: 3.54rem;
 }
 
-.img-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.625rem;
-}
 
 #search-button {
     color: #ffd500;
@@ -829,8 +827,12 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 
 }
+/* Accessibility Page > */
+#img-wawe-test{
+    height: 40rem;
+}
 
-/* GITHUB PAGE ---------------------------------------------------------*/
+/* Github page ---------------------------------------------------------*/
 
 .img-container-github {
     display: flex;
