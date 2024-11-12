@@ -291,7 +291,7 @@ nav {
     display: inline-block;
     margin: 0 0.625rem;
     text-decoration: none;
-    color: #ffd500;
+    color: var(--yellow);
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -414,7 +414,7 @@ main {
     color: black;
     display: flex;
     flex-direction: row;
-    background-color: #ffd500;
+    background-color: var(--yellow);
     /* border-radius: 15px; */
 }
 
@@ -448,7 +448,7 @@ main {
     display: flex;
     align-items: center;
     height: 4em;
-    background-color: #ffd500;
+    background-color: var(--yellow);
     padding: 1em 2em;
     transition: 0.2s scale ease;
 }
@@ -640,7 +640,7 @@ ul.media li a {
 .more-info-links {
     display: block;
     text-decoration: underline;
-    text-decoration-color: #ffd500;
+    text-decoration-color: var(--yellow);
     color: black;
     text-decoration-thickness: 2px;
 }
@@ -709,7 +709,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ffd500;
+    background-color: var(--yellow);
     scale: 1.015;
 }
 
@@ -751,7 +751,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 .course-info-links {
     text-decoration-style: underline;
-    text-decoration-color: #ffd500;
+    text-decoration-color: var(--yellow);
     color: black;
     text-decoration-thickness: 2px;
 }
@@ -791,6 +791,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 .course-info-box:hover {
+    /* --yellow but lighter */
     background-color: #ffde74;
 }
 
@@ -831,7 +832,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 #tabcontent-btt>button:hover {
-    background-color: #ffd500;
+    background-color: var(--yellow);
 }
 
 /* course-cards ---------------------------------------------- */
@@ -933,7 +934,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     height: auto;
     border-radius: 30px;
     margin: 5px 0;
-    border: 3px solid #ffd500;
+    border: 3px solid var(--yellow);
 }
 
 /* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
@@ -967,7 +968,7 @@ h1.github {
 }
 
 .split-left {
-    background-color: #ffd500;
+    background-color: var(--yellow);
 }
 
 .split-right {
