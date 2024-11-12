@@ -65,14 +65,14 @@
             </a>
 
             <a href="#kafe" class="category-box">
-                <h2> Kafe </h2>
+                <h2> Kafé </h2>
                 <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 -4 24 24">
                     <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
                 </svg>
                 <picture>
                     <source srcset="/images/cafeBg2.jpg" media="(min-width: 600px)">
                     <source srcset="/images/kafe1.1.jpg" media="(max-width: 599px)">
-                    <img src="../images/kafe1.jpg" alt="bilde av kafe" style="width: 100%;">
+                    <img src="../images/kafe1.jpg" alt="bilde av kafé" style="width: 100%;">
                 </picture>
 
                 <p> Nyt en avslappende stund på en av byens mange kaféer.
@@ -137,7 +137,7 @@
         <script src="../javascript/index-tabs"></script>
 
         <article>
-            <section class="activity-main-box">
+            <section class="activity-main-box" id="uteliv">
                 <h3>Uteliv</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique in, libero expedita
                     exercitationem magnam at sit incidunt delectus deleniti. Voluptatem eum dolores obcaecati numquam,
@@ -147,8 +147,8 @@
                     officia quisquam voluptate omnis perspiciatis earum adipisci dolorem illum explicabo deserunt.</p>
             </section>
             <hr id="hr-activity">
-            <section class="activity-main-box">
-                <h3>Kafe</h3>
+            <section class="activity-main-box" id="kafe">
+                <h3>kafé</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique in, libero expedita
                     exercitationem magnam at sit incidunt delectus deleniti. Voluptatem eum dolores obcaecati numquam,
                     temporibus molestias repudiandae iste facere excepturi error vitae impedit voluptas eveniet in
@@ -157,69 +157,70 @@
                     officia quisquam voluptate omnis perspiciatis earum adipisci dolorem illum explicabo deserunt.</p>
             </section>
             <hr id="hr-activity">
-            <section class="activity-main-box">
+            <section class="activity-main-box" id="attraksjoner">
                 <h3>Attraksjoner</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus similique in, libero expedita
                     exercitationem magnam at sit incidunt delectus deleniti. Voluptatem eum dolores obcaecati numquam,
                     temporibus molestias repudiandae iste facere excepturi error vitae impedit voluptas eveniet in
                     praesentium ipsum. Tempore quisquam voluptates praesentium eius repellendus expedita, quos inventore
                     dolorem at labore optio fugit, voluptatum quia? Quo enim sint reiciendis soluta libero autem odio. A
-                    officia quisquam voluptate omnis perspiciatis earum adipisci dolorem illum explicabo deserunt.</p>
+                    officia quisquam voluptate omnis perspiciatis earum adipisci dolorem illum explicabo deserunt.
+                </p>
             </section>
             <hr id="hr-activity">
-            <section class="activity-main-box">
+            <section class="activity-main-box" id="aktiviteter">
                 <h3>Aktiviteter</h3>
                 <p></p>
 
                 <div id="slider">
-                       <input type="radio" name="slider" id="slide1" checked>
-                       <input type="radio" name="slider" id="slide2">
-                       <input type="radio" name="slider" id="slide3">
-                       <input type="radio" name="slider" id="slide4">
-                   
-                       <div id="overflow">
-                           <div class="inner">
-                               <div class="slide slide_1">
-                                   <div class="slide-content">
-                                       <div class="text-content">
-                                           <h3>megazone</h3>
-                                       </div>
-                                       <img src="/images/megazone.jpg" alt="slide1 Image" class="slide-image">
-                                   </div>
-                               </div>
-                               <div class="slide slide_2">
-                                   <div class="slide-content">
-                                       <div class="text-content">
-                                           <h3>escape room</h3>
-                                       </div>
-                                       <img src="/images/escaperoom.jpg" alt="slide2 Image" class="slide-image">
-                                   </div>                       
-                               </div>
-                               <div class="slide slide_3">
-                                   <div class="slide-content">
-                                       <div class="text-content">
-                                           <h3>paintball</h3>
-                                       </div>
-                                       <img src="/images/paintball.jpg" alt="slide3 Image" class="slide-image">
-                                   </div>                       
-                               </div>
-                               <div class="slide slide_4">
-                                   <div class="slide-content">
-                                       <div class="text-content">
-                                           <h3>VR games</h3>
-                                       </div>
-                                       <img src="/images/vrGames.jpg" alt="slide4 Image" class="slide-image">                        
-                                   </div>
-                               </div>
-                           </div>
-                       </div>
-                   
-                       <div id="controls">
-                           <label for="slide1"></label>
-                           <label for="slide2"></label>
-                           <label for="slide3"></label>
-                           <label for="slide4"></label>
-                       </div>
+                    <input type="radio" name="slider" id="slide1" checked>
+                    <input type="radio" name="slider" id="slide2">
+                    <input type="radio" name="slider" id="slide3">
+                    <input type="radio" name="slider" id="slide4">
+
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <div class="text-content">
+                                        <h3>megazone</h3>
+                                    </div>
+                                    <img src="/images/megazone.jpg" alt="slide1 Image" class="slide-image">
+                                </div>
+                            </div>
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <div class="text-content">
+                                        <h3>escape room</h3>
+                                    </div>
+                                    <img src="/images/escaperoom.jpg" alt="slide2 Image" class="slide-image">
+                                </div>
+                            </div>
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <div class="text-content">
+                                        <h3>paintball</h3>
+                                    </div>
+                                    <img src="/images/paintball.jpg" alt="slide3 Image" class="slide-image">
+                                </div>
+                            </div>
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <div class="text-content">
+                                        <h3>VR games</h3>
+                                    </div>
+                                    <img src="/images/vrGames.jpg" alt="slide4 Image" class="slide-image">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                    </div>
                 </div>
 
             </section>
