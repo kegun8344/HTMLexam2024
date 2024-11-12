@@ -838,8 +838,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 .img-item {
-    padding: 10px;
-    margin: 10px; 
+    padding:5px;
+    margin: 5px; 
     flex: 1 1 45%; 
 }
 
