@@ -126,7 +126,7 @@ header {
 
 }
 
-/* dropdown menu specifically for activity page */
+/* nav bar specifically for activity page */
 
 .dropbtn-activity {
     background-color: #3B3941;
@@ -178,6 +178,16 @@ header {
     border: none;
     font-size: 1.75rem;
     padding-top: 1rem;
+}
+
+#header-logo-activity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem;
+    margin-left: 0.9rem;
+    margin-top: 0.9rem;
+    width: 3.75%;
 }
 
 /* Video ------------------------------------------------------------*/
