@@ -1001,9 +1001,19 @@ h1.github {
     line-height: 1.5;
 }
 
-.category-box-container {
+.category-box-container{
     text-decoration: none;
     color: var(--teal);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.category-box-container>a{
+    text-decoration: none;
 }
 
 .top-page {
@@ -1031,15 +1041,6 @@ h1.github {
     min-width: 200px;
     margin: 0 auto;
     padding: 1.5vw;
-}
-
-.category-box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px; 
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 80px;
 }
 
 .category-box{
