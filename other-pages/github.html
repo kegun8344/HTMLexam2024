@@ -15,10 +15,10 @@
     </a>
     <nav>
         <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
-        <div class="dropdown" style="float:right;">
-            <button class="dropbtn"><i class="fa fa-bars" alt="Meny"></i></button>
-            <div class="dropdown-content">
-                <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>      
+        <div class="dropdown">
+            <button class="dropbtn" id="menu-button"><i class="fa fa-bars" alt="Meny"></i></button>
+            <div class="dropdown-content" id="dropdown-menu">
+                <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>
                 <a href="activity.html">Activity</a>
                 <a href="accessibility.html">Accessibility</a>
                 <a href="github.html">GitHub</a>
@@ -85,29 +85,31 @@
    <!-- Footer Menu -->
    <footer>
 
-    <div class="moreInfo">
+    <article class="more-info">
         <div class="row">
-            <div id="col1">
+            <section id="col1">
                 <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
 
-                <span>
-                    <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9"><h3>Oslo Metropolitan University</h3></a>
+                <address class="address-font">
+                    <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9">
+                        <h3>Oslo Metropolitan University</h3>
+                    </a>
                     <p>Storbyuniversitetet</p>
                     Postboks 4, St. Olavs plass
                     0130 Oslo
-                </span>
-            </div>
+                </address>
+            </section>
 
-            <div id="col2">
+            <section id="col2">
                 <span id="icon" class="fa fa-phone" alt="Telefon"></span>
 
-                <span>
+                <address class="address-font">
                     <h3>Kontakt oss</h3>
                     <p>Tlf.: 67 23 50 00</p>
-                </span>
-            </div>
+                </address>
+            </section>
 
-            <div id="col3">
+            <section id="col3">
                 <span id="icon" class="fa fa-info" alt="Info"></span>
                 <span>
                     <h3> Mer Info</h3>
@@ -143,11 +145,11 @@
                     </div>
                     <script src="../javascript/index-tabs"></script>
                 </span>
-            </div>
+            </section>
         </div>
-    </div>
+    </article>
     <!-- Social Media links -->
-    <div class="mediabox">
+    <nav class="mediabox">
 
         <ul class="media">
             <li>
@@ -155,7 +157,7 @@
             </li>
 
             <li>
-                <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook" ></a>
+                <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook"></a>
             </li>
 
             <li>
@@ -165,7 +167,7 @@
                 <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" alt="Instagram"></a>
             </li>
         </ul>
-    </div>
+    </nav>
 </footer>
 </body>
 

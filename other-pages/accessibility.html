@@ -15,12 +15,12 @@
     </a>
     <nav>
         <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
-        <div class="dropdown" style="float:right;">
-            <button class="dropbtn"><i class="fa fa-bars"alt="Meny"></i></button>
-            <div class="dropdown-content">
-                <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a> 
-                <a href="accessibility.html">Accessibility</a>
+        <div class="dropdown">
+            <button class="dropbtn" id="menu-button"><i class="fa fa-bars" alt="Meny"></i></button>
+            <div class="dropdown-content" id="dropdown-menu">
+                <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>
                 <a href="activity.html">Activity</a>
+                <a href="accessibility.html">Accessibility</a>
                 <a href="github.html">GitHub</a>
             </div>
         </div>
@@ -32,22 +32,31 @@
         <article>
             <h1>Accessibility</h1>
             <p>For å lage en nettside med universell god design, sørget vi for å inkludere alternativ tekst
-                for ikke-tekstlig innhold og bruke sans-serif-fonter for god lesbarhet. Like viktig er struktur og en behagelig 
-                lese opplevelse til nettstedet derfor er det delt inn i flere seksjoner og avsnitt ved hjelp av overskrifter, underoverskrifter,
-                marginer, paddinger og skillelinjer. Vi brukte tabs for å minimere lengden av siden og skaper en renere og forenklet nettside. For å skape en gjennkjennlig stil må layout og navigasjon være konsekvente på alle sidene unntatt 
-                aktivitetssiden, så navigasjonslinjen og footer er nøyaktig den samme og i tillegg ha samme fargepalett. Siden nettsidene
+                for ikke-tekstlig innhold og bruke sans-serif-fonter for god lesbarhet. Like viktig er struktur og en
+                behagelig
+                lese opplevelse til nettstedet derfor er det delt inn i flere seksjoner og avsnitt ved hjelp av
+                overskrifter, underoverskrifter,
+                marginer, paddinger og skillelinjer. Vi brukte tabs for å minimere lengden av siden og skaper en renere
+                og forenklet nettside. For å skape en gjennkjennlig stil må layout og navigasjon være konsekvente på
+                alle sidene unntatt
+                aktivitetssiden, så navigasjonslinjen og footer er nøyaktig den samme og i tillegg ha samme fargepalett.
+                Siden nettsidene
                 skal være brukbare på en rekke skjermstørrelser, brukte vi media queries. Uten det ville føre til en
-                noen problemer. Som et eksempel, skjermbredde forskjellen mellom en telefon og en laptop. Dermed er paddinger og margene strukturen for plassering
-                av noen få elementer må ulikt på de skjermene. Dermed er det viktig at skjermen er responsivt for å ha en god visuell opplevelse. 
-                Nettsiden sørger også for at innhold vises og fungerer på forutsigbare måter med understrekingsfarge og pil-ikoner for å 
-                kunne identifisere koblingene korrekt. Vi inkluderte også ikonene inni footer for å forbedre forutsigbarheten ytterligere. 
+                noen problemer. Som et eksempel, skjermbredde forskjellen mellom en telefon og en laptop. Dermed er
+                paddinger og margene strukturen for plassering
+                av noen få elementer må ulikt på de skjermene. Dermed er det viktig at skjermen er responsivt for å ha
+                en god visuell opplevelse.
+                Nettsiden sørger også for at innhold vises og fungerer på forutsigbare måter med understrekingsfarge og
+                pil-ikoner for å
+                kunne identifisere koblingene korrekt. Vi inkluderte også ikonene inni footer for å forbedre
+                forutsigbarheten ytterligere.
             </p>
             <p>css..</p>
             <div class="img-container"></div> <!--  css img -->
-            <h2>Automatisert Wawe Test</h2> 
+            <h2>Automatisert Wawe Test</h2>
             <p>text</p>
             <div class="img-container"></div> <!--  wawe test img -->
-            
+
 
 
 
@@ -58,29 +67,31 @@
     <!-- Footer Menu -->
     <footer>
 
-        <div class="moreInfo">
+        <article class="more-info">
             <div class="row">
-                <div id="col1">
+                <section id="col1">
                     <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
 
-                    <span>
-                        <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9"><h3>Oslo Metropolitan University</h3></a>
+                    <address class="address-font">
+                        <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9">
+                            <h3>Oslo Metropolitan University</h3>
+                        </a>
                         <p>Storbyuniversitetet</p>
                         Postboks 4, St. Olavs plass
                         0130 Oslo
-                    </span>
-                </div>
+                    </address>
+                </section>
 
-                <div id="col2">
+                <section id="col2">
                     <span id="icon" class="fa fa-phone" alt="Telefon"></span>
 
-                    <span>
+                    <address class="address-font">
                         <h3>Kontakt oss</h3>
                         <p>Tlf.: 67 23 50 00</p>
-                    </span>
-                </div>
+                    </address>
+                </section>
 
-                <div id="col3">
+                <section id="col3">
                     <span id="icon" class="fa fa-info" alt="Info"></span>
                     <span>
                         <h3> Mer Info</h3>
@@ -116,11 +127,11 @@
                         </div>
                         <script src="../javascript/index-tabs"></script>
                     </span>
-                </div>
+                </section>
             </div>
-        </div>
+        </article>
         <!-- Social Media links -->
-        <div class="mediabox">
+        <nav class="mediabox">
 
             <ul class="media">
                 <li>
@@ -128,7 +139,7 @@
                 </li>
 
                 <li>
-                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook" ></a>
+                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook"></a>
                 </li>
 
                 <li>
@@ -138,7 +149,8 @@
                     <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" alt="Instagram"></a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </footer>
 </body>
+
 </html>
