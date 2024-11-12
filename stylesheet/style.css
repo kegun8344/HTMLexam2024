@@ -756,26 +756,26 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* course-cards ---------------------------------------------- */
 
-#course-cards {
+.course-cards {
     display: flex;
     flex-wrap: wrap;
 }
 
-#course-glance {
+.course-glance {
     margin: 1em;
 }
 
-#course-glance>h3 {
+.course-glance>h3 {
     margin: 0.5rem 0;
     color: black;
 
 }
 
-#course-glance-container>svg {
+.course-glance-container>svg {
     margin: 10px;
 }
 
-#course-glance-container {
+.course-glance-container {
     display: flex;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -793,13 +793,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     }
 }
 
-#course-glance-container:hover {
+.course-glance-container:hover {
     background-color: #ffde74;
     scale: 1.0125;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-#course-glance-points>p {
+.course-glance-points>p {
     margin: 10px;
     margin-right: 15px;
     margin-left: 0px;
@@ -807,7 +807,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     color: black;
 }
 
-#course-glance-points {
+.course-glance-points {
     display: flex;
     flex-wrap: wrap;
     margin-right: 15px;
@@ -815,7 +815,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 @media (max-width: 750px) {
-    #course-glance-container {
+    .course-glance-container {
         margin: 0 0 0.5rem 0;
     }
 
