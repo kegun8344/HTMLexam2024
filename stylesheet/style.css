@@ -1,6 +1,5 @@
-
 :root{
-    --yellow: #ffd500;
+    --yellow:#ffd500;
     --grey: #3B3941;
     --dark: #292421;
 
@@ -10,10 +9,10 @@
     --beige: #F5EFEB;
     --white: #edede9;
 
-    --slide1: #63574f;
-    --slide2: #71635b;
-    --slide3: #998980;
-    --slide4: #c6bdb8;
+    --slide1: #b9cfdf;
+    --slide2: #a8c2d7	;
+    --slide3: #96b6cf;
+    --slide4: #739ebf	;
 }
 
 html {
@@ -72,7 +71,7 @@ h2 {
 
 /* header ------------------------------------- */
 header {
-    background-color: #3B3941;
+    background-color: var(--grey);
     box-shadow: 0rem 0.375rem 1rem 0rem rgba(0, 0, 0, 0.2);
 
 }
@@ -103,7 +102,7 @@ header {
 /* from w3school */
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_right */
 .dropbtn {
-    background-color: #3B3941;
+    background-color: var(--grey);
     color: var(--yellow);
     font-size: 2.19rem;
     border: none;
@@ -130,7 +129,7 @@ header {
     font-size: larger;
 }
 
-.dropdown-content a {
+.dropdown-content>a {
     color: black;
     padding: 1rem 1rem;
     text-decoration: none;
@@ -139,7 +138,7 @@ header {
     border-top: 0.06rem solid rgb(92, 92, 92);
 }
 
-.dropdown-content a:hover {
+.dropdown-content>a:hover {
     background-color: #fff6cb;
 
 }
@@ -147,7 +146,7 @@ header {
 /* nav bar specifically for activity page */
 
 .dropbtn-activity {
-    background-color: #3B3941;
+    background-color: var(--grey);
     color: #C8D9E6;
     font-size: 2.19rem;
     border: none;
@@ -174,7 +173,7 @@ header {
     font-size: larger;
 }
 
-.dropdown-content-activity a {
+.dropdown-content-activity>a {
     color: black;
     padding: 1rem 1rem;
     text-decoration: none;
@@ -183,7 +182,7 @@ header {
     border-top: 0.06rem solid rgb(92, 92, 92);
 }
 
-.dropdown-content-activity a:hover {
+.dropdown-content-activity>a:hover {
     background-color: #abc9e1;
 
 }
@@ -343,11 +342,6 @@ main {
     margin-left: 10%;
     margin-right: 10%;
 }
-
-/* #course-key-points div:hover {
-    background-color: rgba(211, 211, 211, 0.237);
-    border-color: #3b39417a;
-} */
 
 #course-info {
     width: 100%;
@@ -600,7 +594,7 @@ footer #icon {
     padding: 3rem 0em;
     border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
     justify-content: center;
-    background: #3B3941;
+    background: var(--grey);
 }
 
 .mediabox p {
@@ -792,7 +786,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 .course-info-box:hover {
-    /* alternate --yellow color */
     background-color: #ffde74;
 }
 
@@ -824,7 +817,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 #tabcontent-btt>button {
     background-color: #ffde74;
-    border-color: #00000000;
+    border-color: #ff000000;
     border-radius: 3px;
     padding-left: 15px;
     padding-right: 15px;
@@ -965,7 +958,7 @@ h1.github {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 3px solid #3B3941;
+    border: 3px solid var(--grey);
 }
 
 .split-left {
