@@ -126,70 +126,6 @@ header {
 
 }
 
-/* nav bar specifically for activity page */
-
-.dropbtn-activity {
-    background-color: #3B3941;
-    color: #C8D9E6;
-    font-size: 2.19rem;
-    border: none;
-    cursor: pointer;
-    width: 3.75rem;
-    height: 3.75rem;
-    float: right;
-}
-
-.dropdown-activity {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content-activity {
-    display: none;
-    position: absolute;
-    top: 4rem;
-    right: 0;
-    background-color: var(--skyBlue);
-    min-width: 16rem;
-    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    font-size: larger;
-}
-
-.dropdown-content-activity a {
-    color: black;
-    padding: 1rem 1rem;
-    text-decoration: none;
-    display: block;
-    transition: 0.2s background-color ease;
-    border-top: 0.06rem solid rgb(92, 92, 92);
-}
-
-.dropdown-content-activity a:hover {
-    background-color: #abc9e1;
-
-}
-
-#search-button-activity {
-    color: #b9cfe0;
-    width: 3.75rem;
-    height: 3.75rem;
-    cursor: pointer;
-    border: none;
-    font-size: 1.75rem;
-    padding-top: 1rem;
-}
-
-#header-logo-activity {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.625rem;
-    margin-left: 0.9rem;
-    margin-top: 0.9rem;
-    width: 4rem;
-}
-
 /* Video ------------------------------------------------------------*/
 .video-container {
     position: relative;
@@ -963,7 +899,71 @@ h1.github {
 
 /* activity page ---------------------------------------------------*/
 
-/* dette må fikses */
+/* nav bar specifically for activity page */
+
+.dropbtn-activity {
+    background-color: #3B3941;
+    color: #C8D9E6;
+    font-size: 2.19rem;
+    border: none;
+    cursor: pointer;
+    width: 3.75rem;
+    height: 3.75rem;
+    float: right;
+}
+
+.dropdown-activity {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-activity {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: var(--skyBlue);
+    min-width: 16rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: larger;
+}
+
+.dropdown-content-activity a {
+    color: black;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s background-color ease;
+    border-top: 0.06rem solid rgb(92, 92, 92);
+}
+
+.dropdown-content-activity a:hover {
+    background-color: #abc9e1;
+
+}
+
+#search-button-activity {
+    color: #b9cfe0;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1.75rem;
+    padding-top: 1rem;
+}
+
+#header-logo-activity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem;
+    margin-left: 0.9rem;
+    margin-top: 0.9rem;
+    width: 4rem;
+}
+
+
 :root{
     --navy: #2F4156;
     --teal: #567C8D;
@@ -1019,6 +1019,9 @@ a {
     border-radius: 8px;
 }
 
+#hr-activity{
+    border-color: red;
+}
 
 .container {
     width: 50%; 
