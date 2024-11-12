@@ -953,61 +953,6 @@ a {
     border-radius: 8px;
 }
 
-/* Style The Dropdown Button */
-.dropbtn-activity {
-    background-color: var(--dark);
-    color: var(--slide3);
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    width: 100%; /* Ensures the button is full-width on smaller screens */
-    text-align: left; /* Left-aligns text for better readability */
-  }
-
-.dropdown-activity {
-    position: relative;
-    display: inline-block;
-    width: 100%; /* Ensures dropdown fills width on smaller screens */
-  }
-  
-  .dropdown-activity-content {
-    display: none;
-    position: absolute;
-    background-color: var(--slide2);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 0;
-    z-index: 1;
-    width: 100%; /* Ensures dropdown content matches button width */
-
-  }
-
-  /* Links inside the dropdown */
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    background-color: #567C8D;
-  }
-  
-  /* Change color of dropdown links on hover */
-.dropdown-activity-content a:hover {
-    background-color: #f1f1f1
-}
-  
-.dropdown-activity:hover .dropdown-activity-content {
-    display: block;
-  }
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown-acitivty:hover .dropbtn-activity {
-    background-color: #14ba14d1;
-  }
-
-
-
 .container {
     width: 50%; 
     max-width: 400px; 
