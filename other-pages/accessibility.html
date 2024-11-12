@@ -10,19 +10,17 @@
 </head>
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
-    <div class="img-container">
-        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_CFA30B.png" alt="OsloMet Logo">
-    </div>
+    <a href="https://www.oslomet.no/" class="img-container">
+        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
+    </a>
     <nav>
-        <div class="dropdown" style="float:right;">
-            <button class="dropbtn"><i class="fa fa-bars"></i></button>
-            <div class="dropdown-content">
-                <a href="#">Studier</a>
-                <a href="#">Forskningen vår</a>
-                <a href="#">Universitetsbibliotek</a>
-                <a href="#">For studenter</a>
-                <a href="activity.html">Activity</a>
+        <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
+        <div class="dropdown">
+            <button class="dropbtn" id="menu-button"><i class="fa fa-bars" alt="Meny"></i></button>
+            <div class="dropdown-content" id="dropdown-menu">
                 <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>
+                <a href="activity.html">Activity</a>
+                <a href="accessibility.html">Accessibility</a>
                 <a href="github.html">GitHub</a>
             </div>
         </div>
@@ -30,76 +28,129 @@
 </header>
 
 <body>
+    <main>
+        <article>
+            <h1>Accessibility</h1>
+            <p>For å lage en nettside med universell god design, sørget vi for å inkludere alternativ tekst
+                for ikke-tekstlig innhold og bruke sans-serif-fonter for god lesbarhet. Like viktig er struktur og en
+                behagelig
+                lese opplevelse til nettstedet derfor er det delt inn i flere seksjoner og avsnitt ved hjelp av
+                overskrifter, underoverskrifter,
+                marginer, paddinger og skillelinjer. Vi brukte tabs for å minimere lengden av siden og skaper en renere
+                og forenklet nettside. For å skape en gjennkjennlig stil må layout og navigasjon være konsekvente på
+                alle sidene unntatt
+                aktivitetssiden, så navigasjonslinjen og footer er nøyaktig den samme og i tillegg ha samme fargepalett.
+                Siden nettsidene
+                skal være brukbare på en rekke skjermstørrelser, brukte vi media queries. Uten det ville føre til en
+                noen problemer. Som et eksempel, skjermbredde forskjellen mellom en telefon og en laptop. Dermed er
+                paddinger og margene strukturen for plassering
+                av noen få elementer må ulikt på de skjermene. Dermed er det viktig at skjermen er responsivt for å ha
+                en god visuell opplevelse.
+                Nettsiden sørger også for at innhold vises og fungerer på forutsigbare måter med understrekingsfarge og
+                pil-ikoner for å
+                kunne identifisere koblingene korrekt. Vi inkluderte også ikonene inni footer for å forbedre
+                forutsigbarheten ytterligere.
+            </p>
+            <p>css..</p>
+            <div class="img-container"></div> <!--  css img -->
+            <h2>Automatisert Wawe Test</h2>
+            <p>text</p>
+            <div class="img-container"></div> <!--  wawe test img -->
+
+
+
+
+
+        </article>
+    </main>
 
     <!-- Footer Menu -->
-    <footer id="footer">
+    <footer>
 
-        <div class="moreInfo">
+        <article class="more-info">
             <div class="row">
-                <div id="col1">
-                    <span id="icon" class="fa fa-map-marker"></span>
+                <section id="col1">
+                    <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
 
-                    <span>
-                        <h4>Oslo Metropolitan University</h4>
+                    <address class="address-font">
+                        <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9">
+                            <h3>Oslo Metropolitan University</h3>
+                        </a>
                         <p>Storbyuniversitetet</p>
                         Postboks 4, St. Olavs plass
                         0130 Oslo
-                    </span>
-                </div>
+                    </address>
+                </section>
 
-                <div id="col2">
-                    <span id="icon" class="fa fa-phone"></span>
+                <section id="col2">
+                    <span id="icon" class="fa fa-phone" alt="Telefon"></span>
 
-                    <span>
-                        <h4>Kontakt oss</h4>
+                    <address class="address-font">
+                        <h3>Kontakt oss</h3>
                         <p>Tlf.: 67 23 50 00</p>
-                    </span>
-                </div>
+                    </address>
+                </section>
 
-                <div id="col3">
-                    <span id="icon" class="fa fa-info"></span>
+                <section id="col3">
+                    <span id="icon" class="fa fa-info" alt="Info"></span>
                     <span>
-                        <h4> More Info</h4>
-                        <p>
-                            <a class="more-info-links" href="#">English</a><br>
-                            <a class="more-info-links" href="#">Alumni</a><br />
-                            <a class="more-info-links" href="#">Ansatteoversikt</a><br>
-                            <a class="more-info-links" href="#">Arrangementsoversikt</a><br>
-                            <a class="more-info-links" href="#">For ansatte</a><br>
-                            <a class="more-info-links" href="#">For studenter</a><br>
-                            <a class="more-info-links" href="#">Ledige stillinger</a><br>
-                            <a class="more-info-links" href="#">Personvernerklæring og <br> informasjonskapslar</a><br>
-                            <a class="more-info-links" href="#">Pressekontakt</a><br>
-                            <a class="more-info-links" href="#">Tilgjengelegheitserklæring</a><br>
-                            <a class="more-info-links" href="#">Admin</a><br>
-
-                        </p>
+                        <h3> Mer Info</h3>
+                        <div class="more-info-tab">
+                            <button id="toggle-tab" class="more-info-tab-button">
+                                <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                                    viewBox="2 1 20 20" alt=" Nedover pil">
+                                    <path fill-rule="evenodd"
+                                        d="M12 17.414 3.293 8.707l1.414-1.414L12 14.586l7.293-7.293 1.414 1.414L12 17.414z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div id="more-info-tab" class="more-info-tabcontent">
+                            <a class="more-info-links" href="https://www.oslomet.no/en">English</a>
+                            <a class="more-info-links" href="https://www.oslomet.no/alumni">Alumni</a>
+                            <a class="more-info-links"
+                                href="https://www.oslomet.no/om/ansatteoversikt">Ansatteoversikt</a>
+                            <a class="more-info-links"
+                                href="https://www.oslomet.no/om/arrangement/arrangementsoversikt">Arrangementsoversikt</a>
+                            <a class="more-info-links" href="https://www.oslomet.no/om/for-ansatte">For ansatte</a>
+                            <a class="more-info-links" href="https://www.oslomet.no/om/for-studenter">For
+                                studenter</a>
+                            <a class="more-info-links" href="https://www.oslomet.no/om/ledige-stillinger">Ledige
+                                stillinger</a>
+                            <a class="more-info-links"
+                                href="https://www.oslomet.no/om/personvernerklering-informasjonskapslar">Personvernerklæring
+                                og <br> informasjonskapslar</a>
+                            <a class="more-info-links" href="https://www.oslomet.no/om/pressekontakt">Pressekontakt</a>
+                            <a class="more-info-links"
+                                href="https://www.oslomet.no/om/tilgjengelegheitserklering">Tilgjengelegheitserklæring</a>
+                            <a class="more-info-links"
+                                href="https://www-admin.oslomet.no/admin/view/content/58148">Admin</a>
+                        </div>
+                        <script src="../javascript/index-tabs"></script>
                     </span>
-                </div>
+                </section>
             </div>
-        </div>
+        </article>
         <!-- Social Media links -->
-        <div class="mediabox">
+        <nav class="mediabox">
 
             <ul class="media">
                 <li>
-                    <a href="https://x.com/oslomet" class="fa fa-twitter"> </a>
+                    <a href="https://x.com/oslomet" class="fa fa-twitter" alt="Twitter"> </a>
                 </li>
 
                 <li>
-                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook"></a>
+                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook"></a>
                 </li>
 
                 <li>
-                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin"></a>
+                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" alt="LinkedIn"></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram"></a>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" alt="Instagram"></a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </footer>
-
 </body>
 
 </html>
