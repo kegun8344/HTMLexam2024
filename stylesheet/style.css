@@ -7,12 +7,15 @@
     --teal: #567C8D;
     --skyblue: #C8D9E6;
     --beige: #F5EFEB;
-    --white: #edede9;
+    --white: #ffffffd0;
 
     --slide1: #b9cfdf;
     --slide2: #a8c2d7;
     --slide3: #96b6cf;
     --slide4: #739ebf;
+
+    --shadow1: #2f415694;
+    --shadow2: #29242197;
 }
 
 html {
@@ -129,7 +132,7 @@ header {
     font-size: larger;
 }
 
-.dropdown-content>a {
+.dropdown-content a {
     color: black;
     padding: 1rem 1rem;
     text-decoration: none;
@@ -138,7 +141,7 @@ header {
     border-top: 0.06rem solid rgb(92, 92, 92);
 }
 
-.dropdown-content>a:hover {
+.dropdown-content a:hover {
     background-color: #fff6cb;
 
 }
@@ -1091,54 +1094,94 @@ h1.github {
 
 
 .activity-main-box {
-    background-image: linear-gradient(var(--beige), var(--white));
+    background-image: linear-gradient(var(--beige), var(--beige));
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    flex: 1 1 calc(25% - 20px);
+    max-width: 100%;
+    /* Ensure box doesn’t exceed screen width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .activity-main-box>p {
     color: var(--teal);
 }
 
-.activity-row {
-    margin: 8px-16px;
+.activity-img {
+    max-width: 300px;
+    padding: 5px;
 }
 
-.activity-row,
-.activity-row>.activity-column {
-    padding: 8px;
+.small-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 10px;
 }
 
-.activity-column {
-    float: left;
-    width: 33%;
+/* Stil for hver enkelt bilde-boks */
+.small-img-box {
+    flex: 1 1 calc(33.33% - 10px);
+    /* Tredje dels bredde med mellomrom */
+    max-width: calc(33.33% - 10px);
+    transition: transform 0.4s ease;
+    /* Smooth transition */
+
 }
 
-.activity-row:after {
-    content: "";
-    display: table;
-    clear: both;
+.small-img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
 }
 
-.activity-gallery-content {
-    background-color: var(--yellow);
+/* Media query for mellomstore skjermer (for eksempel nettbrett) */
+@media (max-width: 768px) {
+    .small-img-box {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+/* Media query for små skjermer (mobil) */
+@media (max-width: 480px) {
+    .small-img-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/*det er flere hover med samme kode, må endrs, forksjell er backgorudn color som er viktig å ha med*/
+.small-img-box:hover {
+    background-color: var(--beige);
+    border-radius: 10px;
+    transform: scale(1.06);
+    box-shadow: 0px 0px 10px 4px var(--shadow2);
+}
+
+/*kode hentet fra w3school, vise kilde?*/
+.scroll-img-container {
+    display: flex;
+    background-color: var(--white);
+    overflow: auto;
+    white-space: nowrap;
     padding: 10px;
+    gap: 10px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    /*husk å skrive kort forklaring*/
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-    .activity-column {
-        width: 33.33%;
-    }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .activity-column {
-        width: 100%;
-    }
+.scroll-img-container img {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    scroll-snap-align: center;
+    border-radius: 8px;
 }
