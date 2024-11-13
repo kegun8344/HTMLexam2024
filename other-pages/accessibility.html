@@ -30,40 +30,65 @@
     <main>
         <article>
             <h1>Accessibility</h1>
-            <p>For å lage en nettside med universell god design, sørget vi for å inkludere alternativ tekst for ikke-tekstlig innhold og 
-                bruke sans-serif-fonter for god lesbarhet.  Når det gjelder tekst og farger var vi bevisst på at det er viktig å velge en 
-                farge som har god kontrast med bakgrunnen for leseligheten. Like viktig er struktur og en behagelig leseopplevelse til 
-                nettstedet, derfor er det delt inn i flere seksjoner og avsnitt ved hjelp av overskrifter, underoverskrifter, marginer, 
-                paddinger og skillelinjer. Vi brukte tabs for å minimere lengden av siden og skape en renere og forenklet nettside. For å 
-                skape en gjenkjennelig stil må layout og navigasjon være konsekvente på alle sidene unntatt aktivitetssiden, så 
-                navigasjonslinjen og footer er nøyaktig den samme og har i tillegg samme fargepalett. Siden nettsidene skal være 
-                brukbare på en rekke skjermstørrelser, brukte vi media queries. Uten bruk av dette ville noen problemer oppstå. For eksempel 
-                forskjellen på skjermbredde mellom en telefon og en laptop. Derfor må paddinger, margene og selve strukturen for 
-                plassering av noen få elementer, være ulikt på de skjermene. Dermed er det viktig at skjermen er responsiv for å ha en 
-                god visuell opplevelse. Nettsiden sørger også for at innhold vises og fungerer på forutsigbare måter med 
-                understrekingsfarge og pil-ikoner for å kunne identifisere koblingene korrekt. Vi inkluderte også ikonene inne i footer 
-                for å forbedre forutsigbarheten og i tillegg er boksene store nok slik at man ikke sliter med å trykke på riktig boks.
+            <p>For å lage en nettside med universell god design, sørget vi for å inkludere alternativ tekst for
+                ikke-tekstlig innhold og
+                bruke sans-serif-fonter for god lesbarhet. Når det gjelder tekst og farger var vi bevisst på at det er
+                viktig å velge en
+                farge som har god kontrast med bakgrunnen for leseligheten. Like viktig er struktur og en behagelig
+                leseopplevelse til
+                nettstedet, derfor er det delt inn i flere seksjoner og avsnitt ved hjelp av overskrifter,
+                underoverskrifter, marginer,
+                paddinger og skillelinjer. Vi brukte tabs for å minimere lengden av siden og skape en renere og
+                forenklet nettside. For å
+                skape en gjenkjennelig stil må layout og navigasjon være konsekvente på alle sidene unntatt
+                aktivitetssiden, så
+                navigasjonslinjen og footer er nøyaktig den samme og har i tillegg samme fargepalett. Siden nettsidene
+                skal være
+                brukbare på en rekke skjermstørrelser, brukte vi media queries. Uten bruk av dette ville noen problemer
+                oppstå. For eksempel
+                forskjellen på skjermbredde mellom en telefon og en laptop. Derfor må paddinger, margene og selve
+                strukturen for
+                plassering av noen få elementer, være ulikt på de skjermene. Dermed er det viktig at skjermen er
+                responsiv for å ha en
+                god visuell opplevelse. Nettsiden sørger også for at innhold vises og fungerer på forutsigbare måter med
+                understrekingsfarge og pil-ikoner for å kunne identifisere koblingene korrekt. Vi inkluderte også
+                ikonene inne i footer
+                for å forbedre forutsigbarheten og i tillegg er boksene store nok slik at man ikke sliter med å trykke
+                på riktig boks.
             </p>
-            <p>I koden ønsket vi å unngå feil relatert til opeaning og closing HTML-tags. Ved å bruke konsekvent og tydelig innrykk blir 
-                koden mer lesbar og lett å feilsøke, noe som reduserer risikoen for feil og gjør det enklere for andre utviklere å forstå 
-                og vedlikeholde koden. Vi la også vekt på å sikre at elementene ikke hadde dupliserte attributter, noe som kan føre til 
-                uforutsigbar oppførsel i nettlesere og påvirke kodenes validitet. I tillegg sørget vi for at alle ID-verdier er unike på 
-                hver side for å sikre at JavaScript og CSS fungerer som forventet. For å forbedre tilgjengeligheten og gjøre designet mer 
-                responsivt, brukte vi fleksible måleenheter som em og rem i stedet for faste px-verdier. em og rem tilpasser seg brukerens 
-                standardinnstillinger og skjermstørrelse, noe som gir en bedre og mer skalerbar brukeropplevelse på tvers av forskjellige 
-                enheter. Dette gjør det også enklere for brukere med tilpassede innstillinger, som synshemmede, å navigere og lese 
+            <p>I koden ønsket vi å unngå feil relatert til opening og closing HTML-tags. Ved å bruke konsekvent og
+                tydelig innrykk blir
+                koden mer lesbar og lett å feilsøke, noe som reduserer risikoen for feil og gjør det enklere for andre
+                utviklere å forstå
+                og vedlikeholde koden. Vi la også vekt på å sikre at elementene ikke hadde dupliserte attributter, noe
+                som kan føre til
+                uforutsigbar oppførsel i nettlesere og påvirke kodenes validitet. I tillegg sørget vi for at alle
+                ID-verdier er unike på
+                hver side for å sikre at JavaScript og CSS fungerer som forventet. For å forbedre tilgjengeligheten og
+                gjøre designet mer
+                responsivt, brukte vi fleksible måleenheter som em og rem i stedet for faste px-verdier. em og rem
+                tilpasser seg brukerens
+                standardinnstillinger og skjermstørrelse, noe som gir en bedre og mer skalerbar brukeropplevelse på
+                tvers av forskjellige
+                enheter. Dette gjør det også enklere for brukere med tilpassede innstillinger, som synshemmede, å
+                navigere og lese
                 innholdet, noe som er et viktig hensyn for universell utforming.</p>
-            <div class="img-container"></div> 
-        <!-- ???? skal denne brukes? ^^^^^ -->
+            <div class="img-container"></div>
+            <!-- ???? skal denne brukes? ^^^^^ -->
         </article>
 
         <article>
             <h2>Automatisert Wawe Test</h2>
-            <img id ="img-wawe-test" src="../images/wawe-test.png" alt="Wawe-test resultater bilde">
-            <p>Testen fant noen feil rekkefølger i hierarkiet mellom det siste elementet og footer, det er viktig for å styrke strukturen.  
-                En annen feil gjelder med funksjonaliteten ved touchscreen. Siden meny åpnet via hover, vil den åpenbart ikke kunne åpnes. 
-                En siste bonus var at disse ikonene ikke hadde noen alt tekst. Det var også en feilmelding med linkene ikke har tekst som 
-                normalt gjør det vanskelig å vite hva linken er om. Heldigvis var disse linkene hvor vi har ikoner istedenfor link.</p>
+            <img id="img-wawe-test" src="../images/wawe-test.png" alt="Wawe-test resultater bilde">
+            <p>Testen fant noen feil rekkefølger i hierarkiet mellom det siste elementet og footer, det er viktig for å
+                styrke strukturen.
+                En annen feil gjelder med funksjonaliteten ved touchscreen. Siden meny åpnet via hover, vil den åpenbart
+                ikke kunne åpnes. Vi fikset dette ved å gjøre at den åpner ved å trykkes på, og lukkes ved å trykkes på
+                igjen, eller ved å trykke utenfor menyen.
+                En siste bonus var at disse ikonene ikke hadde noen alt tekst. Det var også en feilmelding med linkene
+                ikke har tekst som
+                normalt gjør det vanskelig å vite hva linken er om. Heldigvis var disse linkene hvor vi har ikoner
+                istedenfor link.</p>
         </article>
     </main>
 
