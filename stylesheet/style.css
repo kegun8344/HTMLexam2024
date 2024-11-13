@@ -986,7 +986,7 @@ h1.github {
     margin-bottom: 30px;
 }
 
-#accessibility-background {
+#activity-background {
     background-image: url("/images/activitybackground.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -1019,9 +1019,9 @@ h1.github {
 
 .header-activity {
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 1.2;
-    margin: 10px 0;
+    margin: 0 0 30px 0;
     color: var(--slide3);
     text-align: center;
 }
@@ -1034,12 +1034,6 @@ h1.github {
     border-radius: 8px;
     font-size: 1.2em;
     margin: 0;
-}
-
-.container {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 1.5vw;
 }
 
 @media(max-width:400px) {
@@ -1086,9 +1080,12 @@ h1.github {
     color: var(--teal);
 }
 
-.info-box p {
+.info-box {
     font-size: 1em;
     margin: 0;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1.5vw;
 }
 
 
