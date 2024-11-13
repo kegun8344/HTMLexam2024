@@ -1108,10 +1108,6 @@ h1.github {
     color: var(--teal);
 }
 
-.activity-img {
-    max-width: 300px;
-    padding: 5px;
-}
 
 .small-img-container {
     display: flex;
@@ -1151,6 +1147,16 @@ h1.github {
         flex: 1 1 100%;
         max-width: 100%;
     }
+}
+
+
+.big-img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.big-img-box {
+    max-width: 100px;
 }
 
 /*det er flere hover med samme kode, må endrs, forksjell er backgorudn color som er viktig å ha med*/
