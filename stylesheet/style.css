@@ -40,12 +40,8 @@ body {
     z-index: -1;
 }
 
-.separator {
-    margin: 4em 0;
-}
-
 hr {
-    margin: 40px 0;
+    margin: 4em 0;
 }
 
 h1 {
