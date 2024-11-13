@@ -45,7 +45,7 @@ body {
 }
 
 hr {
-    margin: 0px;
+    margin: 40px 0;
 }
 
 h1 {
@@ -325,6 +325,7 @@ main {
     flex-wrap: wrap;
     justify-content: left;
     padding: 0% 0%;
+    margin: 4rem 0;
 }
 
 @media (max-width: 566px) {
@@ -344,6 +345,10 @@ main {
 .main-content {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+#hr-title-separator{
+    margin-top: 0;
 }
 
 #course-info {
@@ -673,7 +678,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #7f7f7f17;
-    margin: auto;
+    margin: 4rem auto 0;
     max-width: 59em;
 }
 
