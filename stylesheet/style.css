@@ -1133,9 +1133,25 @@ h1.github {
     border-radius: 8px;
 }
 
+.big-img-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.big-img-box {
+    max-width: 280px;
+    margin: 5px;
+}
+
 /* Media query for mellomstore skjermer (for eksempel nettbrett) */
 @media (max-width: 768px) {
     .small-img-box {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+
+    .big-img-box {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
     }
@@ -1147,17 +1163,13 @@ h1.github {
         flex: 1 1 100%;
         max-width: 100%;
     }
+
+    .big-img-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
 
-
-.big-img-container {
-    display: flex;
-    justify-content: center;
-}
-
-.big-img-box {
-    max-width: 100px;
-}
 
 /*det er flere hover med samme kode, må endrs, forksjell er backgorudn color som er viktig å ha med*/
 .small-img-box:hover {
