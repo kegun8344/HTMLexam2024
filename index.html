@@ -11,13 +11,15 @@
 </head>
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
-    <a href="https://www.oslomet.no/">
+    <a href="https://www.oslomet.no/" class="img-container" aria-label="Link til hjemmeside">
         <img id="header-logo" src="images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
     </a>
     <nav>
-        <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
+        <a id="search-button" href="https://www.oslomet.no/s?q" aria-label="Søke knapp"><i class="fa fa-search"
+                alt="Søk"></i></a>
         <div class="dropdown">
-            <button class="dropbtn" id="menu-button"><i class="fa fa-bars" alt="Meny"></i></button>
+            <button class="dropbtn" id="menu-button" aria-label="Navigeringsmeny"><i class="fa fa-bars"
+                    alt="Meny"></i></button>
             <div class="dropdown-content" id="dropdown-menu">
                 <a href="other-pages/activity.html">Activity</a>
                 <a href="other-pages/accessibility.html">Accessibility</a>
@@ -1161,7 +1163,7 @@
             <h2>Studenthistorier</h2>
             <div id="studenthistorier-container">
                 <a id="link-box-story"
-                    href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap">
+                    href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap" aria-label="Les denne studenthistorien">
                     <div id="text">
                         <h2>Teknologi og design</h2>
                         <h2>Spå fremtiden med matematikk og datavitenskap</h2>
@@ -1175,7 +1177,7 @@
                     <i id="link-chevron" class="fa fa-chevron-right" style="font-size:36px" alt=" Chevron høyre"></i>
                 </a>
             </div>
-            <a id="link-box-more-stories" href="https://www.oslomet.no/studier/studenthistorier">
+            <a id="link-box-more-stories" href="https://www.oslomet.no/studier/studenthistorier" aria-label="Les om flere studenthistorier">
                 <div>
                     <h2>Flere studenthistorier</h2>
                 </div>
@@ -1215,7 +1217,7 @@
                     <span>
                         <h3>Mer Info</h3>
                         <div class="more-info-tab">
-                            <button id="toggle-tab" class="more-info-tab-button">
+                            <button id="toggle-tab" class="more-info-tab-button" aria-label="utvid info meny">
                                 <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="2 1 20 20" alt=" Nedover pil">
                                     <path fill-rule="evenodd"

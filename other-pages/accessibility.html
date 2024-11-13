@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheet/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images\Logo_of_Oslo_Metropolitan_University_ffd500_square.png">
     <title>Accessibility</title>
 </head>
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
-    <a href="https://www.oslomet.no/" class="img-container">
+    <a href="https://www.oslomet.no/" class="img-container" aria-label="Link til hjemmeside">
         <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
     </a>
     <nav>
-        <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
+        <a id="search-button" href="https://www.oslomet.no/s?q" aria-label="Søke knapp"><i class="fa fa-search"
+                alt="Søk"></i></a>
         <div class="dropdown">
-            <button class="dropbtn" id="menu-button"><i class="fa fa-bars" alt="Meny"></i></button>
+            <button class="dropbtn" id="menu-button" aria-label="Navigeringsmeny"><i class="fa fa-bars"
+                    alt="Meny"></i></button>
             <div class="dropdown-content" id="dropdown-menu">
                 <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>
                 <a href="activity.html">Activity</a>
@@ -124,7 +127,7 @@
                     <span>
                         <h3> Mer Info</h3>
                         <div class="more-info-tab">
-                            <button id="toggle-tab" class="more-info-tab-button">
+                            <button id="toggle-tab" class="more-info-tab-button" aria-label="expand info menu">
                                 <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="2 1 20 20" alt=" Nedover pil">
                                     <path fill-rule="evenodd"
