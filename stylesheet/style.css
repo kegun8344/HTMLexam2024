@@ -312,6 +312,19 @@ main {
     }
 }
 
+.detail-box {
+    width: 13rem;
+    margin: 0.6%;
+    border: 0.06rem solid #ddd;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.main-content {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
 #main-content>h2 {
     font-weight: 100;
 }
@@ -328,19 +341,6 @@ main {
     #course-key-points {
         justify-content: center;
     }
-}
-
-.detail-box {
-    width: 13rem;
-    margin: 0.6%;
-    border: 0.06rem solid #ddd;
-    padding: 1rem;
-    border-radius: 1rem;
-}
-
-.main-content {
-    margin-left: 10%;
-    margin-right: 10%;
 }
 
 #hr-title-separator{
@@ -559,7 +559,7 @@ main {
     border-radius: 0.31rem;
 }
 
-.more-info {
+#more-info {
     overflow: hidden;
     padding: 3rem 0em;
     background: #7f7f7f17;
@@ -592,7 +592,7 @@ footer #icon {
     font-size: 3rem;
 }
 
-.mediabox {
+#mediabox {
     overflow: hidden;
     padding: 3rem 0em;
     border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
@@ -600,13 +600,8 @@ footer #icon {
     background: var(--grey);
 }
 
-.mediabox p {
-    letter-spacing: 0.06rem;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
-}
 
-.mediabox a {
+#mediabox a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -909,7 +904,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 /* Accessibility Page > */
-#img-wawe-test {
+.img-accessibility{
     width: 100%;
 }
 
