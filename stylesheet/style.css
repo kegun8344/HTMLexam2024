@@ -976,11 +976,6 @@ h1.github {
 
 /* activity page ---------------------------------------------------*/
 
-#hr-activity {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 #activity-background {
     background-image: url("/images/activitybackground.png");
     background-position: center;
@@ -1106,9 +1101,9 @@ h1.github {
     flex: 1 1 calc(33.33% - 10px);
     /* Tredje dels bredde med mellomrom */
     max-width: calc(33.33% - 10px);
-    transition: transform 0.4s ease;
+    transition: 0.4s ease;
     /* Smooth transition */
-
+    filter: grayscale(100%);
 }
 
 .small-img-box img {
@@ -1117,6 +1112,30 @@ h1.github {
     display: block;
     border-radius: 8px;
 }
+
+.small-img-box .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: transparent;
+    font-weight: bold;
+    transition: all 0.4s ease, text-shadow 0.4s ease;
+    z-index: 2;
+    text-shadow: none;
+}
+
+.small-img-box:hover .hover-text {
+    pointer-events: none; /* Prevent the text from interfering with the link */
+    color: var(--beige); /* Use your CSS variable or replace with a color */
+    background-color: rgba(0, 0, 0, 0.745);
+}
+
+.hover-text{
+    padding: 1rem;
+}
+
 
 /* Media query for mellomstore skjermer (for eksempel nettbrett) */
 @media (max-width: 768px) {
@@ -1139,8 +1158,9 @@ h1.github {
 .small-img-box:hover {
     background-color: var(--beige);
     border-radius: 10px;
-    transform: scale(1.06);
+    scale: 1.02;
     box-shadow: 0px 0px 10px 4px var(--shadow2);
+    filter: grayscale(0%);
 }
 
 /*kode hentet fra w3school, vise kilde?*/
