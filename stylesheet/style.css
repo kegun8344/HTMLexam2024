@@ -897,7 +897,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 
 }
-
 /* Accessibility Page > */
 .img-accessibility{
     width: 100%;
@@ -909,65 +908,66 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 25px;
+    gap: 10px;
+    padding-top: 0px;
 }
-
-.img-item {
-    padding: 5px;
-    margin: 5px;
-    flex: 1 1 45%;
-}
-
 .img-item img {
     max-width: 100%;
     height: auto;
     border-radius: 30px;
-    margin: 5px 0;
-    border: 3px solid var(--yellow);
+   border: 3px solid var(--yellow);
 }
 
-/* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
+/* github page text section -------------------------------------------------*/
 h1.github {
     margin: 20px;
+    margin-bottom: 1px;
 }
-
-#main-github {
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
+h2.github{
+    margin-top: 5px;
 }
 
 .split-container {
-    justify-content: space-between;
-    gap: 10px;
-    margin: 20px;
-    display: flex;
-}
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+    padding: 25px;
+  }
 
-.split-left,
-.split-right {
-    width: 49%;
-    padding: 5px;
-    box-sizing: border-box;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  .split-left,
+  .split-right {
+    background-color: var(--white);
+    padding: 20px;
     border: 3px solid var(--grey);
-}
+    border-radius: 30px;
+  }
 
-.split-left {
-    background-color: var(--yellow);
-}
+  .content-box {
+    margin-bottom: 10px;
+  }
 
-.split-right {
-    background-color: #ccc;
-}
+  .content-box h2 {
+    margin-top: 0;
+  }
 
-#main-github {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  .separator.centered {
+    margin: 20px 0;
+  }
+
+@media (max-width: 900px) {
+    .split-container {
+        display: inline;
+        padding: 2px;
+  }
+  
+    .split-left,
+    .split-right {
+        width: 100%;
+        padding: 2px;
+    }
 }
+/* end of git page -------------------------------------------------*/
 
 /* activity page ---------------------------------------------------*/
 
@@ -1149,7 +1149,6 @@ h1.github {
         flex-direction: column;
     }
 }
-
 /* Media query for små skjermer (mobil) */
 @media (max-width: 480px) {
     .small-img-box {
