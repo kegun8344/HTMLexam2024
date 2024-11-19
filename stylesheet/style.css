@@ -1111,6 +1111,11 @@ h1.github {
     height: auto;
     display: block;
     border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.small-img-box:hover img{
+    filter: brightness(0.5);
 }
 
 .small-img-box .hover-text {
@@ -1121,7 +1126,7 @@ h1.github {
     font-size: 2rem;
     color: transparent;
     font-weight: bold;
-    transition: all 0.4s ease, text-shadow 0.4s ease;
+    transition: all 0.4s ease;
     z-index: 2;
     text-shadow: none;
 }
@@ -1129,13 +1134,13 @@ h1.github {
 .small-img-box:hover .hover-text {
     pointer-events: none; /* Prevent the text from interfering with the link */
     color: var(--beige); /* Use your CSS variable or replace with a color */
-    background-color: rgba(0, 0, 0, 0.745);
+    mix-blend-mode: screen;
 }
 
 .hover-text{
-    padding: 1rem;
+    width: 100%;
+    text-align: center;
 }
-
 
 /* Media query for mellomstore skjermer (for eksempel nettbrett) */
 @media (max-width: 768px) {
