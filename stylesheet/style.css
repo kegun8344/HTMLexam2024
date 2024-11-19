@@ -1021,16 +1021,6 @@ h1.github {
     text-align: center;
 }
 
-.info-box {
-    background: var(--beige);
-    color: var(--navy);
-    padding: 15px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 8px;
-    font-size: 1.2em;
-    margin: 0;
-}
-
 @media(max-width:400px) {
     .container {
         max-width: 100%;
@@ -1128,25 +1118,9 @@ h1.github {
     border-radius: 8px;
 }
 
-.big-img-container {
-    display: flex;
-    justify-content: center;
-
-}
-
-.big-img-box {
-    max-width: 280px;
-    margin: 5px;
-}
-
 /* Media query for mellomstore skjermer (for eksempel nettbrett) */
 @media (max-width: 768px) {
     .small-img-box {
-        flex: 1 1 calc(50% - 10px);
-        max-width: calc(50% - 10px);
-    }
-
-    .big-img-box {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
     }
@@ -1155,11 +1129,6 @@ h1.github {
 /* Media query for små skjermer (mobil) */
 @media (max-width: 480px) {
     .small-img-box {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .big-img-box {
         flex: 1 1 100%;
         max-width: 100%;
     }

@@ -32,18 +32,26 @@
 <body class="activity">
     <div id="activity-background"></div>
     <main>
-        <article>
-            <h1 class="header-activity">Utforsk Oslo på en ny måte!</h1>
-            <p class="info-box">Velkommen til din guide til Oslo,
-                hvor vi har samlet de beste tipsene innen fire spennende kategorier.
-                Enten du er ute etter å oppdage Oslos skjulte perler, finne en hyggelig kafé, oppleve byens
-                kulturattraksjoner eller utforske det pulserende utelivet, har vi noe for alle.
-                La deg inspirere og gjør deg klar til å utforske Oslo fra et nytt perspektiv!
-            </p>
-        </article>
-
-
         <article class="category-box-container">
+
+            <section class="activity-main-box" id="aktiviteter">
+
+                <h1 class="header-activity">Utforsk Oslo på en ny måte!</h1>
+                <p>Velkommen til din guide til Oslo,
+                    hvor vi har samlet de beste tipsene innen fire spennende kategorier.
+                    Enten du er ute etter å oppdage Oslos skjulte perler, finne en hyggelig kafé, oppleve byens
+                    kulturattraksjoner eller utforske det pulserende utelivet, har vi noe for alle.
+                    La deg inspirere og gjør deg klar til å utforske Oslo fra et nytt perspektiv!
+                </p>
+                <!--funke for nå, men må forbedres, legge bilde under osv-->
+                <div class="scroll-img-container">
+                    <img src="/images/activitiesBg4.jpg" alt="">
+                    <img src="/images/attractionsBg3.jpg" alt="">
+                    <img src="/images/cafeBg2.jpg" alt="">
+                    <img src="/images/cafeBg2.jpg" alt="">
+                </div>
+            </section>
+
             <a href="#uteliv" class="category-box">
                 <h2> Uteliv </h2>
                 <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 -4 24 24">
@@ -136,27 +144,10 @@
         <script src="../javascript/index-tabs"></script>
 
         <article>
-            <section class="activity-main-box" id="uteliv">
-                <h3>Uteliv i OSLO</h3>
-                <p>3 store bilder</p>
-                <!--midlertidig, ..., ikke resposiv ,-->
-                <div class="big-img-container">
-                    <a href="https://www.himkok.no/">
-                        <img src="/images/himkok-uteliv1.3.jpeg" alt="Himkok i OSLO" class="big-img-box">
-                    </a>
-                    <a href="https://www.thetoposlo.no/bar">
-                        <img src="/images/thetopbar-uteliv2.3.jpg" alt="The top bar" class="big-img-box">
-                    </a>
-                    <a href="https://www.posthallen.no/">
-                        <img src="/images/postbar-uteliv3.3.jpg" alt="image 1" class="big-img-box">
-                    </a>
-                </div>
-            </section>
-
             <!--kommentar til scroll id: endre slik at den stopper før hr?, nå:scroller frem til tittelen..-->
             <hr id="hr-activity">
             <section class="activity-main-box" id="kafe">
-                <h3>kafé</h3>
+                <h3>ENDRES TIL NOE ANNET kafé</h3>
                 <!--midlertidig!! bedre måte enn a heleveien?, men koden er responsiv og funker:)-->
                 <!--endre class navn?, neo som mangler..-->
                 <div class="small-img-container">
@@ -171,44 +162,6 @@
                     <a href="https://cafecathedral.no/" class="small-img-box"><img src="/images/cafeBg2.jpg"
                             alt="Bilde 6"></a>
                 </div>
-            </section>
-
-            <hr id="hr-activity">
-            <section class="activity-main-box" id="attraksjoner">
-                <h3>Attraksjoner</h3>
-                <p> 3 store bilder med mini discription</p>
-            </section>
-
-            <hr id="hr-activity">
-            <section class="activity-main-box" id="aktiviteter">
-                <h3>Aktiviteter</h3>
-                <p> her kommer det en slider thingi</p>
-                <!--funke for nå, men må forbedres, legge bilde under osv-->
-                <div class="scroll-img-container">
-                    <img src="/images/activitiesBg4.jpg" alt="">
-                    <img src="/images/attractionsBg3.jpg" alt="">
-                    <img src="/images/cafeBg2.jpg" alt="">
-                    <img src="/images/cafeBg2.jpg" alt="">
-                </div>
-            </section>
-
-            <hr id="hr-activity">
-            <section class="activity-main-box" id="budsjettvennlig">
-                <h3>Budsjettvennlig</h3>
-                <!--samme layout!! som kafe, må endre href og bilder -->
-                <div class="small-img-container">
-                    <a href="https://www.handbakt.no/" class="small-img-box"><img src="/images/cafeBg2.jpg"
-                            alt="Bilde 1"></a>
-                    <a href="https://kumi.no/" class="small-img-box"><img src="/images/cafeBg2.jpg" alt="Bilde 2"></a>
-                    <a href="https://fuglen.no/" class="small-img-box"><img src="/images/cafeBg2.jpg" alt="Bilde 3"></a>
-                    <a href="https://www.laundromat.no/" class="small-img-box"><img src="/images/cafeBg2.jpg"
-                            alt="Bilde 4"></a>
-                    <a href="https://pustkaffebar.no/" class="small-img-box"><img src="/images/cafeBg2.jpg"
-                            alt="Bilde 5"></a>
-                    <a href="https://cafecathedral.no/" class="small-img-box"><img src="/images/cafeBg2.jpg"
-                            alt="Bilde 6"></a>
-                </div>
-
             </section>
         </article>
 
@@ -256,20 +209,16 @@
                             </button>
                         </div>
                         <div id="more-info-tab" class="more-info-tabcontent">
-                            <a class="more-info-links"
-                                href="#">Arrangementsoversikt</a>
+                            <a class="more-info-links" href="#">Arrangementsoversikt</a>
                             <a class="more-info-links" href="#">For
                                 studenter</a>
                             <a class="more-info-links" href="#">Ledige
                                 stillinger</a>
-                            <a class="more-info-links"
-                                href="#">Personvernerklæring
+                            <a class="more-info-links" href="#">Personvernerklæring
                                 og <br> informasjonskapslar</a>
                             <a class="more-info-links" href="#">Pressekontakt</a>
-                            <a class="more-info-links"
-                                href="#">Tilgjengelegheitserklæring</a>
-                            <a class="more-info-links"
-                                href="#">Admin</a>
+                            <a class="more-info-links" href="#">Tilgjengelegheitserklæring</a>
+                            <a class="more-info-links" href="#">Admin</a>
                         </div>
                         <script src="../javascript/index-tabs"></script>
                     </span>
