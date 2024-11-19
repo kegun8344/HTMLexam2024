@@ -1017,6 +1017,8 @@ h1.github {
     }
 }
 
+
+
 .category-box-container {
     display: flex;
     flex-wrap: wrap;
@@ -1142,6 +1144,9 @@ h1.github {
     .small-img-box {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
+    }
+    .category-box-container{
+        flex-direction: column;
     }
 }
 
