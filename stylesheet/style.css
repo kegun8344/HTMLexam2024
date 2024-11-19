@@ -72,7 +72,10 @@ h2 {
 header {
     background-color: var(--grey);
     box-shadow: 0rem 0.375rem 1rem 0rem rgba(0, 0, 0, 0.2);
+}
 
+#activity-header{
+    background-color: var(--slide2);
 }
 
 .header-logo {
@@ -145,8 +148,8 @@ header {
 /* nav bar specifically for activity page */
 
 .dropbtn-activity {
-    background-color: var(--grey);
-    color: #C8D9E6;
+    background-color: var(--slide2);
+    color: var(--beige);
     font-size: 2.19rem;
     border: none;
     cursor: pointer;
@@ -187,7 +190,7 @@ header {
 }
 
 #search-button-activity {
-    color: #b9cfe0;
+    color: var(--beige);
     width: 3.75rem;
     height: 3.75rem;
     cursor: pointer;
@@ -254,14 +257,6 @@ nav {
     padding: 0.625rem 1.25rem;
     min-height: 5.625rem;
 }
-
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
 
 .nav-links {
     list-style: none;
@@ -976,11 +971,6 @@ h2.github{
 
 /* activity page ---------------------------------------------------*/
 
-#hr-activity {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 #activity-background {
     background-image: url("/images/activitybackground.png");
     background-position: center;
@@ -1026,6 +1016,8 @@ h2.github{
         max-width: 100%;
     }
 }
+
+
 
 .category-box-container {
     display: flex;
@@ -1106,9 +1098,9 @@ h2.github{
     flex: 1 1 calc(33.33% - 10px);
     /* Tredje dels bredde med mellomrom */
     max-width: calc(33.33% - 10px);
-    transition: transform 0.4s ease;
+    transition: 0.4s ease;
     /* Smooth transition */
-
+    filter: grayscale(100%);
 }
 
 .small-img-box img {
@@ -1116,6 +1108,35 @@ h2.github{
     height: auto;
     display: block;
     border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.small-img-box:hover img{
+    filter: brightness(0.5);
+}
+
+.small-img-box .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: transparent;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    z-index: 2;
+    text-shadow: none;
+}
+
+.small-img-box:hover .hover-text {
+    pointer-events: none; /* Prevent the text from interfering with the link */
+    color: var(--beige); /* Use your CSS variable or replace with a color */
+    mix-blend-mode: screen;
+}
+
+.hover-text{
+    width: 100%;
+    text-align: center;
 }
 
 /* Media query for mellomstore skjermer (for eksempel nettbrett) */
@@ -1123,6 +1144,9 @@ h2.github{
     .small-img-box {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
+    }
+    .category-box-container{
+        flex-direction: column;
     }
 }
 /* Media query for små skjermer (mobil) */
@@ -1138,8 +1162,9 @@ h2.github{
 .small-img-box:hover {
     background-color: var(--beige);
     border-radius: 10px;
-    transform: scale(1.06);
+    scale: 1.02;
     box-shadow: 0px 0px 10px 4px var(--shadow2);
+    filter: grayscale(0%);
 }
 
 /*kode hentet fra w3school, vise kilde?*/
