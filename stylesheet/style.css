@@ -72,7 +72,10 @@ h2 {
 header {
     background-color: var(--grey);
     box-shadow: 0rem 0.375rem 1rem 0rem rgba(0, 0, 0, 0.2);
+}
 
+#activity-header{
+    background-color: var(--slide2);
 }
 
 .header-logo {
@@ -145,8 +148,8 @@ header {
 /* nav bar specifically for activity page */
 
 .dropbtn-activity {
-    background-color: var(--grey);
-    color: #C8D9E6;
+    background-color: var(--slide2);
+    color: var(--beige);
     font-size: 2.19rem;
     border: none;
     cursor: pointer;
@@ -187,7 +190,7 @@ header {
 }
 
 #search-button-activity {
-    color: #b9cfe0;
+    color: var(--beige);
     width: 3.75rem;
     height: 3.75rem;
     cursor: pointer;
@@ -254,14 +257,6 @@ nav {
     padding: 0.625rem 1.25rem;
     min-height: 5.625rem;
 }
-
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
 
 .nav-links {
     list-style: none;
