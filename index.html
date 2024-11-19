@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="images\Logo_of_Oslo_Metropolitan_University_ffd500_square.png">
     <title>Matematisk modellering og datavitenskap – ingeniør - OsloMet</title>
 </head>
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
-    <a href="https://www.oslomet.no/" class="img-container">
-        <img id="header-logo" src="images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
+    <a href="https://www.oslomet.no/" aria-label="Link til hjemmeside">
+        <img class="header-logo" src="images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
     </a>
     <nav>
-        <a id="search-button" href="https://www.oslomet.no/s?q"><i class="fa fa-search" alt="Søk"></i></a>
+        <a id="search-button" href="https://www.oslomet.no/s?q" aria-label="Søke-knapp"><i class="fa fa-search"
+                alt="Søk"></i></a>
         <div class="dropdown">
-            <button class="dropbtn" id="menu-button"><i class="fa fa-bars" alt="Meny"></i></button>
+            <button class="dropbtn" id="menu-button" aria-label="Navigeringsmeny"><i class="fa fa-bars"
+                    alt="Meny"></i></button>
             <div class="dropdown-content" id="dropdown-menu">
-                <a href="index.html">Matematisk modellering og datavitenskap - ingeniør</a>
                 <a href="other-pages/activity.html">Activity</a>
                 <a href="other-pages/accessibility.html">Accessibility</a>
                 <a href="other-pages/github.html">GitHub</a>
@@ -30,15 +32,18 @@
 <body>
     <div id="site-background"></div>
     <main>
-        <div class="video-container">
-            <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen
-                title="Oslomet Dataingeiør og matematisk modellering" loading="lazy">
-                <!--URL to film from https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap inspection -->
-            </iframe>
-        </div>
-        <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
-        <section id="main-content">
+        <article>
+            <div class="video-container">
+                <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen
+                    title="Oslomet Dataingeiør og matematisk modellering" loading="lazy">
+                    <!--URL to film from https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap inspection -->
+                </iframe>
+            </div>
+            <h1>Matematisk modellering og datavitenskap - ingeniør</h1>
             <h2>Bachelorprogram</h2>
+            <hr id="hr-title-separator">
+        </article>
+        <article id="main-content">
             <section id="course-key-points">
                 <div class="detail-box">
                     <h3>Studiested: </h3>
@@ -78,7 +83,6 @@
             </section>
 
             <section id="course-info-tabs">
-                </h2>
                 <div class="tab">
                     <button class="tablinks" onclick="openTab(event, 'Studiestart')">Studiestart</button>
                     <button class="tablinks" onclick="openTab(event, 'Opptakskrav-og-poeng')">Opptakskrav og
@@ -216,7 +220,7 @@
                             Se programplan på student.oslomet.no</a>
                     </p>
                 </div>
-
+                <!--Studiets-oppbygging er et stort emne må egne sections-->
                 <div id="Studiets-oppbygging" class="tabcontent">
 
                     <p id="star-symbol-explainer">
@@ -224,7 +228,7 @@
                         Valgfritt emne
                     </p>
                     <p id="double-angle-symbol-explainer">
-                        <i class="fa fa-angle-double-right" alt=" doblet vinklet til høyre pil"></i>
+                        <i class="fa fa-angle-double-right" alt="doblet vinklet til høyre pil"></i>
                         Løper over flere semestre
                     </p>
 
@@ -922,235 +926,248 @@
                     <a id="tabcontent-btt" href="#course-info-tabs"><button>
                             <h3>Tilbake til toppen</h3>
                         </button></a>
-            </section>
-
-            <div id="Hvordan-foregår-undervisningen?" class="tabcontent">
-                <h2>Hvordan foregår undervisningen?</h2>
-                <p>Undervisningen er en kombinasjon av
-                <ul>
-                    <li>prosjektarbeid</li>
-                    <li>workshop</li>
-                    <li>presentasjoner</li>
-                    <li>veiledninger</li>
-                    <li>diskusjoner og refleksjoner</li>
-                    <li>forelesninger</li>
-                    <li>selvstudier</li>
-                    <li>gruppearbeid</li>
-                    <li>arbeidslivsrelevant bacheloroppgave</li>
-                </ul>
-                For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på
-                studierelatert arbeid gjennom hele semesteret.
-                </p>
-            </div>
-
-            <div id="Hva-koster-det?" class="tabcontent">
-                <h2>Hva koster det?</h2>
-                <p>Det er ikke studieavgift på dette studiet. <a class="course-info-links"
-                        href="https://student.oslomet.no/semesteravgift">Du
-                        betaler en semesteravgift hvert semester (student.oslomet.no).</a></p>
-            </div>
-
-            <div id="Hva-kan-du-jobbe-som?" class="tabcontent">
-                <h2>Hva kan du jobbe som?</h2>
-                <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger
-                    spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.
-                </p>
-                <p>
-                    Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du
-                    etterspurt kompetanse i arbeidslivet etter bachelorstudiet.
-                </p>
-                <p>
-                    Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel
-                    beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping.
-                </p>
-                <p>
-                    Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.
-                </p>
-            </div>
-
-            <div id="Utveksling" class="tabcontent">
-                <h2>Utveksling</h2>
-                <p>Du kan dra på utveksling i femte semester.</p>
-            </div>
-
-            <div id="Videre-studiemuligheter-ved-OsloMet" class="tabcontent">
-                <h2>Videre studiemuligheter ved OsloMet</h2>
-                <a id="course-glance-container"
-                    href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
-                    <div id="course-glance">
-
-                        <h3>Anvendt data- og informasjonsteknologi (ACIT)</h3>
-                        <div id="course-glance-points">
-                            <p>Masterprogram</p>
-                            <p>2 år</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a>
-            </div>
-
-            <script src="javascript/index-tabs"></script>
-        </section>
-
-        <hr class="separator">
-
-        <section id="more-content">
-            <div class="more-content-boxes">
-                <h2>Studiested</h2>
-                <a class="more-info-links" href="https://www.oslomet.no/om/studiested-pilestredet"><svg
-                        class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 -5 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>Studiestedet Pilestredet</a>
-            </div>
-            <div class="more-content-boxes">
-                <h2>Spørsmål om utdannningen?</h2>
-                <a class="more-info-links" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student"> <svg
-                        class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 -4 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>Har du spørsmål om
-                    utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
-            </div>
-            <div class="more-content-boxes">
-                <h2>Faglig leder</h2>
-                <img id="img-krhel3944" src="https://gw-oslomet.intark.uh-it.no/ansattbilde/krhel3944"
-                    alt="Bilde av Kristoffer Herland Hellton">
-                <div id="person-text">
-                    <h3>Kristoffer Herland Hellton</h3>
-                    <p>førsteamanuensis</p>
-                    <!-- hva er førsteamanuensis -->
-                    <p>+47 673 37 240 <span class="divider">|</span> <a
-                            href="mailto:kristoffer.hellton@oslomet.no">kristoffer.hellton@oslomet.no</a></p>
+                    <!--End of Studietsoppbygging-->
                 </div>
 
-            </div>
-        </section>
-        <section id="other-studies">
-            <h2>Kanskje du også er interessert i disse?</h2>
-            <div id="course-cards">
-                <a id="course-glance-container" href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">
-                    <div id="course-glance">
-                        <h3>Anvendt Datateknologi</h3>
-                        <div id="course-glance-points">
-                            <p>Bachelorprogram</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a>
-                <a id="course-glance-container" href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior">
-                    <div id="course-glance">
-                        <h3>Bioteknologi- og kjemiingeniør</h3>
-                        <div id="course-glance-points">
-                            <p>Bachelorprogram</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a>
-                <a id="course-glance-container" href="https://www.oslomet.no/studier/tkd/byggingenior">
-                    <div id="course-glance">
-                        <h3>Byggingeniør</h3>
-                        <div id="course-glance-points">
-                            <p>Bachelorprogram</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a>
-                <a id="course-glance-container" href="https://www.oslomet.no/studier/tkd/dataingenior">
-                    <div id="course-glance">
-                        <h3>Dataingeiør</h3>
-                        <div id="course-glance-points">
-                            <p>Bachelorprogram</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a>
-                <a id="course-glance-container" href="https://www.oslomet.no/studier/tkd/elektronikkingenior">
-                    <div id="course-glance">
-                        <h3>Elektronikkingeniør</h3>
-                        <div id="course-glance-points">
-                            <p>Bachelorprogram</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a><a id="course-glance-container" href="https://www.oslomet.no/studier/tkd/informasjonsteknologi">
-                    <div id="course-glance">
-                        <h3>Informasjonsteknologi</h3>
-                        <div id="course-glance-points">
-                            <p>Bachelorprogram</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a><a id="course-glance-container" href="https://www.oslomet.no/studier/tkd/maskiningenior">
-                    <div id="course-glance">
-                        <h3>Maskiningeniør</h3>
-                        <div id="course-glance-points">
-                            <p>Bachelorprogram</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a><a id="course-glance-container" href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior">
-                    <div id="course-glance">
-                        <h3>Tre-terminsordning til ingeniør</h3>
-                        <div id="course-glance-points">
-                            <p>Bachelorprogram</p>
-                            <p>Pilestredet i Oslo</p>
-                            <p>Heltid</p>
-                        </div>
-                    </div>
-                    <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
-                        viewBox="0 0 24 24">
-                        <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
-                    </svg>
-                </a>
-            </div>
-        </section>
+                <div id="Hvordan-foregår-undervisningen?" class="tabcontent">
+                    <h2>Hvordan foregår undervisningen?</h2>
+                    <p>Undervisningen er en kombinasjon av
+                    <ul>
+                        <li>prosjektarbeid</li>
+                        <li>workshop</li>
+                        <li>presentasjoner</li>
+                        <li>veiledninger</li>
+                        <li>diskusjoner og refleksjoner</li>
+                        <li>forelesninger</li>
+                        <li>selvstudier</li>
+                        <li>gruppearbeid</li>
+                        <li>arbeidslivsrelevant bacheloroppgave</li>
+                    </ul>
+                    For å gjennomføre studiet på normert tid, må du regne med å bruke om lag 40 timer per uke på
+                    studierelatert arbeid gjennom hele semesteret.
+                    </p>
+                </div>
 
-        <section id="studenthistorier">
+                <div id="Hva-koster-det?" class="tabcontent">
+                    <h2>Hva koster det?</h2>
+                    <p>Det er ikke studieavgift på dette studiet. <a class="course-info-links"
+                            href="https://student.oslomet.no/semesteravgift">Du
+                            betaler en semesteravgift hvert semester (student.oslomet.no).</a></p>
+                    </div>
+
+                <div id="Hva-kan-du-jobbe-som?" class="tabcontent">
+                    <h2>Hva kan du jobbe som?</h2>
+                    <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger
+                        spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.
+                    </p>
+                    <p>
+                        Spesialiseringen i matematikk og fysikk retter seg mer mot videre studier, men også her får du
+                        etterspurt kompetanse i arbeidslivet etter bachelorstudiet.
+                    </p>
+                    <p>
+                        Matematisk modellering og datavitenskap blir stadig viktigere som basisgrunnlag, i for eksempel
+                        beregninger knyttet til klima, forsikring og finans, og datadrevne metoder for verdiskaping.
+                    </p>
+                    <p>
+                        Datadrevne metoder og maskinlæring er i dag svært mye brukt i arbeidslivet.
+                    </p>
+                </div>
+
+                <div id="Utveksling" class="tabcontent">
+                    <h2>Utveksling</h2>
+                    <p>Du kan dra på utveksling i femte semester.</p>
+                </div>
+
+                <div id="Videre-studiemuligheter-ved-OsloMet" class="tabcontent">
+                    <h2>Videre studiemuligheter ved OsloMet</h2>
+                    <a class="course-glance-container"
+                        href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
+                        <div class="course-glance">
+
+                            <h3>Anvendt data- og informasjonsteknologi (ACIT)</h3>
+                            <div class="course-glance-points">
+                                <p>Masterprogram</p>
+                                <p>2 år</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <script src="javascript/index-tabs"></script>
+            </section>
+        </article>
+        <article>
+            <hr>
+
+            <section id="more-content">
+                <div class="more-content-boxes">
+                    <h2>Studiested</h2>
+                    <a class="more-info-links" href="https://www.oslomet.no/om/studiested-pilestredet"><svg
+                            class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 -5 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>Studiestedet Pilestredet</a>
+                </div>
+                <div class="more-content-boxes">
+                    <h2>Spørsmål om utdannningen?</h2>
+                    <a class="more-info-links" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 -4 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>Har du spørsmål om
+                        utdanningen, kontakt oss gjennom vårt kontaktskjema.</a>
+                </div>
+                <div class="more-content-boxes">
+                    <h2>Faglig leder</h2>
+                    <img id="img-krhel3944" src="https://gw-oslomet.intark.uh-it.no/ansattbilde/krhel3944"
+                        alt="Bilde av Kristoffer Herland Hellton">
+                    <div id="person-text">
+                        <h3>Kristoffer Herland Hellton</h3>
+                        <p>førsteamanuensis</p>
+                        <!-- hva er førsteamanuensis -->
+                        <p>+47 673 37 240 <span class="divider">|</span> <a
+                                href="mailto:kristoffer.hellton@oslomet.no" target=”_blank”>kristoffer.hellton@oslomet.no</a></p>
+                    </div>
+                </div>
+            </section>
+            <section id="other-studies">
+                <h2>Kanskje du også er interessert i disse?</h2>
+                <div class="course-cards">
+                    <a class="course-glance-container" href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">
+                        <div class="course-glance">
+                            <h3>Anvendt Datateknologi</h3>
+                            <div class="course-glance-points">
+                                <p>Bachelorprogram</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a>
+                    <a class="course-glance-container"
+                        href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior">
+                        <div class="course-glance">
+                            <h3>Bioteknologi- og kjemiingeniør</h3>
+                            <div class="course-glance-points">
+                                <p>Bachelorprogram</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a>
+                    <a class="course-glance-container" href="https://www.oslomet.no/studier/tkd/byggingenior">
+                        <div class="course-glance">
+                            <h3>Byggingeniør</h3>
+                            <div class="course-glance-points">
+                                <p>Bachelorprogram</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a>
+                    <a class="course-glance-container" href="https://www.oslomet.no/studier/tkd/dataingenior">
+                        <div class="course-glance">
+                            <h3>Dataingeiør</h3>
+                            <div class="course-glance-points">
+                                <p>Bachelorprogram</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a>
+                    <a class="course-glance-container" href="https://www.oslomet.no/studier/tkd/elektronikkingenior">
+                        <div class="course-glance">
+                            <h3>Elektronikkingeniør</h3>
+                            <div class="course-glance-points">
+                                <p>Bachelorprogram</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a><a class="course-glance-container"
+                        href="https://www.oslomet.no/studier/tkd/informasjonsteknologi">
+                        <div class="course-glance">
+                            <h3>Informasjonsteknologi</h3>
+                            <div class="course-glance-points">
+                                <p>Bachelorprogram</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a><a class="course-glance-container" href="https://www.oslomet.no/studier/tkd/maskiningenior">
+                        <div class="course-glance">
+                            <h3>Maskiningeniør</h3>
+                            <div class="course-glance-points">
+                                <p>Bachelorprogram</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a><a class="course-glance-container"
+                        href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior">
+                        <div class="course-glance">
+                            <h3>Tre-terminsordning til ingeniør</h3>
+                            <div class="course-glance-points">
+                                <p>Bachelorprogram</p>
+                                <p>Pilestredet i Oslo</p>
+                                <p>Heltid</p>
+                            </div>
+                        </div>
+                        <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
+                            viewBox="0 0 24 24">
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+        </article>
+        <article id="studenthistorier">
             <h2>Studenthistorier</h2>
             <div id="studenthistorier-container">
                 <a id="link-box-story"
-                    href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap">
+                    href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap" aria-label="Les denne studenthistorien">
                     <div id="text">
                         <h2>Teknologi og design</h2>
                         <h2>Spå fremtiden med matematikk og datavitenskap</h2>
@@ -1164,18 +1181,18 @@
                     <i id="link-chevron" class="fa fa-chevron-right" style="font-size:36px" alt=" Chevron høyre"></i>
                 </a>
             </div>
-            <a id="link-box-more-stories" href="https://www.oslomet.no/studier/studenthistorier">
+            <a id="link-box-more-stories" href="https://www.oslomet.no/studier/studenthistorier" aria-label="Les om flere studenthistorier">
                 <div>
                     <h2>Flere studenthistorier</h2>
                 </div>
             </a>
-        </section>
+        </article>
     </main>
 
     <!-- Footer Menu -->
     <footer>
 
-        <article class="more-info">
+        <article id="more-info">
             <div class="row">
                 <section id="col1">
                     <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
@@ -1202,9 +1219,9 @@
                 <section id="col3">
                     <span id="icon" class="fa fa-info" alt="Info"></span>
                     <span>
-                        <h3> Mer Info</h3>
+                        <h3>Mer Info</h3>
                         <div class="more-info-tab">
-                            <button id="toggle-tab" class="more-info-tab-button">
+                            <button id="toggle-tab" class="more-info-tab-button" aria-label="utvid info meny">
                                 <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="2 1 20 20" alt=" Nedover pil">
                                     <path fill-rule="evenodd"
@@ -1239,7 +1256,7 @@
             </div>
         </article>
         <!-- Social Media links -->
-        <nav class="mediabox">
+        <nav id="mediabox">
 
             <ul class="media">
                 <li>

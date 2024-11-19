@@ -1,3 +1,23 @@
+:root {
+    --yellow: #ffd500;
+    --grey: #3B3941;
+    --dark: #292421;
+
+    --navy: #2F4156;
+    --teal: #567C8D;
+    --skyblue: #C8D9E6;
+    --beige: #F5EFEB;
+    --white: #ffffffd0;
+
+    --slide1: #b9cfdf;
+    --slide2: #a8c2d7;
+    --slide3: #96b6cf;
+    --slide4: #739ebf;
+
+    --shadow1: #2f415694;
+    --shadow2: #29242197;
+}
+
 html {
     font-family: sans-serif;
     scroll-behavior: smooth;
@@ -20,12 +40,8 @@ body {
     z-index: -1;
 }
 
-.separator {
-    margin: 4em 0;
-}
-
 hr {
-    margin: 0px;
+    margin: 4em 0;
 }
 
 h1 {
@@ -54,27 +70,25 @@ h2 {
 
 /* header ------------------------------------- */
 header {
-    background-color: #3B3941;
+    background-color: var(--grey);
     box-shadow: 0rem 0.375rem 1rem 0rem rgba(0, 0, 0, 0.2);
 
 }
 
-#header-logo {
+.header-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem;
     margin-left: 0.9rem;
     margin-top: 0.9rem;
     max-width: 6.25rem;
     min-width: 3.54rem;
 }
 
-.img-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.625rem;
-}
 
 #search-button {
-    color: #ffd500;
+    color: var(--yellow);
     width: 3.75rem;
     height: 3.75rem;
     cursor: pointer;
@@ -87,8 +101,8 @@ header {
 /* from w3school */
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_right */
 .dropbtn {
-    background-color: #3B3941;
-    color: #ffd500;
+    background-color: var(--grey);
+    color: var(--yellow);
     font-size: 2.19rem;
     border: none;
     cursor: pointer;
@@ -107,7 +121,7 @@ header {
     position: absolute;
     top: 4rem;
     right: 0;
-    background-color: #ffd500;
+    background-color: var(--yellow);
     min-width: 16rem;
     box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -128,6 +142,70 @@ header {
 
 }
 
+/* nav bar specifically for activity page */
+
+.dropbtn-activity {
+    background-color: var(--grey);
+    color: #C8D9E6;
+    font-size: 2.19rem;
+    border: none;
+    cursor: pointer;
+    width: 3.75rem;
+    height: 3.75rem;
+    float: right;
+}
+
+.dropdown-activity {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-activity {
+    display: none;
+    position: absolute;
+    top: 4rem;
+    right: 0;
+    background-color: var(--skyblue);
+    min-width: 16rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: larger;
+}
+
+.dropdown-content-activity>a {
+    color: black;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s background-color ease;
+    border-top: 0.06rem solid rgb(92, 92, 92);
+}
+
+.dropdown-content-activity>a:hover {
+    background-color: #abc9e1;
+
+}
+
+#search-button-activity {
+    color: #b9cfe0;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1.75rem;
+    padding-top: 1rem;
+}
+
+#header-logo-activity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem;
+    margin-left: 0.9rem;
+    margin-top: 0.9rem;
+    width: 4rem;
+}
+
 /* Video ------------------------------------------------------------*/
 .video-container {
     position: relative;
@@ -139,7 +217,7 @@ header {
     overflow: hidden;
     margin: auto;
     border-radius: 1.875rem;
-    border: 0.19rem solid #ffd500;
+    border: 0.19rem solid var(--yellow);
     box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.112);
 }
 
@@ -151,7 +229,7 @@ header {
         /* <----- 16:9 aspect ratio */
         box-shadow: none;
         border-radius: 0;
-        border: 0.19rem solid #ffd500;
+        border: 0.19rem solid var(--yellow);
     }
 
 }
@@ -211,7 +289,7 @@ nav {
     display: inline-block;
     margin: 0 0.625rem;
     text-decoration: none;
-    color: #ffd500;
+    color: var(--yellow);
     font-weight: bold;
     font-size: 1.5rem;
 }
@@ -234,23 +312,6 @@ main {
     }
 }
 
-#main-content>h2 {
-    font-weight: 100;
-}
-
-#course-key-points {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding: 0% 0%;
-}
-
-@media (max-width: 566px) {
-    #course-key-points {
-        justify-content: center;
-    }
-}
-
 .detail-box {
     width: 13rem;
     margin: 0.6%;
@@ -264,10 +325,27 @@ main {
     margin-right: 10%;
 }
 
-/* #course-key-points div:hover {
-    background-color: rgba(211, 211, 211, 0.237);
-    border-color: #3b39417a;
-} */
+#main-content>h2 {
+    font-weight: 100;
+}
+
+#course-key-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0% 0%;
+    margin: 4rem 0;
+}
+
+@media (max-width: 566px) {
+    #course-key-points {
+        justify-content: center;
+    }
+}
+
+#hr-title-separator{
+    margin-top: 0;
+}
 
 #course-info {
     width: 100%;
@@ -334,8 +412,7 @@ main {
     color: black;
     display: flex;
     flex-direction: row;
-    background-color: #ffd500;
-    /* border-radius: 15px; */
+    background-color: var(--yellow);
 }
 
 #text {
@@ -368,7 +445,7 @@ main {
     display: flex;
     align-items: center;
     height: 4em;
-    background-color: #ffd500;
+    background-color: var(--yellow);
     padding: 1em 2em;
     transition: 0.2s scale ease;
 }
@@ -477,12 +554,12 @@ main {
 
 .more-info-tab button {
     cursor: pointer;
-    background-color: #7f7f7f17;
+    background-color: #7f7f7f00;
     border: 0.0625rem;
     border-radius: 0.31rem;
 }
 
-.more-info {
+#more-info {
     overflow: hidden;
     padding: 3rem 0em;
     background: #7f7f7f17;
@@ -515,21 +592,16 @@ footer #icon {
     font-size: 3rem;
 }
 
-.mediabox {
+#mediabox {
     overflow: hidden;
     padding: 3rem 0em;
     border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
     justify-content: center;
-    background: #3B3941;
+    background: var(--grey);
 }
 
-.mediabox p {
-    letter-spacing: 0.06rem;
-    font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.6);
-}
 
-.mediabox a {
+#mediabox a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -560,7 +632,7 @@ ul.media li a {
 .more-info-links {
     display: block;
     text-decoration: underline;
-    text-decoration-color: #ffd500;
+    text-decoration-color: var(--yellow);
     color: black;
     text-decoration-thickness: 2px;
 }
@@ -597,7 +669,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #7f7f7f17;
-    margin: auto;
+    margin: 4rem auto 0;
     max-width: 59em;
 }
 
@@ -619,6 +691,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     font-size: 17px;
     border-radius: 3px;
     margin: 1px;
+    background-color: #f3f3f3;
 }
 
 /* Change background color of buttons on hover */
@@ -629,7 +702,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* Create an active/current tablink class */
 .tab button.active {
-    background-color: #ffd500;
+    background-color: var(--yellow);
     scale: 1.015;
 }
 
@@ -671,7 +744,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 .course-info-links {
     text-decoration-style: underline;
-    text-decoration-color: #ffd500;
+    text-decoration-color: var(--yellow);
     color: black;
     text-decoration-thickness: 2px;
 }
@@ -742,7 +815,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 #tabcontent-btt>button {
     background-color: #ffde74;
-    border-color: #00000000;
+    border-color: #ff000000;
     border-radius: 3px;
     padding-left: 15px;
     padding-right: 15px;
@@ -751,31 +824,31 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 #tabcontent-btt>button:hover {
-    background-color: #ffd500;
+    background-color: var(--yellow);
 }
 
 /* course-cards ---------------------------------------------- */
 
-#course-cards {
+.course-cards {
     display: flex;
     flex-wrap: wrap;
 }
 
-#course-glance {
+.course-glance {
     margin: 1em;
 }
 
-#course-glance>h3 {
+.course-glance>h3 {
     margin: 0.5rem 0;
     color: black;
 
 }
 
-#course-glance-container>svg {
+.course-glance-container>svg {
     margin: 10px;
 }
 
-#course-glance-container {
+.course-glance-container {
     display: flex;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -793,13 +866,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     }
 }
 
-#course-glance-container:hover {
+.course-glance-container:hover {
     background-color: #ffde74;
     scale: 1.0125;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-#course-glance-points>p {
+.course-glance-points>p {
     margin: 10px;
     margin-right: 15px;
     margin-left: 0px;
@@ -807,7 +880,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     color: black;
 }
 
-#course-glance-points {
+.course-glance-points {
     display: flex;
     flex-wrap: wrap;
     margin-right: 15px;
@@ -815,7 +888,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 @media (max-width: 750px) {
-    #course-glance-container {
+    .course-glance-container {
         margin: 0 0 0.5rem 0;
     }
 
@@ -829,8 +902,12 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 
 }
+/* Accessibility Page > */
+.img-accessibility{
+    width: 100%;
+}
 
-/* github page img --------------------------------*/
+/* Github page ---------------------------------------------------------*
 
 .img-container-github {
     display: flex;
@@ -840,12 +917,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     gap: 10px;
     padding-top: 0px;
 }
-
 .img-item img {
     max-width: 100%;
     height: auto;
     border-radius: 30px;
-    border: 3px solid #ffd500;
+   border: 3px solid var(--yellow);
 }
 
 /* github page text section -------------------------------------------------*/
@@ -857,7 +933,6 @@ h2.github{
     margin-top: 5px;
 }
 
-
 .split-container {
     display: grid;
     grid-template-columns: auto auto;
@@ -867,9 +942,9 @@ h2.github{
 
   .split-left,
   .split-right {
-    background-color: #f1f1f1;
+    background-color: var(--white);
     padding: 20px;
-    border: 3px solid #3B3941;
+    border: 3px solid var(--grey);
     border-radius: 30px;
   }
 
@@ -889,12 +964,202 @@ h2.github{
     .split-container {
         display: inline;
         padding: 2px;
-    }
-
+  }
+  
     .split-left,
     .split-right {
         width: 100%;
         padding: 2px;
     }
 }
-/* end of github page css -------------------------*/
+/* end of git page -------------------------------------------------*/
+
+/* activity page ---------------------------------------------------*/
+
+#hr-activity {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#activity-background {
+    background-image: url("/images/activitybackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.activity {
+    background-color: #FFF;
+    line-height: 1.5;
+}
+
+.category-box-container {
+    text-decoration: none;
+    color: var(--teal);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.category-box-container>a {
+    text-decoration: none;
+}
+
+.header-activity {
+    font-weight: bolder;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 30px 0;
+    color: var(--slide3);
+    text-align: center;
+}
+
+@media(max-width:400px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+.category-box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+
+.category-box {
+    flex: 1 1 calc(25% - 20px);
+    background-color: var(--skyblue);
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: 0.2s all ease-in-out;
+}
+
+.category-box:hover {
+    background-color: #abc9e1;
+    transform: scale(1.03);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.category-box>h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: medium;
+    color: var(--navy);
+}
+
+.category-box>p {
+    font-size: 0.9em;
+    margin-top: 10px;
+    color: var(--teal);
+}
+
+.info-box {
+    font-size: 1em;
+    margin: 0;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1.5vw;
+}
+
+
+
+.activity-main-box {
+    background-image: linear-gradient(var(--beige), var(--beige));
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    /* Ensure box doesn’t exceed screen width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.activity-main-box>p {
+    color: var(--teal);
+}
+
+
+.small-img-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    gap: 10px;
+}
+
+/* Stil for hver enkelt bilde-boks */
+.small-img-box {
+    flex: 1 1 calc(33.33% - 10px);
+    /* Tredje dels bredde med mellomrom */
+    max-width: calc(33.33% - 10px);
+    transition: transform 0.4s ease;
+    /* Smooth transition */
+
+}
+
+.small-img-box img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Media query for mellomstore skjermer (for eksempel nettbrett) */
+@media (max-width: 768px) {
+    .small-img-box {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+/* Media query for små skjermer (mobil) */
+@media (max-width: 480px) {
+    .small-img-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+
+/*det er flere hover med samme kode, må endrs, forksjell er backgorudn color som er viktig å ha med*/
+.small-img-box:hover {
+    background-color: var(--beige);
+    border-radius: 10px;
+    transform: scale(1.06);
+    box-shadow: 0px 0px 10px 4px var(--shadow2);
+}
+
+/*kode hentet fra w3school, vise kilde?*/
+.scroll-img-container {
+    display: flex;
+    background-color: var(--white);
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    gap: 10px;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    /*husk å skrive kort forklaring*/
+}
+
+.scroll-img-container img {
+    padding: 10px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    scroll-snap-align: center;
+    border-radius: 8px;
+}
