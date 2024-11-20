@@ -360,6 +360,11 @@ main {
     margin-right: 10%;
 }
 
+#hr-title-separator{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
 #course-info {
     width: 100%;
     margin: auto;
