@@ -30,7 +30,7 @@ body {
     padding: 0%;
 }
 
-section{
+section {
     padding-bottom: 5rem;
 }
 
@@ -105,10 +105,10 @@ header {
     padding-top: 1rem;
 }
 
-.sr-only{
+.sr-only {
     font-size: medium;
     display: block;
-    word-break:break-all
+    word-break: break-all
 }
 
 /* dropdown-menu ------------------------------------------------------------------- */
@@ -169,7 +169,7 @@ header {
     float: right;
 }
 
-#activity-header{
+#activity-header {
     background-color: var(--slide2);
 }
 
@@ -923,7 +923,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 /* Accessibility Page > */
-.img-accessibility-split{
+.img-accessibility-split {
 
     height: 32rem;
     width: auto;
@@ -934,14 +934,14 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 }
 
-.img-accessibility{
+.img-accessibility {
     width: 100%;
     height: auto;
 }
 
 
 @media (max-width: 1000px) {
-    .img-accessibility-split{
+    .img-accessibility-split {
         float: none;
         display: block;
         margin-left: auto;
@@ -1150,7 +1150,7 @@ h1.github {
     max-width: calc(33.33% - 10px);
     transition: 0.4s ease;
     /* Smooth transition */
-    filter: grayscale(100%);
+    filter: grayscale(0%);
 }
 
 .small-img-box img {
@@ -1161,7 +1161,7 @@ h1.github {
     transition: all 0.4s ease;
 }
 
-.small-img-box:hover img{
+.small-img-box:hover img {
     filter: brightness(0.5);
 }
 
@@ -1179,12 +1179,14 @@ h1.github {
 }
 
 .small-img-box:hover .hover-text {
-    pointer-events: none; /* Prevent the text from interfering with the link */
-    color: var(--beige); /* Use your CSS variable or replace with a color */
+    pointer-events: none;
+    /* Prevent the text from interfering with the link */
+    color: var(--beige);
+    /* Use your CSS variable or replace with a color */
     mix-blend-mode: screen;
 }
 
-.hover-text{
+.hover-text {
     width: 100%;
     text-align: center;
 }
@@ -1195,10 +1197,12 @@ h1.github {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
     }
-    .category-box-container{
+
+    .category-box-container {
         flex-direction: column;
     }
 }
+
 /* Media query for små skjermer (mobil) */
 @media (max-width: 480px) {
     .small-img-box {
@@ -1214,7 +1218,7 @@ h1.github {
     border-radius: 10px;
     scale: 1.02;
     box-shadow: 0px 0px 10px 4px var(--shadow2);
-    filter: grayscale(0%);
+    filter: grayscale(50%);
 }
 
 /*kode hentet fra w3school, vise kilde?*/
