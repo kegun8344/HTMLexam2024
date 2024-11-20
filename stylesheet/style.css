@@ -30,6 +30,10 @@ body {
     padding: 0%;
 }
 
+section {
+    padding-bottom: 5rem;
+}
+
 #site-background {
     background-image: url("../images/background.png");
     background-position: center;
@@ -40,8 +44,12 @@ body {
     z-index: -1;
 }
 
-hr {
+.separator {
     margin: 4em 0;
+}
+
+hr {
+    margin: 0px;
 }
 
 h1 {
@@ -97,6 +105,12 @@ header {
     padding-top: 1rem;
 }
 
+.sr-only {
+    font-size: medium;
+    display: block;
+    word-break: break-all
+}
+
 /* dropdown-menu ------------------------------------------------------------------- */
 /* from w3school */
 /* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_right */
@@ -145,14 +159,18 @@ header {
 /* nav bar specifically for activity page */
 
 .dropbtn-activity {
-    background-color: var(--grey);
-    color: #C8D9E6;
+    background-color: var(--slide2);
+    color: var(--beige);
     font-size: 2.19rem;
     border: none;
     cursor: pointer;
     width: 3.75rem;
     height: 3.75rem;
     float: right;
+}
+
+#activity-header {
+    background-color: var(--slide2);
 }
 
 .dropdown-activity {
@@ -187,7 +205,7 @@ header {
 }
 
 #search-button-activity {
-    color: #b9cfe0;
+    color: var(--beige);
     width: 3.75rem;
     height: 3.75rem;
     cursor: pointer;
@@ -312,6 +330,23 @@ main {
     }
 }
 
+#main-content>h2 {
+    font-weight: 100;
+}
+
+#course-key-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0% 0%;
+}
+
+@media (max-width: 566px) {
+    #course-key-points {
+        justify-content: center;
+    }
+}
+
 .detail-box {
     width: 13rem;
     margin: 0.6%;
@@ -323,28 +358,6 @@ main {
 .main-content {
     margin-left: 10%;
     margin-right: 10%;
-}
-
-#main-content>h2 {
-    font-weight: 100;
-}
-
-#course-key-points {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding: 0% 0%;
-    margin: 4rem 0;
-}
-
-@media (max-width: 566px) {
-    #course-key-points {
-        justify-content: center;
-    }
-}
-
-#hr-title-separator{
-    margin-top: 0;
 }
 
 #course-info {
@@ -413,6 +426,7 @@ main {
     display: flex;
     flex-direction: row;
     background-color: var(--yellow);
+    /* border-radius: 15px; */
 }
 
 #text {
@@ -559,7 +573,7 @@ main {
     border-radius: 0.31rem;
 }
 
-#more-info {
+.more-info {
     overflow: hidden;
     padding: 3rem 0em;
     background: #7f7f7f17;
@@ -592,7 +606,7 @@ footer #icon {
     font-size: 3rem;
 }
 
-#mediabox {
+.mediabox {
     overflow: hidden;
     padding: 3rem 0em;
     border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
@@ -600,8 +614,13 @@ footer #icon {
     background: var(--grey);
 }
 
+.mediabox p {
+    letter-spacing: 0.06rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
 
-#mediabox a {
+.mediabox a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -669,7 +688,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #7f7f7f17;
-    margin: 4rem auto 0;
+    margin: auto;
     max-width: 59em;
 }
 
@@ -902,10 +921,38 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 
 }
+
 /* Accessibility Page > */
-.img-accessibility{
-    width: 100%;
+.img-accessibility-split {
+
+    height: 32rem;
+    width: auto;
+    max-width: 100%;
+    float: right;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+
 }
+
+.img-accessibility {
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 1000px) {
+    .img-accessibility-split {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+}
+
+
+
 
 /* Github page ---------------------------------------------------------*/
 
@@ -993,12 +1040,6 @@ h2.github{
 }
 
 /* activity page ---------------------------------------------------*/
-
-#hr-activity {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 #activity-background {
     background-image: url("/images/activitybackground.png");
     background-position: center;
@@ -1044,6 +1085,8 @@ h2.github{
         max-width: 100%;
     }
 }
+
+
 
 .category-box-container {
     display: flex;
@@ -1124,9 +1167,9 @@ h2.github{
     flex: 1 1 calc(33.33% - 10px);
     /* Tredje dels bredde med mellomrom */
     max-width: calc(33.33% - 10px);
-    transition: transform 0.4s ease;
+    transition: 0.4s ease;
     /* Smooth transition */
-
+    filter: grayscale(0%);
 }
 
 .small-img-box img {
@@ -1134,6 +1177,37 @@ h2.github{
     height: auto;
     display: block;
     border-radius: 8px;
+    transition: all 0.4s ease;
+}
+
+.small-img-box:hover img {
+    filter: brightness(0.5);
+}
+
+.small-img-box .hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: transparent;
+    font-weight: bold;
+    transition: all 0.4s ease;
+    z-index: 2;
+    text-shadow: none;
+}
+
+.small-img-box:hover .hover-text {
+    pointer-events: none;
+    /* Prevent the text from interfering with the link */
+    color: var(--beige);
+    /* Use your CSS variable or replace with a color */
+    mix-blend-mode: screen;
+}
+
+.hover-text {
+    width: 100%;
+    text-align: center;
 }
 
 /* Media query for mellomstore skjermer (for eksempel nettbrett) */
@@ -1142,7 +1216,12 @@ h2.github{
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
     }
+
+    .category-box-container {
+        flex-direction: column;
+    }
 }
+
 /* Media query for små skjermer (mobil) */
 @media (max-width: 480px) {
     .small-img-box {
@@ -1156,8 +1235,9 @@ h2.github{
 .small-img-box:hover {
     background-color: var(--beige);
     border-radius: 10px;
-    transform: scale(1.06);
+    scale: 1.02;
     box-shadow: 0px 0px 10px 4px var(--shadow2);
+    filter: grayscale(50%);
 }
 
 /*kode hentet fra w3school, vise kilde?*/
