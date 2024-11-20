@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheet/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fot-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="images\Logo_of_Oslo_Metropolitan_University_ffd500_square.png">
     <title>Accessibility</title>
 </head>
@@ -15,11 +15,11 @@
         <img class="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
     </a>
     <nav>
-        <a id="search-button" href="https://www.oslomet.no/s?q" aria-label="Søke-knapp"><i class="fa fa-search"
-                alt="Søk"></i></a>
+        <a id="search-button" href="https://www.oslomet.no/s?q" aria-hidden="true" title="Søkeknapp"><i class="fa fa-search"></i>
+            <span class="sr-only">Søke-knapp</span></a>
         <div class="dropdown">
-            <button class="dropbtn" id="menu-button" aria-label="Navigeringsmeny"><i class="fa fa-bars"
-                    alt="Meny"></i></button>
+            <button class="dropbtn" id="menu-button" aria-hidden="true" title="Navigeringsmeny"><i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Navigeringsmeny</span></button>
             <div class="dropdown-content" id="dropdown-menu">
                 <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>
                 <a href="activity.html">Activity</a>
@@ -32,52 +32,56 @@
 <body>
     <main>
         <article>
-            <h1>Accessibility</h1>
-            <p>For å lage en nettside med universell god design, sørget vi for å inkludere alternativ tekst for
-                ikke-tekstlig innhold og
-                bruke sans-serif-fonter for god lesbarhet. Når det gjelder tekst og farger var vi bevisst på at det er
-                viktig å velge en
-                farge som har god kontrast med bakgrunnen for leseligheten. Like viktig er struktur og en behagelig
-                leseopplevelse til
-                nettstedet, derfor er det delt inn i flere seksjoner og avsnitt ved hjelp av overskrifter,
-                underoverskrifter, marginer,
-                paddinger og skillelinjer. Vi brukte tabs for å minimere lengden av siden og skape en renere og
-                forenklet nettside. For å
-                skape en gjenkjennelig stil må layout og navigasjon være konsekvente på alle sidene unntatt
-                aktivitetssiden, så
-                navigasjonslinjen og footer er nøyaktig den samme og har i tillegg samme fargepalett. Siden nettsidene
-                skal være
-                brukbare på en rekke skjermstørrelser, brukte vi media queries. Uten bruk av dette ville noen problemer
-                oppstå. For eksempel
-                forskjellen på skjermbredde mellom en telefon og en laptop. Derfor må paddinger, margene og selve
-                strukturen for
-                plassering av noen få elementer, være ulikt på de skjermene. Dermed er det viktig at skjermen er
-                responsiv for å ha en
-                god visuell opplevelse. Nettsiden sørger også for at innhold vises og fungerer på forutsigbare måter med
-                understrekingsfarge og pil-ikoner for å kunne identifisere koblingene korrekt. Vi inkluderte også
-                ikonene inne i footer
-                for å forbedre forutsigbarheten og i tillegg er boksene store nok slik at man ikke sliter med å trykke
-                på riktig boks.
-            </p>
-            <img class="img-accessibility" src="../images/css-media-queries.png" alt="Bilde av CSS media queries">
-            <p>I koden ønsket vi å unngå feil relatert til opening og closing HTML-tags. Ved å bruke konsekvent og
-                tydelig innrykk blir
-                koden mer lesbar og lett å feilsøke, noe som reduserer risikoen for feil og gjør det enklere for andre
-                utviklere å forstå
-                og vedlikeholde koden. Vi la også vekt på å sikre at elementene ikke hadde dupliserte attributter, noe
-                som kan føre til
-                uforutsigbar oppførsel i nettlesere og påvirke kodenes validitet. I tillegg sørget vi for at alle
-                ID-verdier er unike på
-                hver side for å sikre at JavaScript og CSS fungerer som forventet. For å forbedre tilgjengeligheten og
-                gjøre designet mer
-                responsivt, brukte vi fleksible måleenheter som em og rem i stedet for faste px-verdier. em og rem
-                tilpasser seg brukerens
-                standardinnstillinger og skjermstørrelse, noe som gir en bedre og mer skalerbar brukeropplevelse på
-                tvers av forskjellige
-                enheter. Dette gjør det også enklere for brukere med tilpassede innstillinger, som synshemmede, å
-                navigere og lese
-                innholdet, noe som er et viktig hensyn for universell utforming.</p>
-            <img class="img-accessibility" src="../images/html-structure.png" alt="Bilde av HTML struktur">
+            <section class="flex">
+                <h1>Accessibility</h1>
+                <img class="img-accessibility-split" src="../images/css-media-queries.png" alt="Bilde av CSS media queries">
+                <p>For å lage en nettside med universell god design, sørget vi for å inkludere alternativ tekst for
+                    ikke-tekstlig innhold og
+                    bruke sans-serif-fonter for god lesbarhet. Når det gjelder tekst og farger var vi bevisst på at det er
+                    viktig å velge en
+                    farge som har god kontrast med bakgrunnen for leseligheten. Like viktig er struktur og en behagelig
+                    leseopplevelse til
+                    nettstedet, derfor er det delt inn i flere seksjoner og avsnitt ved hjelp av overskrifter,
+                    underoverskrifter, marginer,
+                    paddinger og skillelinjer. Vi brukte tabs for å minimere lengden av siden og skape en renere og
+                    forenklet nettside. For å
+                    skape en gjenkjennelig stil må layout og navigasjon være konsekvente på alle sidene unntatt
+                    aktivitetssiden, så
+                    navigasjonslinjen og footer er nøyaktig den samme og har i tillegg samme fargepalett. Siden nettsidene
+                    skal være
+                    brukbare på en rekke skjermstørrelser, brukte vi media queries. Uten bruk av dette ville noen problemer
+                    oppstå. For eksempel
+                    forskjellen på skjermbredde mellom en telefon og en laptop. Derfor må paddinger, margene og selve
+                    strukturen for
+                    plassering av noen få elementer, være ulikt på de skjermene. Dermed er det viktig at skjermen er
+                    responsiv for å ha en
+                    god visuell opplevelse. Nettsiden sørger også for at innhold vises og fungerer på forutsigbare måter med
+                    understrekingsfarge og pil-ikoner for å kunne identifisere koblingene korrekt. Vi inkluderte også
+                    ikonene inne i footer
+                    for å forbedre forutsigbarheten og i tillegg er boksene store nok slik at man ikke sliter med å trykke
+                    på riktig boks.
+                </p>
+            </section>
+            <section class="flex">
+                <img class="img-accessibility-split" src="../images/html-structure.png" alt="Bilde av HTML struktur">
+                <p>I koden ønsket vi å unngå feil relatert til opening og closing HTML-tags. Ved å bruke konsekvent og
+                    tydelig innrykk blir
+                    koden mer lesbar og lett å feilsøke, noe som reduserer risikoen for feil og gjør det enklere for andre
+                    utviklere å forstå
+                    og vedlikeholde koden. Vi la også vekt på å sikre at elementene ikke hadde dupliserte attributter, noe
+                    som kan føre til
+                    uforutsigbar oppførsel i nettlesere og påvirke kodenes validitet. I tillegg sørget vi for at alle
+                    ID-verdier er unike på
+                    hver side for å sikre at JavaScript og CSS fungerer som forventet. For å forbedre tilgjengeligheten og
+                    gjøre designet mer
+                    responsivt, brukte vi fleksible måleenheter som em og rem i stedet for faste px-verdier. em og rem
+                    tilpasser seg brukerens
+                    standardinnstillinger og skjermstørrelse, noe som gir en bedre og mer skalerbar brukeropplevelse på
+                    tvers av forskjellige
+                    enheter. Dette gjør det også enklere for brukere med tilpassede innstillinger, som synshemmede, å
+                    navigere og lese
+                    innholdet, noe som er et viktig hensyn for universell utforming.</p>
+                </section>
         </article>
 
         <article>
@@ -87,22 +91,20 @@
                 styrke strukturen.
                 En annen feil gjelder med funksjonaliteten ved touchscreen. Siden meny åpnet via hover, vil den åpenbart
                 ikke kunne åpnes. Vi fikset dette ved å gjøre at den åpner ved å trykkes på, og lukkes ved å trykkes på
-                igjen, eller ved å trykke utenfor menyen.
-                En siste bonus var at disse ikonene ikke hadde noen alt tekst. Det var også en feilmelding med linkene
+                igjen, eller ved å trykke utenfor menyen. Etter å ha fikset all dette nevnt, så gjenstår det en feilmelding om
+                at ikonene vi brukt ikke hadde noen alt tekst. Det var også en feilmelding med linkene
                 ikke har tekst som
                 normalt gjør det vanskelig å vite hva linken er om. Heldigvis var disse linkene hvor vi har ikoner
                 istedenfor link.</p>
         </article>
     </main>
 
-    <!-- Footer Menu -->
     <footer>
 
-        <article class="more-info">
+        <article id="more-info">
             <div class="row">
                 <section id="col1">
-                    <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
-
+                    <span id="icon" class="fa fa-map-marker" aria-hidden="true" title="Map markering" alt="Map markering"><span class="sr-only">Map markering</span></span>
                     <address class="address-font">
                         <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9">
                             <h3>Oslo Metropolitan University</h3>
@@ -114,7 +116,7 @@
                 </section>
 
                 <section id="col2">
-                    <span id="icon" class="fa fa-phone" alt="Telefon"></span>
+                    <span id="icon" class="fa fa-phone" aria-hidden="true" title="Telefon"><span class="sr-only">Telefon</span></span>
 
                     <address class="address-font">
                         <h3>Kontakt oss</h3>
@@ -123,7 +125,7 @@
                 </section>
 
                 <section id="col3">
-                    <span id="icon" class="fa fa-info" alt="Info"></span>
+                    <span id="icon" class="fa fa-info" aria-hidden="true" title="Info"><span class="sr-only">Telefon</span></span>
                     <span>
                         <h3> Mer Info</h3>
                         <div class="more-info-tab">
@@ -166,18 +168,18 @@
 
             <ul class="media">
                 <li>
-                    <a href="https://x.com/oslomet" class="fa fa-twitter" alt="Twitter"> </a>
+                    <a href="https://x.com/oslomet" class="fa fa-twitter" aria-hidden="true" title="Twitter"><span class="sr-only">Twitter</span></a>
                 </li>
 
                 <li>
-                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook"></a>
+                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" aria-hidden="true" title="Facebook"><span class="sr-only">Facebook</span></a>
                 </li>
 
                 <li>
-                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" alt="LinkedIn"></a>
+                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" title="LinkedIn"><span class="sr-only">LinkedIn</span></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" alt="Instagram"></a>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" title="Instagram"><span class="sr-only">Instagram</span></a>
                 </li>
             </ul>
         </nav>
