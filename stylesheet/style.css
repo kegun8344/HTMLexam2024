@@ -30,6 +30,10 @@ body {
     padding: 0%;
 }
 
+section{
+    padding-bottom: 5rem;
+}
+
 #site-background {
     background-image: url("../images/background.png");
     background-position: center;
@@ -99,6 +103,12 @@ header {
     border: none;
     font-size: 1.75rem;
     padding-top: 1rem;
+}
+
+.sr-only{
+    font-size: medium;
+    display: block;
+    word-break:break-all
 }
 
 /* dropdown-menu ------------------------------------------------------------------- */
@@ -913,9 +923,36 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 }
 
 /* Accessibility Page > */
-#img-wawe-test {
-    height: 40rem;
+.img-accessibility-split{
+
+    height: 32rem;
+    width: auto;
+    max-width: 100%;
+    float: right;
+    margin-left: 5rem;
+    margin-bottom: 2rem;
+
 }
+
+.img-accessibility{
+    width: 100%;
+    height: auto;
+}
+
+
+@media (max-width: 1000px) {
+    .img-accessibility-split{
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+    }
+
+}
+
+
+
 
 /* Github page ---------------------------------------------------------*/
 
