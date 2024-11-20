@@ -959,6 +959,10 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* Github page ---------------------------------------------------------*/
 
+h1.github {
+    margin: 1.25rem 1.25rem 0 1.25rem;
+}
+
 .img-container-github {
     display: flex;
     justify-content: space-between;
