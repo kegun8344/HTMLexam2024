@@ -15,11 +15,11 @@
         <img class="header-logo" src="images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
     </a>
     <nav>
-        <a id="search-button" href="https://www.oslomet.no/s?q" aria-label="Søke-knapp"><i class="fa fa-search"
-                alt="Søk"></i></a>
+        <a id="search-button" href="https://www.oslomet.no/s?q" aria-hidden="true" title="Søkeknapp"><i class="fa fa-search"></i>
+            <span class="sr-only">Søke-knapp</span></a>
         <div class="dropdown">
-            <button class="dropbtn" id="menu-button" aria-label="Navigeringsmeny"><i class="fa fa-bars"
-                    alt="Meny"></i></button>
+            <button class="dropbtn" id="menu-button" aria-hidden="true" title="Navigeringsmeny"><i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Navigeringsmeny</span></button>
             <div class="dropdown-content" id="dropdown-menu">
                 <a href="other-pages/activity.html">Activity</a>
                 <a href="other-pages/accessibility.html">Accessibility</a>
@@ -220,7 +220,7 @@
                             Se programplan på student.oslomet.no</a>
                     </p>
                 </div>
-                <!--Studiets-oppbygging er et stort emne må egne sections-->
+                <!--Studiets-oppbygging er et stort emne, og må ha egne sections-->
                 <div id="Studiets-oppbygging" class="tabcontent">
 
                     <p id="star-symbol-explainer">
@@ -1191,12 +1191,10 @@
 
     <!-- Footer Menu -->
     <footer>
-
         <article class="more-info">
             <div class="row">
                 <section id="col1">
-                    <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
-
+                    <span id="icon" class="fa fa-map-marker" aria-hidden="true" title="Map markering" alt="Map markering"><span class="sr-only">Map markering</span></span>
                     <address class="address-font">
                         <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9">
                             <h3>Oslo Metropolitan University</h3>
@@ -1206,22 +1204,19 @@
                         0130 Oslo
                     </address>
                 </section>
-
                 <section id="col2">
-                    <span id="icon" class="fa fa-phone" alt="Telefon"></span>
-
+                    <span id="icon" class="fa fa-phone" aria-hidden="true" title="Telefon"><span class="sr-only">Telefon</span></span>
                     <address class="address-font">
                         <h3>Kontakt oss</h3>
                         <p>Tlf.: 67 23 50 00</p>
                     </address>
                 </section>
-
                 <section id="col3">
-                    <span id="icon" class="fa fa-info" alt="Info"></span>
+                    <span id="icon" class="fa fa-info" aria-hidden="true" title="Info"><span class="sr-only">Info</span></span>
                     <span>
                         <h3>Mer Info</h3>
                         <div class="more-info-tab">
-                            <button id="toggle-tab" class="more-info-tab-button" aria-label="utvid info meny">
+                            <button id="toggle-tab" class="more-info-tab-button" aria-hidden="true" title="Expand Info Menu"><span class="sr-only">Expand Info Menu</span>
                                 <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="2 1 20 20" alt=" Nedover pil">
                                     <path fill-rule="evenodd"
@@ -1257,26 +1252,20 @@
         </article>
         <!-- Social Media links -->
         <nav class="mediabox">
-
             <ul class="media">
                 <li>
-                    <a href="https://x.com/oslomet" class="fa fa-twitter" alt="Twitter"> </a>
-                </li>
-
-                <li>
-                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" alt="Facebook"></a>
-                </li>
-
-                <li>
-                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" alt="LinkedIn"></a>
+                    <a href="https://x.com/oslomet" class="fa fa-twitter" aria-hidden="true" title="Twitter"><span class="sr-only">Twitter</span></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" aria-hidden="true" title="Facebook"><span class="sr-only">Facebook</span></a>
                 </li>
-            </ul>
+                <li>
+                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" title="LinkedIn"><span class="sr-only">LinkedIn</span></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" title="Instagram"><span class="sr-only">Instagram</span></a>
+                </li>
         </nav>
     </footer>
 </body>
-
-
 </html>

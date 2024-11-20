@@ -360,6 +360,11 @@ main {
     margin-right: 10%;
 }
 
+#hr-title-separator{
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+}
+
 #course-info {
     width: 100%;
     margin: auto;
@@ -643,9 +648,9 @@ ul.media li a {
     color: #FFF;
     display: inline-block;
     background: rgba(12, 12, 12, 0.6);
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
     text-align: center;
 }
 
@@ -952,73 +957,72 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 }
 
-
-
-
 /* Github page ---------------------------------------------------------*/
 
 .img-container-github {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
-
-.img-item {
-    padding: 5px;
-    margin: 5px;
-    flex: 1 1 45%;
-}
-
 .img-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 30px;
-    margin: 5px 0;
-    border: 3px solid var(--yellow);
-}
-
-/* GITHUB TEXT PARAGRAPH-------------------------------------------------*/
-h1.github {
-    margin: 20px;
-}
-
-#main-github {
-    display: flex;
-    justify-content: space-between;
+    border-radius: 1.875rem;
+    border: 0.1875rem solid var(--yellow);
     box-sizing: border-box;
 }
+
+/* github page text section -------------------------------------------------*/
 
 .split-container {
-    justify-content: space-between;
-    gap: 10px;
-    margin: 20px;
-    display: flex;
-}
-
-.split-left,
-.split-right {
-    width: 49%;
-    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.9375rem;
+    padding: 1.5625rem;
     box-sizing: border-box;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border: 3px solid var(--grey);
-}
+  }
 
-.split-left {
-    background-color: var(--yellow);
-}
+  .split-left,
+  .split-right {
+    padding: 1.5rem;
+    border: 0.1875rem solid var(--grey);
+    border-radius: 1.5625rem;
+    box-sizing: border-box;
+  }
 
-.split-right {
-    background-color: #ccc;
-}
+  .separator.centered {
+    margin: 1.25rem 0;
+  }
 
-#main-github {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+@media (max-width: 900px) {
+    .split-container {
+        grid-template-columns: 1fr;
+        padding: 0.125rem;
+        margin-left: 5%;
+        margin-right: 5%;
+  }
+  
+    .split-left,
+    .split-right {
+        width: 100%;
+        padding: 0.125rem;
+    }
+    
+    .img-container-github {
+        padding: 0.125rem;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .content-box {
+        margin: 5%;
+}
+.separator.centered {
+    margin: 2% 5%;
+  }
 }
 
 /* activity page ---------------------------------------------------*/

@@ -17,8 +17,10 @@
     </a>
     <nav>
         <a id="search-button-activity" href="https://www.visitoslo.com/"><i class="fa fa-search" alt="Søk"></i></a>
+
         <div class="dropdown-activity">
-            <button class="dropbtn-activity" id="menu-button"><i class="fa fa-bars" alt="Meny"></i></button>
+            <button class="dropbtn-activity" id="menu-button" aria-hidden="true" title="Navigeringsmeny"><i class="fa fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Navigeringsmeny</span></button>
             <div class="dropdown-content-activity" id="dropdown-menu">
                 <a href="../index.html">Matematisk modellering og datavitenskap - ingeniør</a>
                 <a href="accessibility.html">Accessibility</a>
@@ -161,12 +163,10 @@
 
     <!-- Footer Menu -->
     <footer>
-
         <article class="more-info">
             <div class="row">
                 <section id="col1">
-                    <span id="icon" class="fa fa-map-marker" alt="Map markering"></span>
-
+                    <span id="icon" class="fa fa-map-marker" aria-hidden="true" title="Map markering" alt="Map markering"><span class="sr-only">Map markering</span></span>
                     <address class="address-font">
                         <a class="more-info-links" href="https://www.visitoslo.com/no/">
                             <h3>VisitOslo</h3>
@@ -175,24 +175,23 @@
                         Jernbanetorget 1
                         0154 Oslo
                         Norge
+
                     </address>
                 </section>
-
                 <section id="col2">
-                    <span id="icon" class="fa fa-phone" alt="Telefon"></span>
-
+                    <span id="icon" class="fa fa-phone" aria-hidden="true" title="Telefon"><span class="sr-only">Telefon</span></span>
                     <address class="address-font">
                         <h3>Kontakt oss</h3>
                         <p>Tlf.: 23 10 62 00 </p>
+
                     </address>
                 </section>
-
                 <section id="col3">
-                    <span id="icon" class="fa fa-info" alt="Info"></span>
+                    <span id="icon" class="fa fa-info" aria-hidden="true" title="Info"><span class="sr-only">Info</span></span>
                     <span>
-                        <h3>Mer Info</h3>
+                        <h3> Mer Info</h3>
                         <div class="more-info-tab">
-                            <button id="toggle-tab" class="more-info-tab-button" aria-label="expand info menu">
+                            <button id="toggle-tab" class="more-info-tab-button" aria-hidden="true" title="Expand Info Menu"><span class="sr-only">Expand Info Menu</span>
                                 <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="2 1 20 20" alt=" Nedover pil">
                                     <path fill-rule="evenodd"
@@ -209,6 +208,7 @@
                                 <br> informasjon</a>
                             <a class="more-info-links"
                                 href="https://www.visitoslo.com/no/oslo-for-deg/tilgjengelighet/">Tilgjenlighet</a>
+
                         </div>
                         <script src="../javascript/index-tabs"></script>
                     </span>
@@ -221,18 +221,18 @@
             <ul class="media-activity">
                 <li>
                     <a href="https://x.com/visitoslo" class="fa fa-twitter" alt="Twitter"></a>
-                </li>
 
+                </li>
                 <li>
                     <a href="https://www.facebook.com/VisitOslo/" class="fa fa-facebook" alt="Facebook"></a>
-                </li>
 
+                </li>
                 <li>
                     <a href="https://www.instagram.com/visitoslo/" class="fa fa-instagram" alt="Instagram"></a>
+
                 </li>
             </ul>
         </nav>
     </footer>
 </body>
-
 </html>
