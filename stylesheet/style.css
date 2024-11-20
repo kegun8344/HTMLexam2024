@@ -1163,7 +1163,7 @@ h1.github {
 
 .small-img-box img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     border-radius: 8px;
     transition: filter 0.4s ease;
