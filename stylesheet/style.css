@@ -614,6 +614,7 @@ footer #icon {
     background: var(--grey);
 }
 
+/*tror ikke dette brukes*/
 .mediabox p {
     letter-spacing: 0.06rem;
     font-size: 0.9rem;
@@ -1241,4 +1242,41 @@ h1.github {
     object-fit: cover;
     scroll-snap-align: center;
     border-radius: 8px;
+}
+
+.mediabox-activity {
+    overflow: hidden;
+    padding: 3rem 0em;
+    border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
+    justify-content: center;
+    background: var(--slide2);
+}
+
+
+.mediabox-activity a {
+    text-decoration: none;
+}
+
+
+/* Styling Social Icons */
+ul.media-activity {
+    margin: 0;
+    padding: 2rem 0 0 0;
+    list-style: none;
+}
+
+ul.media-activity li {
+    display: inline-block;
+    padding: 0 0.10rem;
+    font-size: 2rem;
+}
+
+ul.media-activity li a {
+    color: var(--beige);
+    display: inline-block;
+    background: var(--slide3);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
 }
