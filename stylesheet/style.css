@@ -83,7 +83,7 @@ header {
 
 }
 
-#header-logo {
+.header-logo {
     position: absolute;
     top: 0;
     left: 0;
