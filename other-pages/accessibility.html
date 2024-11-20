@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../stylesheet/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fot-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="images\Logo_of_Oslo_Metropolitan_University_ffd500_square.png">
     <title>Accessibility</title>
 </head>
 <header>
     <!-- img-container simply puts the img above the navigation elements so .nav is centered on page. -->
     <a href="https://www.oslomet.no/" aria-label="Link til hjemmeside">
-        <img class="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
+        <img id="header-logo" src="../images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
     </a>
     <nav>
         <a id="search-button" href="https://www.oslomet.no/s?q" aria-hidden="true" title="Søkeknapp"><i class="fa fa-search"></i>
@@ -100,8 +100,7 @@
     </main>
 
     <footer>
-
-        <article id="more-info">
+        <article class="more-info">
             <div class="row">
                 <section id="col1">
                     <span id="icon" class="fa fa-map-marker" aria-hidden="true" title="Map markering" alt="Map markering"><span class="sr-only">Map markering</span></span>
@@ -114,22 +113,19 @@
                         0130 Oslo
                     </address>
                 </section>
-
                 <section id="col2">
                     <span id="icon" class="fa fa-phone" aria-hidden="true" title="Telefon"><span class="sr-only">Telefon</span></span>
-
                     <address class="address-font">
                         <h3>Kontakt oss</h3>
                         <p>Tlf.: 67 23 50 00</p>
                     </address>
                 </section>
-
                 <section id="col3">
-                    <span id="icon" class="fa fa-info" aria-hidden="true" title="Info"><span class="sr-only">Telefon</span></span>
+                    <span id="icon" class="fa fa-info" aria-hidden="true" title="Info"><span class="sr-only">Info</span></span>
                     <span>
                         <h3> Mer Info</h3>
                         <div class="more-info-tab">
-                            <button id="toggle-tab" class="more-info-tab-button" aria-label="expand info menu">
+                            <button id="toggle-tab" class="more-info-tab-button" aria-hidden="true" title="Expand Info Menu"><span class="sr-only">Expand Info Menu</span>
                                 <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="2 1 20 20" alt=" Nedover pil">
                                     <path fill-rule="evenodd"
@@ -164,17 +160,14 @@
             </div>
         </article>
         <!-- Social Media links -->
-        <nav id="mediabox">
-
+        <nav class="mediabox">
             <ul class="media">
                 <li>
                     <a href="https://x.com/oslomet" class="fa fa-twitter" aria-hidden="true" title="Twitter"><span class="sr-only">Twitter</span></a>
                 </li>
-
                 <li>
                     <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" aria-hidden="true" title="Facebook"><span class="sr-only">Facebook</span></a>
                 </li>
-
                 <li>
                     <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" title="LinkedIn"><span class="sr-only">LinkedIn</span></a>
                 </li>
@@ -185,5 +178,4 @@
         </nav>
     </footer>
 </body>
-
 </html>

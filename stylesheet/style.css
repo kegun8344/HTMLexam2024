@@ -638,9 +638,9 @@ ul.media li a {
     color: #FFF;
     display: inline-block;
     background: rgba(12, 12, 12, 0.6);
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
     text-align: center;
 }
 
