@@ -91,11 +91,10 @@
                 styrke strukturen.
                 En annen feil gjelder med funksjonaliteten ved touchscreen. Siden meny åpnet via hover, vil den åpenbart
                 ikke kunne åpnes. Vi fikset dette ved å gjøre at den åpner ved å trykkes på, og lukkes ved å trykkes på
-                igjen, eller ved å trykke utenfor menyen. Etter å ha fikset all dette nevnt, så gjenstår det en feilmelding om
-                at ikonene vi brukt ikke hadde noen alt tekst. Det var også en feilmelding med linkene
-                ikke har tekst som
-                normalt gjør det vanskelig å vite hva linken er om. Heldigvis var disse linkene hvor vi har ikoner
-                istedenfor link.</p>
+                igjen, eller ved å trykke utenfor menyen. Etter å ha fikset all dette nevnt, så gjenstår det 9 varseler. De handler om
+                om denne aria-hidden som gjør at dersom ikonene ikke laster opp og ikke er synlig gir det en tekst isteden. 
+                Itilegg brukes det tooltip. Siden teksten er den samme i begge kan det virke unødvendig, men vi har ingen tekst ved siden
+                av ikonene. </p>
         </article>
     </main>
 
@@ -169,10 +168,10 @@
                     <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" aria-hidden="true" title="Facebook"><span class="sr-only">Facebook</span></a>
                 </li>
                 <li>
-                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" title="LinkedIn"><span class="sr-only">LinkedIn</span></a>
+                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" aria-hidden="true" title="LinkedIn"><span class="sr-only">LinkedIn</span></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" title="Instagram"><span class="sr-only">Instagram</span></a>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram"  aria-hidden="true"title="Instagram"><span class="sr-only">Instagram</span></a>
                 </li>
             </ul>
         </nav>
