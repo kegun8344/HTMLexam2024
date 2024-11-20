@@ -61,10 +61,7 @@ p {
 }
 
 @media(min-width:1920px) {
-    h1 {
-        font-size: 1.875rem;
-    }
-
+/* code to make the background image not have any gaps in larger resolutions */
     #site-background {
         background-position: none;
         background-position-x: left;
