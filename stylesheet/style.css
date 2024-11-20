@@ -36,7 +36,7 @@ section {
 
 #site-background {
     background-image: url("../images/background.png");
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     position: absolute;
     width: 100%;
@@ -58,6 +58,18 @@ h1 {
 
 p {
     font-size: larger;
+}
+
+@media(min-width:1920px) {
+    h1 {
+        font-size: 1.875rem;
+    }
+
+    #site-background {
+        background-position: none;
+        background-position-x: left;
+        background-position-y: top;
+    }
 }
 
 @media(max-width:600px) {
@@ -360,7 +372,7 @@ main {
     margin-right: 10%;
 }
 
-#hr-title-separator{
+#hr-title-separator {
     margin-top: -1rem;
     margin-bottom: 2rem;
 }
@@ -969,6 +981,7 @@ h1.github {
     overflow-x: hidden;
     box-sizing: border-box;
 }
+
 .img-item img {
     max-width: 100%;
     height: auto;
@@ -985,19 +998,19 @@ h1.github {
     gap: 0.9375rem;
     padding: 1.5625rem;
     box-sizing: border-box;
-  }
+}
 
-  .split-left,
-  .split-right {
+.split-left,
+.split-right {
     padding: 1.5rem;
     border: 0.1875rem solid var(--grey);
     border-radius: 1.5625rem;
     box-sizing: border-box;
-  }
+}
 
-  .separator.centered {
+.separator.centered {
     margin: 1.25rem 0;
-  }
+}
 
 @media (max-width: 900px) {
     .split-container {
@@ -1005,14 +1018,14 @@ h1.github {
         padding: 0.125rem;
         margin-left: 5%;
         margin-right: 5%;
-  }
-  
+    }
+
     .split-left,
     .split-right {
         width: 100%;
         padding: 0.125rem;
     }
-    
+
     .img-container-github {
         padding: 0.125rem;
         margin-left: 5%;
@@ -1021,10 +1034,11 @@ h1.github {
 
     .content-box {
         margin: 5%;
-}
-.separator.centered {
-    margin: 2% 5%;
-  }
+    }
+
+    .separator.centered {
+        margin: 2% 5%;
+    }
 }
 
 /* activity page ---------------------------------------------------*/
