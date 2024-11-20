@@ -44,8 +44,12 @@ section{
     z-index: -1;
 }
 
-hr {
+.separator {
     margin: 4em 0;
+}
+
+hr {
+    margin: 0px;
 }
 
 h1 {
@@ -79,7 +83,7 @@ header {
 
 }
 
-.header-logo {
+#header-logo {
     position: absolute;
     top: 0;
     left: 0;
@@ -322,6 +326,23 @@ main {
     }
 }
 
+#main-content>h2 {
+    font-weight: 100;
+}
+
+#course-key-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding: 0% 0%;
+}
+
+@media (max-width: 566px) {
+    #course-key-points {
+        justify-content: center;
+    }
+}
+
 .detail-box {
     width: 13rem;
     margin: 0.6%;
@@ -333,28 +354,6 @@ main {
 .main-content {
     margin-left: 10%;
     margin-right: 10%;
-}
-
-#main-content>h2 {
-    font-weight: 100;
-}
-
-#course-key-points {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding: 0% 0%;
-    margin: 4rem 0;
-}
-
-@media (max-width: 566px) {
-    #course-key-points {
-        justify-content: center;
-    }
-}
-
-#hr-title-separator{
-    margin-top: 0;
 }
 
 #course-info {
@@ -423,6 +422,7 @@ main {
     display: flex;
     flex-direction: row;
     background-color: var(--yellow);
+    /* border-radius: 15px; */
 }
 
 #text {
@@ -569,7 +569,7 @@ main {
     border-radius: 0.31rem;
 }
 
-#more-info {
+.more-info {
     overflow: hidden;
     padding: 3rem 0em;
     background: #7f7f7f17;
@@ -602,7 +602,7 @@ footer #icon {
     font-size: 3rem;
 }
 
-#mediabox {
+.mediabox {
     overflow: hidden;
     padding: 3rem 0em;
     border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
@@ -610,8 +610,13 @@ footer #icon {
     background: var(--grey);
 }
 
+.mediabox p {
+    letter-spacing: 0.06rem;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.6);
+}
 
-#mediabox a {
+.mediabox a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
 }
@@ -679,7 +684,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #7f7f7f17;
-    margin: 4rem auto 0;
+    margin: auto;
     max-width: 59em;
 }
 
@@ -1155,7 +1160,6 @@ h1.github {
     max-width: calc(33.33% - 10px);
     transition: transform 0.4s ease;
     /* Smooth transition */
-
 }
 
 .small-img-box img {
@@ -1182,21 +1186,11 @@ h1.github {
         flex: 1 1 calc(50% - 10px);
         max-width: calc(50% - 10px);
     }
-
-    .big-img-box {
-        flex: 1 1 calc(50% - 10px);
-        max-width: calc(50% - 10px);
-    }
 }
 
 /* Media query for små skjermer (mobil) */
 @media (max-width: 480px) {
     .small-img-box {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-
-    .big-img-box {
         flex: 1 1 100%;
         max-width: 100%;
     }
