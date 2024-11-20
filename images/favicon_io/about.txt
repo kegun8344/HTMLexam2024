@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Dekko
+- Font Title: Yusei Magic
 - Font Author: undefined
-- Font Source: https://fonts.gstatic.com/s/dekko/v21/46khlb_wWjfSrttFR0vsfl1B.ttf
+- Font Source: https://fonts.gstatic.com/s/yuseimagic/v14/yYLt0hbAyuCmoo5wlhPkpjHR-tdfcIT_.ttf
 - Font License: undefined)

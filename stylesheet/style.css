@@ -619,6 +619,7 @@ footer #icon {
     background: var(--grey);
 }
 
+/*tror ikke dette brukes*/
 .mediabox p {
     letter-spacing: 0.06rem;
     font-size: 0.9rem;
@@ -954,70 +955,54 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 }
 
-
-
-
 /* Github page ---------------------------------------------------------*/
+
+h1.github {
+    margin: 1.25rem 1.25rem 0 1.25rem;
+}
 
 .img-container-github {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
-    padding: 25px;
-    padding-top: 0px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     overflow-x: hidden;
     box-sizing: border-box;
 }
 .img-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 30px;
-    border: 3px solid var(--yellow);
+    border-radius: 1.875rem;
+    border: 0.1875rem solid var(--yellow);
     box-sizing: border-box;
 }
 
 /* github page text section -------------------------------------------------*/
-h1.github {
-    margin: 20px;
-    margin-bottom: 1px;
-}
-h2.github{
-    margin-top: 5px;
-}
 
 .split-container {
     display: grid;
     grid-template-columns: auto auto;
-    gap: 15px;
-    padding: 25px;
+    gap: 0.9375rem;
+    padding: 1.5625rem;
     box-sizing: border-box;
   }
 
   .split-left,
   .split-right {
-    padding: 25px;
-    border: 3px solid var(--grey);
-    border-radius: 25px;
+    padding: 1.5rem;
+    border: 0.1875rem solid var(--grey);
+    border-radius: 1.5625rem;
     box-sizing: border-box;
   }
 
-  .content-box {
-    margin-bottom: 1px;
-  }
-
-  .content-box h2 {
-    margin-top: 0;
-  }
-
   .separator.centered {
-    margin: 20px 0;
+    margin: 1.25rem 0;
   }
 
 @media (max-width: 900px) {
     .split-container {
         grid-template-columns: 1fr;
-        padding: 2px;
+        padding: 0.125rem;
         margin-left: 5%;
         margin-right: 5%;
   }
@@ -1025,11 +1010,11 @@ h2.github{
     .split-left,
     .split-right {
         width: 100%;
-        padding: 2px;
+        padding: 0.125rem;
     }
     
     .img-container-github {
-        padding: 2px;
+        padding: 0.125rem;
         margin-left: 5%;
         margin-right: 5%;
     }
@@ -1263,4 +1248,41 @@ h2.github{
     object-fit: cover;
     scroll-snap-align: center;
     border-radius: 8px;
+}
+
+.mediabox-activity {
+    overflow: hidden;
+    padding: 3rem 0em;
+    border-top: 1.25rem solid rgba(255, 255, 255, 0.08);
+    justify-content: center;
+    background: var(--slide2);
+}
+
+
+.mediabox-activity a {
+    text-decoration: none;
+}
+
+
+/* Styling Social Icons */
+ul.media-activity {
+    margin: 0;
+    padding: 2rem 0 0 0;
+    list-style: none;
+}
+
+ul.media-activity li {
+    display: inline-block;
+    padding: 0 0.10rem;
+    font-size: 2rem;
+}
+
+ul.media-activity li a {
+    color: var(--beige);
+    display: inline-block;
+    background: var(--slide3);
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
 }
