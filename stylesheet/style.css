@@ -744,7 +744,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 .more-info-tabcontent>a:hover {
     scale: 1.11;
-    background-color: #cccccc;
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
 .more-info-tab {
