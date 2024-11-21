@@ -32,6 +32,7 @@ document.getElementById('toggle-tab').addEventListener('click', function () {
 
 
 // Hamburger menu in nav bar
+// OpenAI. (2024). ChatGPT [Large language model]. https://chatgpt.com
 document.addEventListener("DOMContentLoaded", () => {
     const menuButton = document.getElementById("menu-button");
     const dropdownMenu = document.getElementById("dropdown-menu");
