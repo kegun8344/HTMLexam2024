@@ -390,6 +390,179 @@ main {
     margin-top: 0;
 }
 
+/* course-info-tabs ----------------------------------------------------- */
+
+/* tabs style copied from w3schools, then customized
+https://www.w3schools.com/howto/howto_js_tabs.asp
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
+ */
+
+/* Style the tab */
+.tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #7f7f7f17;
+    margin: auto;
+    max-width: 59em;
+}
+
+/* for mobile */
+@media (max-width: 930px) {
+    .tab {
+        flex-direction: column;
+    }
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1em 2em;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 3px;
+    margin: 1px;
+    background-color: #f3f3f3;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ffe58f;
+    scale: 1.015;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: var(--yellow);
+    scale: 1.015;
+}
+
+/* Style the tab content */
+.tabcontent {
+    background-color: #7f7f7f17;
+    display: none;
+    padding: 3em 4em;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    max-width: 51em;
+    margin: auto;
+    border: 1px solid #7f7f7f17;
+    /* min-width: 250px; */
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.course-info-links {
+    text-decoration-style: underline;
+    text-decoration-color: var(--yellow);
+    color: black;
+    text-decoration-thickness: 2px;
+}
+
+.course-info-links:hover {
+    text-decoration-thickness: 3px;
+}
+
+.subheader-tabcontent {
+    margin-top: 50px;
+}
+
+.course-structure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-bottom: 30px;
+}
+
+.clickable-info-box {
+    text-decoration: none;
+    margin-right: -1px;
+}
+
+.course-info-box {
+    width: 175px;
+    margin: 0.6%;
+    border-left: 1px solid #c9c9c9;
+    border-right: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    transition: 0.1s all ease;
+    background-color: #00000000;
+    height: 120px;
+    line-height: initial;
+}
+
+.course-info-box:hover {
+    background-color: #ffde74;
+}
+
+.course-info-box-elements {
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+    margin-top: -8px;
+    margin-bottom: 25px;
+}
+
+#star-symbol-explainer>i {
+    margin-right: 7px;
+}
+
+#double-angle-symbol-explainer>i {
+    margin-right: 11px;
+    margin-left: 2px;
+    scale: 1.2;
+}
+
+.hr-dashed {
+    margin: 0px;
+    border-top: 1px dashed;
+    height: 1px;
+    color: #0000004e;
+    margin: auto;
+}
+
+#tabcontent-btt>button {
+    background-color: #ffde74;
+    border-color: #ff000000;
+    border-radius: 3px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    transition: 0.3s background-color ease;
+}
+
+#tabcontent-btt>button:hover {
+    background-color: var(--yellow);
+}
+
 /* studies ----------------------------------------------- */
 
 #person-text {
@@ -685,180 +858,6 @@ ul.media li a {
 
 .more-content-boxes {
     margin-bottom: 4rem;
-}
-
-
-/* course-info-tabs ----------------------------------------------------- */
-
-/* tabs style copied from w3schools, then customized
-https://www.w3schools.com/howto/howto_js_tabs.asp
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
- */
-
-/* Style the tab */
-.tab {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #7f7f7f17;
-    margin: auto;
-    max-width: 59em;
-}
-
-/* for mobile */
-@media (max-width: 930px) {
-    .tab {
-        flex-direction: column;
-    }
-}
-
-/* Style the buttons inside the tab */
-.tab button {
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 1em 2em;
-    transition: 0.3s;
-    font-size: 17px;
-    border-radius: 3px;
-    margin: 1px;
-    background-color: #f3f3f3;
-}
-
-/* Change background color of buttons on hover */
-.tab button:hover {
-    background-color: #ffe58f;
-    scale: 1.015;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
-    background-color: var(--yellow);
-    scale: 1.015;
-}
-
-/* Style the tab content */
-.tabcontent {
-    background-color: #7f7f7f17;
-    display: none;
-    padding: 3em 4em;
-    -webkit-animation: fadeEffect 1s;
-    animation: fadeEffect 1s;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    max-width: 51em;
-    margin: auto;
-    border: 1px solid #7f7f7f17;
-    /* min-width: 250px; */
-}
-
-/* Fade in tabs */
-@-webkit-keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes fadeEffect {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.course-info-links {
-    text-decoration-style: underline;
-    text-decoration-color: var(--yellow);
-    color: black;
-    text-decoration-thickness: 2px;
-}
-
-.course-info-links:hover {
-    text-decoration-thickness: 3px;
-}
-
-.subheader-tabcontent {
-    margin-top: 50px;
-}
-
-.course-structure {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    padding-bottom: 30px;
-}
-
-.clickable-info-box {
-    text-decoration: none;
-    margin-right: -1px;
-}
-
-.course-info-box {
-    width: 175px;
-    margin: 0.6%;
-    border-left: 1px solid #c9c9c9;
-    border-right: 1px solid #c9c9c9;
-    padding: 10px;
-    border-radius: 10px;
-    color: black;
-    transition: 0.1s all ease;
-    background-color: #00000000;
-    height: 120px;
-    line-height: initial;
-}
-
-.course-info-box:hover {
-    background-color: #ffde74;
-}
-
-.course-info-box-elements {
-    display: flex;
-    justify-content: space-between;
-    height: 62px;
-    margin-top: -8px;
-    margin-bottom: 25px;
-}
-
-#star-symbol-explainer>i {
-    margin-right: 7px;
-}
-
-#double-angle-symbol-explainer>i {
-    margin-right: 11px;
-    margin-left: 2px;
-    scale: 1.2;
-}
-
-.hr-dashed {
-    margin: 0px;
-    border-top: 1px dashed;
-    height: 1px;
-    color: #0000004e;
-    margin: auto;
-}
-
-#tabcontent-btt>button {
-    background-color: #ffde74;
-    border-color: #ff000000;
-    border-radius: 3px;
-    padding-left: 15px;
-    padding-right: 15px;
-    cursor: pointer;
-    transition: 0.3s background-color ease;
-}
-
-#tabcontent-btt>button:hover {
-    background-color: var(--yellow);
 }
 
 /* course-cards ---------------------------------------------- */
