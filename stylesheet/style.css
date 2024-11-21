@@ -1,3 +1,4 @@
+/* CSS Variables: Defining color palette and theme variables */
 :root {
     --yellow: #ffd500;
     --grey: #3B3941;
@@ -18,22 +19,26 @@
     --shadow2: #29242197;
 }
 
+/* Base styles for the HTML document */
 html {
     font-family: sans-serif;
     scroll-behavior: smooth;
     line-height: 1.5;
 }
 
+/* General body styling */
 body {
     background-color: white;
     margin: 0%;
     padding: 0%;
 }
 
+/* Styling for default section elements */
 section {
     padding-bottom: 5rem;
 }
 
+/* Background image styling for the site where site background is used */
 #site-background {
     background-image: url("../images/background.png");
     background-position: top;
@@ -44,10 +49,7 @@ section {
     z-index: -1;
 }
 
-.separator {
-    margin: 4em 0;
-}
-
+/* Typography styles */
 hr {
     margin: 0px;
 }
@@ -61,7 +63,7 @@ p {
 }
 
 @media(min-width:1920px) {
-/* code to make the background image not have any gaps in larger resolutions */
+/* code to adjust the background image, to not have any gaps in larger resolutions */
     #site-background {
         background-position: none;
         background-position-x: left;
@@ -236,10 +238,12 @@ header {
 /* Video ------------------------------------------------------------*/
 .video-container {
     position: relative;
+
+    /* 16:9 aspect ratio */
     max-width: 100%;
-    /* <----- 16:9 aspect ratio */
     padding-bottom: 56.25%;
-    /* <----- 16:9 aspect ratio */
+    /* 16:9 aspect ratio */
+    
     height: 0;
     overflow: hidden;
     margin: auto;
@@ -250,10 +254,12 @@ header {
 
 @media (max-width: 600px) {
     .video-container {
-        max-width: 100%;
+
         /* <----- 16:9 aspect ratio */
+        max-width: 100%;
         padding-bottom: 56.25%;
         /* <----- 16:9 aspect ratio */
+        
         box-shadow: none;
         border-radius: 0;
         border: 0.19rem solid var(--yellow);
@@ -269,7 +275,7 @@ iframe {
     height: 100.5%;
     border: none;
     /* top, width and height adjusted to better fit inside borders. 
-    For some reason the video was slightly smaller than the border, showing 1px thick lines at top and right */
+    For some reason the video was slightly smaller than the border, showing small gaps */
 }
 
 
@@ -281,14 +287,6 @@ nav {
     padding: 0.625rem 1.25rem;
     min-height: 5.625rem;
 }
-
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
-/* muligens endre størrelse på nav på mobile */
 
 .nav-links {
     list-style: none;
@@ -390,6 +388,36 @@ main {
 
 #course-short-summary>h2 {
     margin-top: 0;
+}
+
+/* studies ----------------------------------------------- */
+
+#person-text {
+    padding-left: 0.625rem;
+    display: inline-block;
+}
+
+.divider {
+    font-size: larger;
+    display: inline;
+    font-weight: 100;
+}
+
+@media (max-width: 396px) {
+    .divider {
+        opacity: 0;
+    }
+}
+
+#img-krhel3944 {
+    max-width: 8em;
+    border-radius: 0.32rem;
+    box-shadow: -0.125rem 0.25rem 0.31rem 0rem rgba(0, 0, 0, 0.267);
+
+}
+
+#course-glance-container {
+    margin: 0;
 }
 
 /* studenthistorier -------------------------------------- */
@@ -524,36 +552,6 @@ main {
     #link-box-more-stories {
         margin: 0;
     }
-}
-
-/* studies ----------------------------------------------- */
-
-#person-text {
-    padding-left: 0.625rem;
-    display: inline-block;
-}
-
-.divider {
-    font-size: larger;
-    display: inline;
-    font-weight: 100;
-}
-
-@media (max-width: 396px) {
-    .divider {
-        opacity: 0;
-    }
-}
-
-#img-krhel3944 {
-    max-width: 8em;
-    border-radius: 0.32rem;
-    box-shadow: -0.125rem 0.25rem 0.31rem 0rem rgba(0, 0, 0, 0.267);
-
-}
-
-#course-glance-container {
-    margin: 0;
 }
 
 /* footer ------------------------------------------------- */
