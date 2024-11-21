@@ -451,7 +451,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 /* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ffe58f;
-    scale: 1.015;
 }
 
 /* Create an active/current tablink class */
