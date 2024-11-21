@@ -223,7 +223,7 @@ header {
     padding-top: 1rem;
 }
 
-.header-logo-activity {
+#header-logo-activity {
     position: absolute;
     top: 0;
     left: 0;
