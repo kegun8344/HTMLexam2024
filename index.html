@@ -17,10 +17,14 @@
             <img class="header-logo" src="images/Logo_of_Oslo_Metropolitan_University_ffd500.png" alt="OsloMet Logo">
         </a>
         <nav>
-            <a id="search-button" href="https://www.oslomet.no/s?q" aria-hidden="true" title="Søkeknapp"><i class="fa fa-search"></i>
+            <!-- search button, takes you to the search page -->
+            <a id="search-button" href="https://www.oslomet.no/s?q" aria-hidden="true" title="Søkeknapp"><i
+                    class="fa fa-search"></i>
                 <span class="sr-only">Søke-knapp</span></a>
+            <!-- hamburger menu to navigate -->
             <div class="dropdown">
-                <button class="dropbtn" id="menu-button" aria-hidden="true" title="Navigeringsmeny"><i class="fa fa-bars" aria-hidden="true"></i>
+                <button class="dropbtn" id="menu-button" aria-hidden="true" title="Navigeringsmeny"><i
+                        class="fa fa-bars" aria-hidden="true"></i>
                     <span class="sr-only">Navigeringsmeny</span></button>
                 <div class="dropdown-content" id="dropdown-menu">
                     <a href="other-pages/activity.html">Activity</a>
@@ -30,12 +34,14 @@
             </div>
         </nav>
     </header>
+    <!-- site background using css -->
     <div id="site-background"></div>
+
     <main>
         <article>
             <div class="video-container">
-                <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483" allowfullscreen
-                    title="Oslomet Dataingeiør og matematisk modellering" loading="lazy">
+                <iframe src="https://film.oslomet.no/v.ihtml/player.html?source=embed&photo%5fid=95216483"
+                    allowfullscreen title="Oslomet Dataingeiør og matematisk modellering" loading="lazy">
                     <!--URL to film from https://www.oslomet.no/studier/tkd/matematisk-modellering-datavitenskap inspection -->
                 </iframe>
             </div>
@@ -43,6 +49,8 @@
             <h2>Bachelorprogram</h2>
             <hr id="hr-title-separator">
         </article>
+
+        <!-- boxes containing course informations, summarized -->
         <article id="main-content">
             <section id="course-key-points">
                 <div class="detail-box">
@@ -82,6 +90,7 @@
                 </h2>
             </section>
 
+            <!-- buttons that reveal information about the course etc -->
             <section id="course-info-tabs">
                 <div class="tab">
                     <button class="tablinks" onclick="openTab(event, 'studiestart')">Studiestart</button>
@@ -100,6 +109,8 @@
                     <button class="tablinks" onclick="openTab(event, 'videre-studiemuligheter')">Videre
                         studiemuligheter ved OsloMet</button>
                 </div>
+
+                <!-- THE FOLLOWING IS THE CONTENT THAT IS REVEALED WHEN PRESSING THE BUTTONS ABOVE -->
 
                 <div id="studiestart" class="tabcontent">
                     <h2>Studiestart</h2>
@@ -217,10 +228,13 @@
                                 <polygon
                                     points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
                             </svg>
-                            Se programplan på student.oslomet.no</a>
+                            Se programplan på student.oslomet.no
+                        </a>
                     </p>
                 </div>
-                <!--Studiets-oppbygging er et stort emne, og må ha egne sections-->
+                <!--Studiets-oppbygging is a large, must have own sections-->
+                <!-- using divs to structure each course -->
+                <!-- line 237 to 944 -->
                 <div id="studiets-oppbygging" class="tabcontent">
 
                     <p id="star-symbol-explainer">
@@ -926,8 +940,8 @@
                     <a id="tabcontent-btt" href="#course-info-tabs"><button>
                             <h3>Tilbake til toppen</h3>
                         </button></a>
-                    <!--End of Studietsoppbygging-->
                 </div>
+                <!--End of Studietsoppbygging-->
 
                 <div id="undervisningen" class="tabcontent">
                     <h2>Hvordan foregår undervisningen?</h2>
@@ -953,9 +967,9 @@
                     <p>Det er ikke studieavgift på dette studiet. <a class="course-info-links"
                             href="https://student.oslomet.no/semesteravgift">Du
                             betaler en semesteravgift hvert semester (student.oslomet.no).</a></p>
-                    </div>
+                </div>
 
-                <div id="jobb-muligheter class="tabcontent">
+                <div id="jobb-muligheter class=" tabcontent">
                     <h2>Hva kan du jobbe som?</h2>
                     <p>Med dette studiet får du IT-kompetanse som er etterspurt i arbeidslivet, særlig om du velger
                         spesialiseringene vitenskapelige beregninger eller statistiske og datadrevne metoder.
@@ -994,16 +1008,18 @@
                         </div>
                         <svg class="link-arrow" xmlns="http://www.w3.org/2000/svg" width="19" height="19"
                             viewBox="0 0 24 24">
-                            <polygon points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
+                            <polygon
+                                points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
                         </svg>
                     </a>
                 </div>
                 <script src="javascript/index-tabs"></script>
             </section>
         </article>
+
+        <!-- general information about the study -->
         <article>
             <hr>
-
             <section id="more-content">
                 <div class="more-content-boxes">
                     <h2>Studiested</h2>
@@ -1032,14 +1048,18 @@
                         <h3>Kristoffer Herland Hellton</h3>
                         <p>førsteamanuensis</p>
                         <!-- hva er førsteamanuensis -->
-                        <p>+47 673 37 240 <span class="divider">|</span> <a
-                                href="mailto:kristoffer.hellton@oslomet.no" target=”_blank”>kristoffer.hellton@oslomet.no</a></p>
+                        <p>+47 673 37 240 <span class="divider">|</span> <a href="mailto:kristoffer.hellton@oslomet.no"
+                                target=”_blank”>kristoffer.hellton@oslomet.no</a></p>
                     </div>
                 </div>
             </section>
+
+            <!-- other studies the user might be interested in -->
             <section id="other-studies">
                 <h2>Kanskje du også er interessert i disse?</h2>
-                <div class="course-cards">
+                <!-- other studies presented as "cards", clickable links to the page of the studies -->
+                <!-- using divs to structure the cards -->
+                <section class="course-cards">
                     <a class="course-glance-container" href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">
                         <div class="course-glance">
                             <h3>Anvendt Datateknologi</h3>
@@ -1160,14 +1180,17 @@
                                 points="7 7 15.586 7 5.293 17.293 6.707 18.707 17 8.414 17 17 19 17 19 5 7 5 7 7" />
                         </svg>
                     </a>
-                </div>
+                </section>
             </section>
         </article>
+
+        <!-- studenthistorer -->
         <article id="studenthistorier">
             <h2>Studenthistorier</h2>
             <div id="studenthistorier-container">
                 <a id="link-box-story"
-                    href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap" aria-label="Les denne studenthistorien">
+                    href="https://www.oslomet.no/studier/studenthistorier/spa-fremtiden-matematikk-datavitenskap"
+                    aria-label="Les denne studenthistorien">
                     <div id="text">
                         <h2>Teknologi og design</h2>
                         <h2>Spå fremtiden med matematikk og datavitenskap</h2>
@@ -1181,7 +1204,8 @@
                     <i id="link-chevron" class="fa fa-chevron-right" style="font-size:36px" alt=" Chevron høyre"></i>
                 </a>
             </div>
-            <a id="link-box-more-stories" href="https://www.oslomet.no/studier/studenthistorier" aria-label="Les om flere studenthistorier">
+            <a id="link-box-more-stories" href="https://www.oslomet.no/studier/studenthistorier"
+                aria-label="Les om flere studenthistorier">
                 <div>
                     <h2>Flere studenthistorier</h2>
                 </div>
@@ -1194,7 +1218,8 @@
         <article class="more-info">
             <div class="row">
                 <section id="col1">
-                    <span id="icon" class="fa fa-map-marker" aria-hidden="true" title="Map markering" alt="Map markering"><span class="sr-only">Map markering</span></span>
+                    <span id="icon" class="fa fa-map-marker" aria-hidden="true" title="Map markering"
+                        alt="Map markering"><span class="sr-only">Map markering</span></span>
                     <address class="address-font">
                         <a class="more-info-links" href="https://maps.app.goo.gl/KMtNLzg2X4wWKpAG9">
                             <h3>Oslo Metropolitan University</h3>
@@ -1205,18 +1230,21 @@
                     </address>
                 </section>
                 <section id="col2">
-                    <span id="icon" class="fa fa-phone" aria-hidden="true" title="Telefon"><span class="sr-only">Telefon</span></span>
+                    <span id="icon" class="fa fa-phone" aria-hidden="true" title="Telefon"><span
+                            class="sr-only">Telefon</span></span>
                     <address class="address-font">
                         <h3>Kontakt oss</h3>
                         <p>Tlf.: 67 23 50 00</p>
                     </address>
                 </section>
                 <section id="col3">
-                    <span id="icon" class="fa fa-info" aria-hidden="true" title="Info"><span class="sr-only">Info</span></span>
+                    <span id="icon" class="fa fa-info" aria-hidden="true" title="Info"><span
+                            class="sr-only">Info</span></span>
                     <span>
                         <h3>Mer Info</h3>
                         <div class="more-info-tab">
-                            <button id="toggle-tab" class="more-info-tab-button" aria-hidden="true" title="Expand Info Menu"><span class="sr-only">Expand Info Menu</span>
+                            <button id="toggle-tab" class="more-info-tab-button" aria-hidden="true"
+                                title="Expand Info Menu"><span class="sr-only">Expand Info Menu</span>
                                 <svg id="toggle-icon" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
                                     viewBox="2 1 20 20" alt=" Nedover pil">
                                     <path fill-rule="evenodd"
@@ -1254,18 +1282,23 @@
         <nav class="mediabox">
             <ul class="media">
                 <li>
-                    <a href="https://x.com/oslomet" class="fa fa-twitter" aria-hidden="true" title="Twitter"><span class="sr-only">Twitter</span></a>
+                    <a href="https://x.com/oslomet" class="fa fa-twitter" aria-hidden="true" title="Twitter"><span
+                            class="sr-only">Twitter</span></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" aria-hidden="true" title="Facebook"><span class="sr-only">Facebook</span></a>
+                    <a href="https://www.facebook.com/oslomet/" class="fa fa-facebook" aria-hidden="true"
+                        title="Facebook"><span class="sr-only">Facebook</span></a>
                 </li>
                 <li>
-                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin"  aria-hidden="true"title="LinkedIn"><span class="sr-only">LinkedIn</span></a>
+                    <a href="https://no.linkedin.com/school/oslomet/" class="fa fa-linkedin" aria-hidden="true"
+                        title="LinkedIn"><span class="sr-only">LinkedIn</span></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram"  aria-hidden="true"title="Instagram"><span class="sr-only">Instagram</span></a>
+                    <a href="https://www.instagram.com/oslomet/?hl=nb" class="fa fa-instagram" aria-hidden="true"
+                        title="Instagram"><span class="sr-only">Instagram</span></a>
                 </li>
         </nav>
     </footer>
 </body>
+
 </html>
