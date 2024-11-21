@@ -676,7 +676,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     padding: 0 0.15rem 0 0.15rem;
 }
 
-@media (max-width: 396px) {
+@media (max-width: 475px) {
     .divider {
         opacity: 0;
     }
