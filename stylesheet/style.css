@@ -673,6 +673,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
     font-size: larger;
     display: inline;
     font-weight: 100;
+    padding: 0 0.15rem 0 0.15rem;
 }
 
 @media (max-width: 396px) {
