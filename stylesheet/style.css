@@ -1305,7 +1305,7 @@ ul.media-activity {
 
 ul.media-activity li {
     display: inline-block;
-    padding: 0 0.10rem;
+    padding: 0 0.1rem;
     font-size: 2rem;
 }
 
@@ -1313,9 +1313,9 @@ ul.media-activity li a {
     color: var(--beige);
     display: inline-block;
     background: var(--slide3);
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
     text-align: center;
 }
 
