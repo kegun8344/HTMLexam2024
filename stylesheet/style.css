@@ -347,8 +347,7 @@ main {
 }
 
 #hr-title-separator {
-    margin-top: -1rem;
-    margin-bottom: 2rem;
+    margin: -1rem 0 2rem 0;
 }
 
 #course-info {
@@ -826,6 +825,17 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_tabs_fade
 
 /* footer ------------------------------------------------- */
 /*** Adding Styles to Company Details ***/
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    height: 2em;
+    background-color: var(--yellow);
+    padding: 1em 2em;
+    transition: 0.2s scale ease;
+    text-decoration: none;
+    color: black;
+}
 
 .more-info-tabcontent {
     background-color: #7f7f7f17;
