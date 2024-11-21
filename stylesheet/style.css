@@ -63,7 +63,7 @@ p {
 }
 
 @media(min-width:1920px) {
-/* code to adjust the background image, to not have any gaps in larger resolutions */
+/* code to adjust the background image to not have any gaps in larger resolutions */
     #site-background {
         background-position: none;
         background-position-x: left;
