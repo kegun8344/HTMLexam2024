@@ -223,7 +223,7 @@ header {
     padding-top: 1rem;
 }
 
-#header-logo-activity {
+.header-logo-activity {
     position: absolute;
     top: 0;
     left: 0;
@@ -1038,7 +1038,7 @@ h1.github {
     }
 }
 
-/* activity page ---------------------------------------------------*/
+/* activity page ----------------------------------------------------------*/
 #activity-background {
     background-image: url("/images/activitybackground.png");
     background-position: center;
@@ -1062,8 +1062,8 @@ h1.github {
     flex-wrap: wrap;
     gap: 15px;
     justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .category-box-container>a {
@@ -1297,4 +1297,12 @@ ul.media-activity li a {
     height: 60px;
     line-height: 60px;
     text-align: center;
+}
+
+.more-info-links-activity {
+    display: block;
+    text-decoration: underline;
+    text-decoration-color: var(--slide2);
+    color: var(--navy);
+    text-decoration-thickness: 2px;
 }
