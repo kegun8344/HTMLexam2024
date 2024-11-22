@@ -373,6 +373,7 @@ main {
     padding-bottom: 56.25%;
     /* 16:9 aspect ratio */
     
+    height: 0;
     overflow: hidden;
     margin: auto;
     border-radius: 0.5rem;
@@ -397,8 +398,8 @@ main {
 
 iframe {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100.5%;
+    height: 100.5%;
     border: none;
     left: 0;
     top: -2px;
@@ -956,7 +957,8 @@ ul.media li a {
 }
 
 /* Accessibility Page -------------------------------------------- */
-.img-accessibility-split { /*Makes image appear on the right side of the text while text wraps around the bottom*/
+.img-accessibility-split {
+
     height: 32rem;
     width: auto;
     max-width: 100%;
@@ -972,7 +974,7 @@ ul.media li a {
 }
 
 
-@media (max-width: 1000px) { /*Makes image appear above text on smaller screen*/
+@media (max-width: 1000px) { /*Make image appear above text on smaller screen*/
     .img-accessibility-split {
         float: none;
         display: block;
@@ -997,7 +999,6 @@ h1.github {
     overflow-x: hidden;
     box-sizing: border-box;
 }
-
 .img-item img {
     max-width: 100%;
     height: auto;
@@ -1028,7 +1029,7 @@ h1.github {
     margin: 1.25rem 0;
 }
 
-@media (max-width: 900px) { /*On smaller screens container moves beneath eacother*/
+@media (max-width: 900px) {
     .split-container {
         grid-template-columns: 1fr;
         padding: 0.125rem;
