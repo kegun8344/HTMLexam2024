@@ -957,8 +957,7 @@ ul.media li a {
 }
 
 /* Accessibility Page -------------------------------------------- */
-.img-accessibility-split {
-
+.img-accessibility-split { /*Makes image appear on the right side of the text while text wraps around the bottom*/
     height: 32rem;
     width: auto;
     max-width: 100%;
@@ -974,7 +973,7 @@ ul.media li a {
 }
 
 
-@media (max-width: 1000px) { /*Make image appear above text on smaller screen*/
+@media (max-width: 1000px) { /*Makes image appear above text on smaller screen*/
     .img-accessibility-split {
         float: none;
         display: block;
@@ -1030,7 +1029,7 @@ h1.github {
     margin: 1.25rem 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) { /*On smaller screens container moves beneath eacother*/
     .split-container {
         grid-template-columns: 1fr;
         padding: 0.125rem;
