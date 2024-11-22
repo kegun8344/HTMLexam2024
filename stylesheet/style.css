@@ -373,10 +373,9 @@ main {
     padding-bottom: 56.25%;
     /* 16:9 aspect ratio */
     
-    height: 0;
     overflow: hidden;
     margin: auto;
-    border-radius: 1.875rem;
+    border-radius: 0.5rem;
     border: 0.19rem solid var(--yellow);
     box-shadow: 0rem 0.25rem 1.25rem 0rem rgba(0, 0, 0, 0.112);
 }
@@ -386,7 +385,7 @@ main {
 
         /* <----- 16:9 aspect ratio */
         max-width: 100%;
-        padding-bottom: 56.25%;
+        padding-bottom: 53.25%;
         /* <----- 16:9 aspect ratio */
         
         box-shadow: none;
@@ -398,11 +397,11 @@ main {
 
 iframe {
     position: absolute;
-    top: -2px;
-    left: 0;
-    width: 100.5%;
-    height: 100.5%;
+    width: 100%;
+    height: 100%;
     border: none;
+    left: 0;
+    top: -2px;
     /* top, width and height adjusted to better fit inside borders. 
     For some reason the video was slightly smaller than the border, showing small gaps */
 }
