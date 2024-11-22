@@ -83,7 +83,8 @@ p {
 }
 
 @media(min-width:1920px) {
-/* code to adjust the background image to not have any gaps in larger resolutions */
+
+    /* code to adjust the background image to not have any gaps in larger resolutions */
     #site-background {
         background-position: none;
         background-position-x: left;
@@ -187,73 +188,6 @@ header {
 
 }
 
-/* nav bar specifically for activity page */
-.dropbtn-activity {
-    background-color: var(--slide2);
-    color: var(--beige);
-    font-size: 2.19rem;
-    border: none;
-    cursor: pointer;
-    width: 3.75rem;
-    height: 3.75rem;
-    float: right;
-}
-
-#activity-header {
-    background-color: var(--slide2);
-}
-
-.dropdown-activity {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content-activity {
-    display: none;
-    position: absolute;
-    top: 4rem;
-    right: 0;
-    background-color: var(--skyblue);
-    min-width: 16rem;
-    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    font-size: larger;
-}
-
-.dropdown-content-activity>a {
-    color: black;
-    padding: 1rem 1rem;
-    text-decoration: none;
-    display: block;
-    transition: 0.2s background-color ease;
-    border-top: 0.06rem solid rgb(92, 92, 92);
-}
-
-.dropdown-content-activity>a:hover {
-    background-color: #abc9e1;
-
-}
-
-#search-button-activity {
-    color: var(--beige);
-    width: 3.75rem;
-    height: 3.75rem;
-    cursor: pointer;
-    border: none;
-    font-size: 1.75rem;
-    padding-top: 1rem;
-}
-
-#header-logo-activity {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding: 0.625rem;
-    margin-left: 0.9rem;
-    margin-top: 0.9rem;
-    width: 4rem;
-}
-
 /* nav ----------------------------------------------- */
 nav {
     display: flex;
@@ -323,7 +257,7 @@ main {
     padding: 0% 0%;
 }
 
-#course-summary{
+#course-summary {
     padding: 2rem 0 2rem 0;
 }
 
@@ -372,7 +306,7 @@ main {
     max-width: 100%;
     padding-bottom: 56.25%;
     /* 16:9 aspect ratio */
-    
+
     height: 0;
     overflow: hidden;
     margin: auto;
@@ -388,7 +322,7 @@ main {
         max-width: 100%;
         padding-bottom: 53.25%;
         /* <----- 16:9 aspect ratio */
-        
+
         box-shadow: none;
         border-radius: 0;
         border: 0.19rem solid var(--yellow);
@@ -956,8 +890,13 @@ ul.media li a {
     text-decoration-thickness: 3px;
 }
 
+<<<<<<< HEAD
 /* Accessibility Page -------------------------------------------- */
 .img-accessibility-split { /*Makes image appear on the right side of the text while text wraps around the bottom*/
+=======
+/* ============================ Accessibility Page =========================== */
+.img-accessibility-split {
+>>>>>>> last-changes-yippi-acitivty
 
     height: 32rem;
     width: auto;
@@ -974,7 +913,13 @@ ul.media li a {
 }
 
 
+<<<<<<< HEAD
 @media (max-width: 1000px) { /*Makes image appear above text on smaller screen*/
+=======
+@media (max-width: 1000px) {
+
+    /*Make image appear above text on smaller screen*/
+>>>>>>> last-changes-yippi-acitivty
     .img-accessibility-split {
         float: none;
         display: block;
@@ -985,7 +930,7 @@ ul.media li a {
 
 }
 
-/* Github page ---------------------------------------------------------*/
+/* ============================ Github Page =========================== */
 
 h1.github {
     margin: 1.25rem 1.25rem 0 1.25rem;
@@ -1056,7 +1001,84 @@ h1.github {
     }
 }
 
-/* activity page ----------------------------------------------------------*/
+/* ============================ Activity Page Styles =========================== */
+
+/* Drop button (for the activity page navigation) */
+.dropbtn-activity {
+    background-color: var(--slide2);
+    color: var(--beige);
+    font-size: 2.19rem;
+    border: none;
+    cursor: pointer;
+    /* Indicates clickable area */
+    width: 3.75rem;
+    height: 3.75rem;
+    float: right;
+    /* Positions the button to the right */
+}
+
+#activity-header {
+    background-color: var(--slide2);
+}
+
+/* Dropdown menu container */
+.dropdown-activity {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content-activity {
+    display: none;
+    position: absolute;
+    /* Positions dropdown absolutely in relation to its parent */
+    top: 4rem;
+    right: 0;
+    background-color: var(--skyblue);
+    min-width: 16rem;
+    box-shadow: 0rem 0.5rem 1rem 0rem rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: larger;
+}
+
+/* Dropdown links styling */
+.dropdown-content-activity>a {
+    color: black;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    display: block;
+    transition: 0.2s background-color ease;
+    /* Smooth hover effect */
+    border-top: 0.06rem solid rgb(92, 92, 92);
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content-activity>a:hover {
+    background-color: #abc9e1;
+}
+
+/* Activity search button styling */
+#search-button-activity {
+    color: var(--beige);
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    border: none;
+    font-size: 1.75rem;
+    padding-top: 1rem;
+}
+
+/* Logo placement and styling */
+#header-logo-activity {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.625rem;
+    margin-left: 0.9rem;
+    margin-top: 0.9rem;
+    width: 4rem;
+}
+
 #activity-background {
     background-image: url("/images/activitybackground.png");
     background-position: center;
@@ -1065,14 +1087,10 @@ h1.github {
     width: 100%;
     height: 100%;
     z-index: -1;
+    /* Places the background behind all other content */
 }
 
-
-.activity {
-    background-color: #FFF;
-    line-height: 1.5;
-}
-
+/* Container for category boxes */
 .category-box-container {
     text-decoration: none;
     color: var(--teal);
@@ -1097,25 +1115,43 @@ h1.github {
     text-align: center;
 }
 
+/* ========================== Responsive Design, activity ============================== */
+
+/* Small screens (less than 400px wide) */
 @media(max-width:400px) {
     .container {
         max-width: 100%;
     }
 }
 
+/* Medium screens (tablets, etc.) */
+@media (max-width: 768px) {
+    .small-img-box {
+        flex: 1 1 calc(50% - 10px);
+        /* Two columns layout for small screens */
+        max-width: calc(50% - 10px);
+    }
 
-
-.category-box-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 80px;
+    .category-box-container {
+        flex-direction: column;
+        /* Stack the categories vertically on smaller screens */
+    }
 }
 
+/* Media query for small screen */
+@media (max-width: 400px) {
+    .small-img-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+/* ============================ Category Box Styling =========================== */
+
+/* Individual category box styling */
 .category-box {
     flex: 1 1 calc(25% - 20px);
+    /* Creates a 4-column layout for category boxes */
     background-color: var(--skyblue);
     padding: 20px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
@@ -1123,17 +1159,18 @@ h1.github {
     transition: 0.2s all ease-in-out;
 }
 
+/* Hover effect for category box */
 .category-box:hover {
     background-color: #abc9e1;
     transform: scale(1.03);
+    /* Slightly scales the box */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .category-box>h2 {
-    font-size: 1.5em;
+    font-size: medium;
     margin-bottom: 10px;
     font-weight: bold;
-    font-size: medium;
     color: var(--navy);
 }
 
@@ -1143,6 +1180,9 @@ h1.github {
     color: var(--teal);
 }
 
+/* ======================== Media Box and Information Box ===================== */
+
+/* Information box styling */
 .info-box {
     font-size: 1em;
     margin: 0;
@@ -1151,10 +1191,8 @@ h1.github {
     padding: 1.5vw;
 }
 
-
-
 .activity-main-box {
-    background-image: linear-gradient(var(--beige), var(--beige));
+    background-image: linear-gradient(var(--beige), var(--white));
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -1164,6 +1202,7 @@ h1.github {
     /* Ensure box doesn’t exceed screen width */
     display: flex;
     flex-direction: column;
+    /* Stacks items vertically */
     align-items: center;
 }
 
@@ -1171,7 +1210,9 @@ h1.github {
     color: var(--teal);
 }
 
+/* ============================ Small Image Styling =========================== */
 
+/* Scrollable container for images (horizontal scroll) */
 .small-img-container {
     display: flex;
     flex-wrap: wrap;
@@ -1179,10 +1220,9 @@ h1.github {
     gap: 10px;
 }
 
-/* Stil for hver enkelt bilde-boks */
+/* style for each small imagebox */
 .small-img-box {
     flex: 1 1 calc(33.33% - 10px);
-    /* Tredje dels bredde med mellomrom */
     max-width: calc(33.33% - 10px);
     transition: 0.4s ease;
     /* Smooth transition */
@@ -1219,7 +1259,6 @@ h1.github {
     pointer-events: none;
     /* Prevent the text from interfering with the link */
     color: var(--beige);
-    /* Use your CSS variable or replace with a color */
     mix-blend-mode: screen;
 }
 
@@ -1228,28 +1267,6 @@ h1.github {
     text-align: center;
 }
 
-/* Media query for mediumsized (Example Tablets) */
-@media (max-width: 768px) {
-    .small-img-box {
-        flex: 1 1 calc(50% - 10px);
-        max-width: calc(50% - 10px);
-    }
-
-    .category-box-container {
-        flex-direction: column;
-    }
-}
-
-/* Media query for small  (Example Mobile) */
-@media (max-width: 480px) {
-    .small-img-box {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
-
-
-/*det er flere hover med samme kode, må endrs, forksjell er background color som er viktig å ha med*/
 .small-img-box:hover {
     background-color: var(--beige);
     border-radius: 8px;
@@ -1258,7 +1275,10 @@ h1.github {
     filter: grayscale(50%);
 }
 
-/*kode hentet fra w3school, vise kilde?*/
+/* ============================ Scrollable Gallery Styling =================== */
+
+
+/*Code for slider: https://www.w3schools.com/howto/howto_css_image_gallery_scroll.asp*/
 .scroll-img-container {
     display: flex;
     background-color: var(--white);
@@ -1266,20 +1286,24 @@ h1.github {
     white-space: nowrap;
     padding: 10px;
     gap: 10px;
-    padding: 10px;
     scroll-snap-type: x mandatory;
-    /*husk å skrive kort forklaring*/
+    /* Ensures smooth scrolling */
 }
 
+/* Image styling inside the scrollable gallery */
 .scroll-img-container img {
     padding: 10px;
     max-width: 100%;
     height: auto;
     object-fit: cover;
     scroll-snap-align: center;
+    /* Ensures images snap to center when scrolled */
     border-radius: 8px;
 }
 
+/* ======================== Social Media and Link Styling ===================== */
+
+/* Media box container for social activity */
 .mediabox-activity {
     overflow: hidden;
     padding: 3rem 0em;
@@ -1288,11 +1312,9 @@ h1.github {
     background: var(--slide2);
 }
 
-
 .mediabox-activity a {
     text-decoration: none;
 }
-
 
 /* Styling Social Icons */
 ul.media-activity {
