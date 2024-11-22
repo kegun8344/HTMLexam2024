@@ -996,7 +996,6 @@ h1.github {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1.5rem 1.5rem 0 1.5rem;
-    overflow-x: hidden;
     box-sizing: border-box;
 }
 .img-item img {
@@ -1017,8 +1016,7 @@ h1.github {
     box-sizing: border-box;
 }
 
-.split-left,
-.split-right { /* style the left and right split*/
+.split-text { /* style the left and right split*/
     padding: 1.5rem;
     border: 0.1875rem solid var(--grey);
     border-radius: 1.5625rem;
