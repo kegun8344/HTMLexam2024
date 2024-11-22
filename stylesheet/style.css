@@ -974,7 +974,7 @@ ul.media li a {
 }
 
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px) { /*Make image appear above text on smaller screen*/
     .img-accessibility-split {
         float: none;
         display: block;
@@ -1231,7 +1231,7 @@ h1.github {
     text-align: center;
 }
 
-/* Media query for mellomstore skjermer (for eksempel nettbrett) */
+/* Media query for mediumsized (Example Tablets) */
 @media (max-width: 768px) {
     .small-img-box {
         flex: 1 1 calc(50% - 10px);
@@ -1243,7 +1243,7 @@ h1.github {
     }
 }
 
-/* Media query for små skjermer (mobil) */
+/* Media query for small  (Example Mobile) */
 @media (max-width: 480px) {
     .small-img-box {
         flex: 1 1 100%;
