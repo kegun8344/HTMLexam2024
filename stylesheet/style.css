@@ -957,7 +957,7 @@ ul.media li a {
 }
 
 /* Accessibility Page -------------------------------------------- */
-.img-accessibility-split {
+.img-accessibility-split { /*Makes image appear on the right side of the text while text wraps around the bottom*/
 
     height: 32rem;
     width: auto;
@@ -974,7 +974,7 @@ ul.media li a {
 }
 
 
-@media (max-width: 1000px) { /*Make image appear above text on smaller screen*/
+@media (max-width: 1000px) { /*Makes image appear above text on smaller screen*/
     .img-accessibility-split {
         float: none;
         display: block;
@@ -1009,7 +1009,7 @@ h1.github {
 
 /* github page text section -------------------------------------------------*/
 
-.split-container {
+.split-container { 
     display: grid;
     grid-template-columns: auto auto;
     gap: 0.9375rem;
@@ -1018,7 +1018,7 @@ h1.github {
 }
 
 .split-left,
-.split-right {
+.split-right { /* style the left and right split*/
     padding: 1.5rem;
     border: 0.1875rem solid var(--grey);
     border-radius: 1.5625rem;
@@ -1029,7 +1029,7 @@ h1.github {
     margin: 1.25rem 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) { /*On smaller screens container moves beneath each other*/
     .split-container {
         grid-template-columns: 1fr;
         padding: 0.125rem;
